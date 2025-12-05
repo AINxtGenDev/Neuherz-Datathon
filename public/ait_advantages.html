@@ -1,0 +1,3234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIT Advantages - HPE & AIT Datathon Partnership</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #ec4899;
+            --accent: #14b8a6;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --gradient-1: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+            --gradient-2: linear-gradient(135deg, #14b8a6 0%, #6366f1 100%);
+            --gradient-3: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --radius: 12px;
+            --radius-lg: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Mobile-first container */
+        .container {
+            width: 100%;
+            padding: 0 16px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                padding: 0 24px;
+                max-width: 640px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1200px;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-1);
+            padding: 60px 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 24px;
+        }
+
+        @media (min-width: 768px) {
+            .hero {
+                padding: 80px 0 120px;
+            }
+            .hero h1 {
+                font-size: 42px;
+            }
+            .hero-subtitle {
+                font-size: 18px;
+            }
+        }
+
+        /* Navigation */
+        .nav {
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .nav-inner {
+            display: flex;
+            gap: 4px;
+            padding: 12px 16px;
+            min-width: max-content;
+        }
+
+        .nav a {
+            display: inline-block;
+            padding: 8px 14px;
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 500;
+            border-radius: 8px;
+            white-space: nowrap;
+            transition: all 0.2s;
+        }
+
+        .nav a:hover, .nav a.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .nav a.nav-highlight {
+            background: var(--gradient-1);
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 0;
+        }
+
+        @media (min-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .section-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-1);
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            border-radius: 50%;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .section-subtitle {
+            color: var(--gray);
+            font-size: 15px;
+        }
+
+        @media (min-width: 768px) {
+            .section-title {
+                font-size: 32px;
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 20px;
+            box-shadow: var(--shadow);
+            margin-bottom: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        @media (min-width: 768px) {
+            .card {
+                padding: 28px;
+            }
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .card-icon.purple { background: rgba(99, 102, 241, 0.1); }
+        .card-icon.pink { background: rgba(236, 72, 153, 0.1); }
+        .card-icon.teal { background: rgba(20, 184, 166, 0.1); }
+        .card-icon.orange { background: rgba(245, 158, 11, 0.1); }
+        .card-icon.green { background: rgba(34, 197, 94, 0.1); }
+        .card-icon.red { background: rgba(239, 68, 68, 0.1); }
+
+        .card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .card p {
+            color: var(--gray);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        .grid-3 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 640px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .grid-3 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Stats Section */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 20px 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        @media (min-width: 768px) {
+            .stat-value {
+                font-size: 36px;
+            }
+            .stat-label {
+                font-size: 14px;
+            }
+        }
+
+        /* Benefit Tags */
+        .benefit-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 4px;
+        }
+
+        .benefit-tag.purple { background: rgba(99, 102, 241, 0.1); color: var(--primary); }
+        .benefit-tag.pink { background: rgba(236, 72, 153, 0.1); color: var(--secondary); }
+        .benefit-tag.teal { background: rgba(20, 184, 166, 0.1); color: var(--accent); }
+        .benefit-tag.green { background: rgba(34, 197, 94, 0.1); color: var(--success); }
+        .benefit-tag.orange { background: rgba(245, 158, 11, 0.1); color: var(--warning); }
+
+        /* Hero benefit tags - white text on semi-transparent white background for readability */
+        .hero .benefit-tag {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Executive Summary Button */
+        .exec-summary-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 32px;
+            background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(245, 158, 11, 0.4);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .exec-summary-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 30px rgba(245, 158, 11, 0.5);
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+        }
+
+        .exec-summary-btn .btn-icon {
+            font-size: 24px;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); }
+            50% { box-shadow: 0 4px 30px rgba(255, 255, 255, 0.4); }
+        }
+
+        .exec-summary-btn.concept-btn {
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: white;
+            animation: none;
+        }
+
+        .exec-summary-btn.concept-btn:hover {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+        }
+
+        .nav a.nav-highlight-teal {
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: white;
+            font-weight: 600;
+        }
+
+        /* Rough Concept Section */
+        .rough-concept-section {
+            background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%);
+            padding: 60px 0;
+        }
+
+        /* Hidden sections by default */
+        .executive-summary-section,
+        .rough-concept-section {
+            display: none;
+        }
+
+        .executive-summary-section.visible,
+        .rough-concept-section.visible {
+            display: block;
+            animation: slideDown 0.4s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Active button state */
+        .exec-summary-btn.active {
+            background: var(--dark);
+            color: white;
+            animation: none;
+        }
+
+        .exec-summary-btn.concept-btn.active {
+            background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%);
+        }
+
+        /* Concept Details Grid */
+        .concept-details-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        @media (min-width: 768px) {
+            .concept-details-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .concept-detail-card {
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(13, 148, 136, 0.1) 100%);
+            padding: 20px;
+            border-radius: var(--radius);
+            text-align: center;
+            border: 1px solid rgba(20, 184, 166, 0.2);
+        }
+
+        .detail-icon {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .concept-detail-card h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+
+        .concept-detail-card p {
+            font-size: 12px;
+            color: var(--gray);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Agenda Styling */
+        .agenda-day {
+            margin-bottom: 24px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .day-header {
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .day-header.friday { background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%); }
+        .day-header.saturday { background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); }
+        .day-header.sunday { background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%); }
+
+        .day-label {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .day-time {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .agenda-items {
+            background: #f8fafc;
+        }
+
+        .agenda-item {
+            display: flex;
+            gap: 16px;
+            padding: 12px 20px;
+            border-bottom: 1px solid #e2e8f0;
+            align-items: flex-start;
+        }
+
+        .agenda-item:last-child {
+            border-bottom: none;
+        }
+
+        .agenda-item.highlight {
+            background: rgba(20, 184, 166, 0.1);
+        }
+
+        .agenda-item .time {
+            flex-shrink: 0;
+            width: 90px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .agenda-item .activity strong {
+            display: block;
+            font-size: 13px;
+            color: var(--dark);
+            margin-bottom: 2px;
+        }
+
+        .agenda-item .activity p {
+            font-size: 12px;
+            color: var(--gray);
+            margin: 0;
+        }
+
+        /* Challenge Grid */
+        .challenge-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 640px) {
+            .challenge-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .challenge-card {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: var(--radius);
+            border-left: 4px solid var(--accent);
+        }
+
+        .challenge-icon {
+            font-size: 28px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .challenge-card h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 6px;
+        }
+
+        .challenge-card p {
+            font-size: 13px;
+            color: var(--gray);
+            margin: 0;
+        }
+
+        /* Tech Stack Visual */
+        .tech-stack-visual {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .tech-layer {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .layer-label {
+            flex-shrink: 0;
+            width: 100px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--gray);
+            text-transform: uppercase;
+        }
+
+        .tech-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-item {
+            padding: 6px 12px;
+            background: #e2e8f0;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .tech-item.hpe {
+            background: rgba(1, 169, 130, 0.15);
+            color: #01a982;
+        }
+
+        .tech-item.nvidia {
+            background: rgba(118, 185, 0, 0.15);
+            color: #76b900;
+        }
+
+        /* Requirements Grid */
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        @media (min-width: 640px) {
+            .requirements-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .requirements-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .requirement-item {
+            background: #f8fafc;
+            padding: 16px;
+            border-radius: var(--radius);
+        }
+
+        .req-icon {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .requirement-item strong {
+            display: block;
+            font-size: 13px;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .requirement-item p {
+            font-size: 12px;
+            color: var(--gray);
+            margin: 0;
+        }
+
+        /* Budget Breakdown */
+        .budget-breakdown {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .budget-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .budget-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        .budget-label span:first-child {
+            color: var(--dark);
+        }
+
+        .budget-percent {
+            font-weight: 600;
+            color: var(--gray);
+        }
+
+        .budget-bar {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .budget-fill {
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        .budget-amount {
+            font-size: 12px;
+            color: var(--gray);
+            text-align: right;
+        }
+
+        .budget-total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background: var(--gradient-2);
+            border-radius: var(--radius);
+            color: white;
+            margin-top: 16px;
+        }
+
+        .budget-total span:first-child {
+            font-weight: 500;
+        }
+
+        .total-amount {
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .team-role {
+            background: #f8fafc;
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .role-header {
+            padding: 12px 16px;
+            color: white;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .role-header.hpe-role {
+            background: linear-gradient(135deg, #01a982 0%, #00875a 100%);
+        }
+
+        .role-header.ait-role {
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+        }
+
+        .team-role ul {
+            list-style: none;
+            padding: 16px;
+            margin: 0;
+        }
+
+        .team-role li {
+            padding: 6px 0;
+            font-size: 13px;
+            color: var(--gray);
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .team-role li:last-child {
+            border-bottom: none;
+        }
+
+        .team-role li strong {
+            color: var(--dark);
+        }
+
+        /* Prep Timeline */
+        .prep-timeline {
+            position: relative;
+            padding-left: 100px;
+        }
+
+        @media (max-width: 640px) {
+            .prep-timeline {
+                padding-left: 0;
+            }
+        }
+
+        .prep-phase {
+            display: flex;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid #e2e8f0;
+            align-items: flex-start;
+        }
+
+        .prep-phase:last-child {
+            border-bottom: none;
+        }
+
+        .prep-phase.highlight {
+            background: rgba(20, 184, 166, 0.1);
+            margin: 0 -24px;
+            padding: 16px 24px;
+            border-radius: var(--radius);
+        }
+
+        .phase-marker {
+            flex-shrink: 0;
+            width: 80px;
+            padding: 6px 12px;
+            background: var(--dark);
+            color: white;
+            font-size: 11px;
+            font-weight: 600;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        .prep-phase.highlight .phase-marker {
+            background: var(--accent);
+        }
+
+        .phase-content strong {
+            display: block;
+            font-size: 14px;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .phase-content p {
+            font-size: 13px;
+            color: var(--gray);
+            margin: 0;
+        }
+
+        /* Success Grid */
+        .success-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
+        @media (min-width: 640px) {
+            .success-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .success-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .success-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--dark);
+        }
+
+        .success-check {
+            flex-shrink: 0;
+            width: 20px;
+            height: 20px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+        }
+
+        /* Executive Summary Section */
+        .executive-summary-section {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            padding: 60px 0;
+        }
+
+        .exec-summary-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .exec-header {
+            background: var(--gradient-1);
+            padding: 32px 24px;
+            text-align: center;
+            color: white;
+        }
+
+        .exec-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .exec-header h2 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .exec-subtitle {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .exec-content {
+            padding: 24px;
+        }
+
+        @media (min-width: 768px) {
+            .exec-header {
+                padding: 48px 40px;
+            }
+            .exec-header h2 {
+                font-size: 36px;
+            }
+            .exec-content {
+                padding: 40px;
+            }
+        }
+
+        .exec-block {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .exec-block:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .exec-block h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 16px;
+        }
+
+        .exec-block p {
+            color: var(--gray);
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .exec-block.vision {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+            padding: 24px;
+            border-radius: var(--radius);
+            border: none;
+            margin-bottom: 32px;
+        }
+
+        /* Executive Metrics */
+        .exec-metrics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        @media (min-width: 768px) {
+            .exec-metrics {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .exec-metric {
+            background: #f8fafc;
+            padding: 20px 16px;
+            border-radius: var(--radius);
+            text-align: center;
+        }
+
+        .exec-metric.highlight {
+            background: var(--gradient-1);
+            color: white;
+        }
+
+        .exec-metric.highlight .metric-value,
+        .exec-metric.highlight .metric-label {
+            color: white;
+        }
+
+        .metric-value {
+            display: block;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .metric-label {
+            display: block;
+            font-size: 11px;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @media (min-width: 768px) {
+            .metric-value {
+                font-size: 32px;
+            }
+            .metric-label {
+                font-size: 12px;
+            }
+        }
+
+        /* Value Grid */
+        .value-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .value-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 16px;
+            background: #f8fafc;
+            border-radius: var(--radius);
+        }
+
+        .value-icon {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+
+        .value-icon.green {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--success);
+        }
+
+        .value-item strong {
+            display: block;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .value-item p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* Outcomes Grid */
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .outcomes-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .outcome-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 16px;
+            border-radius: var(--radius);
+            text-align: center;
+        }
+
+        .outcome-number {
+            display: block;
+            font-size: 24px;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .outcome-label {
+            display: block;
+            font-size: 11px;
+            color: var(--gray);
+            margin-top: 4px;
+        }
+
+        /* Partnership Visual */
+        .partnership-visual {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .partnership-visual {
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+
+        .partner-box {
+            flex: 1;
+            max-width: 200px;
+            padding: 20px;
+            border-radius: var(--radius);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .partner-box strong {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .partner-box span {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .partner-box.hpe {
+            background: linear-gradient(135deg, #01a982 0%, #00875a 100%);
+            color: white;
+        }
+
+        .partner-box.tech {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            color: white;
+        }
+
+        .partner-box.ait {
+            background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+            color: white;
+        }
+
+        .partner-connector {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--gray);
+        }
+
+        /* Elevator Pitch */
+        .elevator-pitch blockquote {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(236, 72, 153, 0.05) 100%);
+            border-left: 4px solid var(--primary);
+            padding: 24px;
+            margin: 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-size: 15px;
+            line-height: 1.8;
+            color: var(--dark);
+            font-style: italic;
+        }
+
+        /* Benefits List */
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .benefits-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .benefits-list li:last-child {
+            border-bottom: none;
+        }
+
+        .benefits-list li strong {
+            color: var(--dark);
+        }
+
+        /* Recommendation */
+        .exec-recommendation {
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%);
+            padding: 24px;
+            border-radius: var(--radius);
+            border-left: 4px solid var(--success);
+        }
+
+        .exec-recommendation h3 {
+            color: var(--success);
+            margin-bottom: 12px;
+        }
+
+        .exec-recommendation p {
+            margin: 0;
+            color: var(--dark);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 16px 0;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        table {
+            width: 100%;
+            min-width: 400px;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 13px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: var(--dark);
+            color: white;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        th:first-child {
+            border-radius: var(--radius) 0 0 0;
+        }
+
+        th:last-child {
+            border-radius: 0 var(--radius) 0 0;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: #f8fafc;
+        }
+
+        @media (min-width: 768px) {
+            th, td {
+                padding: 14px 20px;
+                font-size: 14px;
+            }
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            border-radius: var(--radius);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box.purple {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+            border-left: 4px solid var(--primary);
+        }
+
+        .highlight-box.teal {
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
+            border-left: 4px solid var(--accent);
+        }
+
+        .highlight-box.green {
+            background: rgba(34, 197, 94, 0.1);
+            border-left: 4px solid var(--success);
+        }
+
+        .highlight-box h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--dark);
+        }
+
+        .highlight-box p, .highlight-box ul {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        .highlight-box ul {
+            margin-top: 8px;
+            padding-left: 20px;
+        }
+
+        .highlight-box li {
+            margin-bottom: 4px;
+        }
+
+        /* List Styles */
+        .check-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 14px;
+        }
+
+        .check-list li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            flex-shrink: 0;
+            width: 24px;
+            height: 24px;
+            background: var(--success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+        }
+
+        /* Progress Bars */
+        .progress-item {
+            margin-bottom: 20px;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        .progress-label {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .progress-value {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-fill.purple { background: var(--gradient-1); }
+        .progress-fill.teal { background: var(--gradient-2); }
+        .progress-fill.orange { background: var(--gradient-3); }
+
+        /* ROI Section Special Styling */
+        .roi-card {
+            background: var(--gradient-1);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            color: white;
+            text-align: center;
+            margin: 32px 0;
+        }
+
+        .roi-card h3 {
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .roi-value {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .roi-label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        @media (min-width: 768px) {
+            .roi-card {
+                padding: 48px 32px;
+            }
+            .roi-value {
+                font-size: 64px;
+            }
+        }
+
+        /* Accordion */
+        .accordion {
+            margin: 16px 0;
+        }
+
+        .accordion-item {
+            background: white;
+            border-radius: var(--radius);
+            margin-bottom: 8px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            padding: 16px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background 0.2s;
+        }
+
+        .accordion-header:hover {
+            background: #f8fafc;
+        }
+
+        .accordion-icon {
+            font-size: 20px;
+            color: var(--gray);
+            transition: transform 0.3s;
+        }
+
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+
+        .accordion-body {
+            padding: 0 20px 20px;
+            font-size: 14px;
+            color: var(--gray);
+            line-height: 1.7;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 24px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 24px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: white;
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+        }
+
+        .timeline-item h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 4px;
+        }
+
+        .timeline-item p {
+            font-size: 13px;
+            color: var(--gray);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 13px;
+            opacity: 0.7;
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Utility Classes */
+        .text-center { text-align: center; }
+        .text-gradient {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .mb-16 { margin-bottom: 16px; }
+        .mb-24 { margin-bottom: 24px; }
+        .mb-32 { margin-bottom: 32px; }
+        .mt-32 { margin-top: 32px; }
+
+        /* Background Sections */
+        .bg-light { background: #f1f5f9; }
+        .bg-white { background: white; }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        /* Scroll indicator */
+        .scroll-indicator {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--gradient-1);
+            z-index: 1000;
+            transition: width 0.1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- HPE Logo with fallback -->
+                <div style="margin-bottom: 16px;">
+                    <img src="HPE-logo_white.png"
+                         alt="HPE - Hewlett Packard Enterprise"
+                         style="height: 60px; width: auto;"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <!-- SVG Fallback -->
+                    <svg style="display: none; height: 60px; width: auto;" viewBox="0 0 200 50" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="38" font-family="Arial, sans-serif" font-size="42" font-weight="bold" fill="white">HPE</text>
+                        <rect x="155" y="5" width="40" height="25" fill="#01a982"/>
+                        <rect x="170" y="20" width="25" height="25" fill="none" stroke="none"/>
+                        <path d="M155 5 L195 5 L195 30 L180 30 L180 45 L155 45 Z" fill="#01a982"/>
+                    </svg>
+                </div>
+                <p style="font-size: 14px; opacity: 0.9; margin-bottom: 20px; letter-spacing: 1px;">Lead: <strong>Raphael NEUHERZ</strong></p>
+                <span class="hero-badge">Partnership Benefits</span>
+                <h1>Advantages for AIT<br>Austrian Institute of Technology</h1>
+                <p class="hero-subtitle">Comprehensive analysis of strategic benefits from the HPE & AIT Datathon Partnership</p>
+                <!-- Action Buttons -->
+                <div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
+                    <button id="exec-summary-toggle" class="exec-summary-btn" onclick="toggleSection('executive-summary')">
+                        <span class="btn-icon">&#128203;</span>
+                        Executive Summary
+                    </button>
+                    <button id="rough-concept-toggle" class="exec-summary-btn concept-btn" onclick="toggleSection('rough-concept')">
+                        <span class="btn-icon">&#128197;</span>
+                        Rough Concept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Executive Summary Modal/Section -->
+    <section id="executive-summary" class="executive-summary-section">
+        <div class="container">
+            <div class="exec-summary-card">
+                <div class="exec-header">
+                    <div class="exec-icon">&#128203;</div>
+                    <h2>Executive Summary</h2>
+                    <p class="exec-subtitle">HPE & AIT Datathon Partnership - Strategic Value Proposition</p>
+                </div>
+
+                <div class="exec-content">
+                    <!-- Executive Summary Text Block -->
+                    <div class="exec-block summary-text" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%); border-left: 4px solid var(--primary); padding: 24px; margin-bottom: 32px;">
+                        <h3 style="color: var(--primary); margin-bottom: 16px;">&#128221; Executive Summary</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--dark); text-align: justify;">
+                            The <strong>HPE & AIT Datathon Partnership</strong> represents a strategic opportunity for the Austrian Institute of Technology to significantly strengthen its position as Austria's leading Research and Technology Organization in the AI and data science domain. Through a modest investment of <strong>€17,500</strong> (representing only 25% of the total €70,000 initiative), AIT gains access to enterprise-grade technology infrastructure valued at over <strong>€190,000</strong>, including HPE Private Cloud AI and NVIDIA AI Enterprise tools.
+                        </p>
+                        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--dark); text-align: justify; margin-top: 16px;">
+                            This collaborative initiative is designed to foster Austria's AI expert community through a 48-hour intensive innovation event, bringing together <strong>50-100 top AI professionals</strong>, data scientists, and researchers. For AIT, the partnership delivers exceptional value across five key dimensions: <strong>(1) Financial efficiency</strong> through 75% cost reduction via risk-sharing; <strong>(2) Technology access</strong> to cutting-edge HPE/NVIDIA infrastructure; <strong>(3) Talent acquisition</strong> pipeline for potential PhD candidates and research collaborators; <strong>(4) Brand enhancement</strong> with 50,000-100,000 marketing impressions; and <strong>(5) Research synergies</strong> through real-world AI challenge prototypes.
+                        </p>
+                        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--dark); text-align: justify; margin-top: 16px;">
+                            The expected ROI for HPE is projected at <strong>40x</strong> with a €7.5M pipeline target, demonstrating the commercial viability of this initiative. For AIT, the return extends beyond financial metrics to include <strong>intellectual property</strong> from developed solutions, <strong>strengthened industry relationships</strong>, and <strong>enhanced visibility</strong> as the premier Austrian AI research institution. The event positions AIT at the center of Austria's AI ecosystem, facilitating connections between academia, industry, and government stakeholders while showcasing AIT's research capabilities to potential partners and sponsors.
+                        </p>
+                        <p style="font-size: 1.05rem; line-height: 1.8; color: var(--dark); text-align: justify; margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(99, 102, 241, 0.2);">
+                            <strong>Recommendation:</strong> This partnership offers AIT a low-risk, high-reward opportunity to advance its strategic objectives in AI leadership, talent development, and industry collaboration. The favorable cost-sharing structure, combined with access to premium technology resources and networking opportunities, makes this initiative a compelling investment in AIT's future as Austria's AI innovation hub.
+                        </p>
+                    </div>
+
+                    <!-- Vision Statement -->
+                    <div class="exec-block vision">
+                        <h3>&#127919; Strategic Vision</h3>
+                        <p>Position <strong>HPE as a top 3 AI solution provider in Austria</strong> by fiscal year end, while enabling <strong>AIT to strengthen its leadership</strong> as Austria's premier Research and Technology Organization in the AI and data science domain.</p>
+                    </div>
+
+                    <!-- The Opportunity -->
+                    <div class="exec-block">
+                        <h3>&#128161; The Opportunity</h3>
+                        <p>A collaborative Datathon initiative designed to foster Austria's AI expert community, create knowledge-sharing environments for AI/LLM use cases, and shift market perception of HPE from "Hardware provider" to "AI Solutions leader" - with AIT as the trusted research partner.</p>
+                    </div>
+
+                    <!-- Key Metrics Grid -->
+                    <div class="exec-metrics">
+                        <div class="exec-metric">
+                            <span class="metric-value">€70k</span>
+                            <span class="metric-label">Total Investment</span>
+                        </div>
+                        <div class="exec-metric highlight">
+                            <span class="metric-value">€7.5M</span>
+                            <span class="metric-label">Expected Pipeline</span>
+                        </div>
+                        <div class="exec-metric">
+                            <span class="metric-value">40x</span>
+                            <span class="metric-label">Target ROI</span>
+                        </div>
+                        <div class="exec-metric">
+                            <span class="metric-value">€17.5k</span>
+                            <span class="metric-label">AIT Investment</span>
+                        </div>
+                    </div>
+
+                    <!-- Value Proposition -->
+                    <div class="exec-block">
+                        <h3>&#128176; Value Proposition for AIT</h3>
+                        <div class="value-grid">
+                            <div class="value-item">
+                                <span class="value-icon green">&#10003;</span>
+                                <div>
+                                    <strong>Risk Sharing</strong>
+                                    <p>75% cost reduction through partnership - only €17.5k investment vs €70k total</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon green">&#10003;</span>
+                                <div>
+                                    <strong>Enterprise Technology Access</strong>
+                                    <p>HPE Private Cloud AI, NVIDIA AI Enterprise tools worth €190k+</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon green">&#10003;</span>
+                                <div>
+                                    <strong>Talent Pipeline</strong>
+                                    <p>Access to 50-100 AI professionals, potential PhD candidates and collaborators</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon green">&#10003;</span>
+                                <div>
+                                    <strong>Brand Enhancement</strong>
+                                    <p>50k-100k impressions, position as Austrian AI ecosystem leader</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Expected Outcomes -->
+                    <div class="exec-block">
+                        <h3>&#127919; Expected Outcomes</h3>
+                        <div class="outcomes-grid">
+                            <div class="outcome-card">
+                                <span class="outcome-number">50-100</span>
+                                <span class="outcome-label">High-Quality Attendees</span>
+                            </div>
+                            <div class="outcome-card">
+                                <span class="outcome-number">40-50</span>
+                                <span class="outcome-label">Marketing Qualified Leads</span>
+                            </div>
+                            <div class="outcome-card">
+                                <span class="outcome-number">20-30</span>
+                                <span class="outcome-label">Sales Qualified Leads</span>
+                            </div>
+                            <div class="outcome-card">
+                                <span class="outcome-number">10-15</span>
+                                <span class="outcome-label">Pipeline Opportunities</span>
+                            </div>
+                            <div class="outcome-card">
+                                <span class="outcome-number">2-3</span>
+                                <span class="outcome-label">Closed Deals Expected</span>
+                            </div>
+                            <div class="outcome-card">
+                                <span class="outcome-number">4-5</span>
+                                <span class="outcome-label">Media Mentions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Partnership Structure -->
+                    <div class="exec-block">
+                        <h3>&#129309; Partnership Structure</h3>
+                        <div class="partnership-visual">
+                            <div class="partner-box hpe">
+                                <strong>HPE</strong>
+                                <span>50% Budget</span>
+                                <span>Technology Stack</span>
+                                <span>Marketing Lead</span>
+                            </div>
+                            <div class="partner-connector">+</div>
+                            <div class="partner-box tech">
+                                <strong>Tech Partners</strong>
+                                <span>25% Budget</span>
+                                <span>NVIDIA / Intel / AMD</span>
+                            </div>
+                            <div class="partner-connector">+</div>
+                            <div class="partner-box ait">
+                                <strong>AIT</strong>
+                                <span>25% Budget</span>
+                                <span>Research Expertise</span>
+                                <span>Academic Network</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROI Elevator Pitch -->
+                    <div class="exec-block elevator-pitch">
+                        <h3>&#128200; ROI Elevator Pitch</h3>
+                        <blockquote>
+                            "Our Datathon investment of avg. <strong>€70k</strong> is expected to generate approximately <strong>€7.5 Million</strong> of new or influenced pipeline, with at least one directly attributable deal by EoFY. The event will strengthen our brand in the data & AI ecosystem, generate <strong>20-30 qualified contacts</strong>, and deliver long-term engagement with future innovators and customers. Conservatively, that's a <strong>40x ROI</strong> - in line with typical marketing benchmarks for high-touch B2B events."
+                        </blockquote>
+                    </div>
+
+                    <!-- AIT-Specific Benefits -->
+                    <div class="exec-block ait-benefits">
+                        <h3>&#127891; Why This Matters for AIT</h3>
+                        <ul class="benefits-list">
+                            <li><strong>Mission Alignment:</strong> Serves as "network node at the interface of science and industry"</li>
+                            <li><strong>Infrastructure Value:</strong> €190k+ in technology access at minimal cost</li>
+                            <li><strong>PhD Community:</strong> Expand 150-student international PhD network</li>
+                            <li><strong>Research Validation:</strong> Real-world testing of AI solutions with market feedback</li>
+                            <li><strong>Blueprint Creation:</strong> Replicable model for future Austrian/European AI initiatives</li>
+                            <li><strong>Network Growth:</strong> Direct partnerships with HPE, NVIDIA, Intel, AMD, and consulting firms</li>
+                        </ul>
+                    </div>
+
+                    <!-- Recommendation -->
+                    <div class="exec-recommendation">
+                        <h3>&#9989; Recommendation</h3>
+                        <p>AIT should <strong>actively engage</strong> in the HPE Datathon partnership, leveraging its 200+ AI experts, 150 PhD students, and established university partnerships to strengthen leadership in Austria's AI ecosystem - achieving <strong>10x+ ROI</strong> on a minimal €17.5k investment with substantial strategic upside.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rough Concept Section -->
+    <section id="rough-concept" class="rough-concept-section">
+        <div class="container">
+            <div class="exec-summary-card">
+                <div class="exec-header" style="background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);">
+                    <div class="exec-icon">&#128197;</div>
+                    <h2>Rough Concept</h2>
+                    <p class="exec-subtitle">48-Hour Physical Datathon at AIT Premises</p>
+                </div>
+
+                <div class="exec-content">
+                    <!-- Event Overview -->
+                    <div class="exec-block vision" style="background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(13, 148, 136, 0.1) 100%);">
+                        <h3>&#127919; Event Overview</h3>
+                        <p>A <strong>48-hour physical datathon</strong> hosted at AIT's state-of-the-art facilities, bringing together <strong>50-100 AI professionals</strong>, data scientists, developers, and industry experts to collaborate on real-world LLM and AI challenges using HPE's enterprise technology stack.</p>
+                    </div>
+
+                    <!-- Event Details Grid -->
+                    <div class="concept-details-grid">
+                        <div class="concept-detail-card">
+                            <span class="detail-icon">&#128205;</span>
+                            <h4>Venue</h4>
+                            <p>AIT Austrian Institute of Technology<br>Vienna Giefinggasse</p>
+                        </div>
+                        <div class="concept-detail-card">
+                            <span class="detail-icon">&#128337;</span>
+                            <h4>Duration</h4>
+                            <p>48 Hours<br>Fri Evening - Sun Afternoon</p>
+                        </div>
+                        <div class="concept-detail-card">
+                            <span class="detail-icon">&#128101;</span>
+                            <h4>Participants</h4>
+                            <p>50-100 Attendees<br>Teams of 3-5 people</p>
+                        </div>
+                        <div class="concept-detail-card">
+                            <span class="detail-icon">&#127942;</span>
+                            <h4>Format</h4>
+                            <p>Collaborative<br>Community-focused</p>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Agenda -->
+                    <div class="exec-block">
+                        <h3>&#128197; Detailed 48-Hour Agenda</h3>
+
+                        <div class="agenda-day">
+                            <div class="day-header friday">
+                                <span class="day-label">Day 1 - Friday</span>
+                                <span class="day-time">17:00 - 23:00</span>
+                            </div>
+                            <div class="agenda-items">
+                                <div class="agenda-item">
+                                    <span class="time">17:00 - 18:00</span>
+                                    <div class="activity">
+                                        <strong>Check-in & Registration</strong>
+                                        <p>Badge collection, welcome packages, workspace assignment</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">18:00 - 19:00</span>
+                                    <div class="activity">
+                                        <strong>Opening Ceremony & Keynote</strong>
+                                        <p>Welcome by AIT & HPE leadership, event rules, challenge introduction</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">19:00 - 20:00</span>
+                                    <div class="activity">
+                                        <strong>Dinner & Networking</strong>
+                                        <p>Catered dinner, team formation for individual participants</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">20:00 - 21:00</span>
+                                    <div class="activity">
+                                        <strong>Tech Stack Introduction</strong>
+                                        <p>HPE Private Cloud AI, NVIDIA tools, platform walkthrough</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">21:00 - 23:00</span>
+                                    <div class="activity">
+                                        <strong>Hacking Begins</strong>
+                                        <p>Teams start working, mentors available for initial guidance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="agenda-day">
+                            <div class="day-header saturday">
+                                <span class="day-label">Day 2 - Saturday</span>
+                                <span class="day-time">00:00 - 23:59</span>
+                            </div>
+                            <div class="agenda-items">
+                                <div class="agenda-item">
+                                    <span class="time">00:00 - 08:00</span>
+                                    <div class="activity">
+                                        <strong>Night Hacking Session</strong>
+                                        <p>Continued development, rest areas available, midnight snacks</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">08:00 - 09:00</span>
+                                    <div class="activity">
+                                        <strong>Breakfast</strong>
+                                        <p>Full breakfast buffet, coffee stations refreshed</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">09:00 - 10:00</span>
+                                    <div class="activity">
+                                        <strong>Workshop: Advanced LLM Techniques</strong>
+                                        <p>Optional session on RAG, fine-tuning, prompt engineering</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">10:00 - 12:00</span>
+                                    <div class="activity">
+                                        <strong>Mentor Check-ins Round 1</strong>
+                                        <p>Scheduled 15-min sessions with technical mentors</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">12:00 - 13:00</span>
+                                    <div class="activity">
+                                        <strong>Lunch Break</strong>
+                                        <p>Catered lunch, networking opportunity</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">13:00 - 18:00</span>
+                                    <div class="activity">
+                                        <strong>Intensive Hacking Session</strong>
+                                        <p>Core development time, roaming mentor support</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">18:00 - 19:00</span>
+                                    <div class="activity">
+                                        <strong>Dinner & Progress Showcase</strong>
+                                        <p>Quick 2-min progress updates from each team</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">19:00 - 20:00</span>
+                                    <div class="activity">
+                                        <strong>Mentor Check-ins Round 2</strong>
+                                        <p>Technical guidance, architecture review</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">20:00 - 23:59</span>
+                                    <div class="activity">
+                                        <strong>Evening Hacking Session</strong>
+                                        <p>Continued development, wellness break options</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="agenda-day">
+                            <div class="day-header sunday">
+                                <span class="day-label">Day 3 - Sunday</span>
+                                <span class="day-time">00:00 - 17:00</span>
+                            </div>
+                            <div class="agenda-items">
+                                <div class="agenda-item">
+                                    <span class="time">00:00 - 08:00</span>
+                                    <div class="activity">
+                                        <strong>Final Night Session</strong>
+                                        <p>Last push for development, rest areas available</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">08:00 - 09:00</span>
+                                    <div class="activity">
+                                        <strong>Breakfast</strong>
+                                        <p>Final breakfast, team energy boost</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">09:00 - 12:00</span>
+                                    <div class="activity">
+                                        <strong>Project Refinement</strong>
+                                        <p>Final touches, presentation preparation, demo polish</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item highlight">
+                                    <span class="time">12:00</span>
+                                    <div class="activity">
+                                        <strong>&#128680; Code Freeze & Submission</strong>
+                                        <p>All code must be committed, submissions finalized</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">12:00 - 13:00</span>
+                                    <div class="activity">
+                                        <strong>Lunch & Presentation Prep</strong>
+                                        <p>Final meal, teams prepare pitches</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">13:00 - 15:00</span>
+                                    <div class="activity">
+                                        <strong>Team Presentations</strong>
+                                        <p>5-min pitch + 3-min Q&A per team</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item">
+                                    <span class="time">15:00 - 16:00</span>
+                                    <div class="activity">
+                                        <strong>Judging & Deliberation</strong>
+                                        <p>Judges evaluate, attendees networking</p>
+                                    </div>
+                                </div>
+                                <div class="agenda-item highlight">
+                                    <span class="time">16:00 - 17:00</span>
+                                    <div class="activity">
+                                        <strong>&#127942; Awards Ceremony & Closing</strong>
+                                        <p>Winner announcements, prizes, closing remarks, photo op</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Challenge Topics -->
+                    <div class="exec-block">
+                        <h3>&#128300; Suggested Challenge Tracks</h3>
+                        <div class="challenge-grid">
+                            <div class="challenge-card">
+                                <span class="challenge-icon">&#129658;</span>
+                                <h4>Healthcare AI</h4>
+                                <p>Medical document analysis, clinical decision support, patient data processing</p>
+                            </div>
+                            <div class="challenge-card">
+                                <span class="challenge-icon">&#127981;</span>
+                                <h4>Enterprise Automation</h4>
+                                <p>Business process automation, intelligent document processing, workflow optimization</p>
+                            </div>
+                            <div class="challenge-card">
+                                <span class="challenge-icon">&#127757;</span>
+                                <h4>Sustainability & Energy</h4>
+                                <p>Smart grid optimization, environmental monitoring, energy efficiency AI</p>
+                            </div>
+                            <div class="challenge-card">
+                                <span class="challenge-icon">&#128274;</span>
+                                <h4>Cybersecurity</h4>
+                                <p>Threat detection, security analytics, privacy-preserving AI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technology Stack -->
+                    <div class="exec-block">
+                        <h3>&#128187; Technology Stack Provided</h3>
+                        <div class="tech-stack-visual">
+                            <div class="tech-layer">
+                                <span class="layer-label">Infrastructure</span>
+                                <div class="tech-items">
+                                    <span class="tech-item hpe">HPE Private Cloud AI</span>
+                                    <span class="tech-item hpe">HPE GreenLake</span>
+                                    <span class="tech-item">GPU Compute</span>
+                                </div>
+                            </div>
+                            <div class="tech-layer">
+                                <span class="layer-label">AI Platform</span>
+                                <div class="tech-items">
+                                    <span class="tech-item nvidia">NVIDIA AI Enterprise</span>
+                                    <span class="tech-item nvidia">NeMo Framework</span>
+                                    <span class="tech-item nvidia">NIM Microservices</span>
+                                </div>
+                            </div>
+                            <div class="tech-layer">
+                                <span class="layer-label">Development</span>
+                                <div class="tech-items">
+                                    <span class="tech-item">Jupyter Notebooks</span>
+                                    <span class="tech-item">Python/PyTorch</span>
+                                    <span class="tech-item">GitHub</span>
+                                </div>
+                            </div>
+                            <div class="tech-layer">
+                                <span class="layer-label">Collaboration</span>
+                                <div class="tech-items">
+                                    <span class="tech-item">Slack/Discord</span>
+                                    <span class="tech-item">Miro</span>
+                                    <span class="tech-item">Zoom</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Venue Requirements -->
+                    <div class="exec-block">
+                        <h3>&#127970; AIT Venue Requirements</h3>
+                        <div class="requirements-grid">
+                            <div class="requirement-item">
+                                <span class="req-icon">&#128187;</span>
+                                <strong>Main Hacking Space</strong>
+                                <p>Large hall with tables for 15-20 teams, power outlets, strong WiFi</p>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-icon">&#127908;</span>
+                                <strong>Presentation Area</strong>
+                                <p>Stage or front area with projector, microphone, seating for all attendees</p>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-icon">&#128716;</span>
+                                <strong>Rest Areas</strong>
+                                <p>Quiet rooms with bean bags/couches for power naps</p>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-icon">&#127828;</span>
+                                <strong>Catering Zone</strong>
+                                <p>Dedicated area for meals, snacks, coffee/drinks station</p>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-icon">&#128101;</span>
+                                <strong>Mentor Room</strong>
+                                <p>Separate space for mentor check-ins and private consultations</p>
+                            </div>
+                            <div class="requirement-item">
+                                <span class="req-icon">&#128274;</span>
+                                <strong>Security & Access</strong>
+                                <p>24/7 building access, secure storage for personal items</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Budget Overview -->
+                    <div class="exec-block">
+                        <h3>&#128176; Budget Overview (Physical Event)</h3>
+                        <div class="budget-breakdown">
+                            <div class="budget-item">
+                                <div class="budget-label">
+                                    <span>Venue & Facilities</span>
+                                    <span class="budget-percent">35%</span>
+                                </div>
+                                <div class="budget-bar">
+                                    <div class="budget-fill" style="width: 35%; background: var(--primary);"></div>
+                                </div>
+                                <span class="budget-amount">~€24,500</span>
+                            </div>
+                            <div class="budget-item">
+                                <div class="budget-label">
+                                    <span>Catering (48hrs)</span>
+                                    <span class="budget-percent">20%</span>
+                                </div>
+                                <div class="budget-bar">
+                                    <div class="budget-fill" style="width: 20%; background: var(--secondary);"></div>
+                                </div>
+                                <span class="budget-amount">~€14,000</span>
+                            </div>
+                            <div class="budget-item">
+                                <div class="budget-label">
+                                    <span>Marketing & Recruitment</span>
+                                    <span class="budget-percent">15%</span>
+                                </div>
+                                <div class="budget-bar">
+                                    <div class="budget-fill" style="width: 15%; background: var(--accent);"></div>
+                                </div>
+                                <span class="budget-amount">~€10,500</span>
+                            </div>
+                            <div class="budget-item">
+                                <div class="budget-label">
+                                    <span>Prizes & Awards</span>
+                                    <span class="budget-percent">15%</span>
+                                </div>
+                                <div class="budget-bar">
+                                    <div class="budget-fill" style="width: 15%; background: var(--warning);"></div>
+                                </div>
+                                <span class="budget-amount">~€10,500</span>
+                            </div>
+                            <div class="budget-item">
+                                <div class="budget-label">
+                                    <span>A/V & Technical Setup</span>
+                                    <span class="budget-percent">10%</span>
+                                </div>
+                                <div class="budget-bar">
+                                    <div class="budget-fill" style="width: 10%; background: var(--success);"></div>
+                                </div>
+                                <span class="budget-amount">~€7,000</span>
+                            </div>
+                            <div class="budget-item">
+                                <div class="budget-label">
+                                    <span>Swag & Materials</span>
+                                    <span class="budget-percent">5%</span>
+                                </div>
+                                <div class="budget-bar">
+                                    <div class="budget-fill" style="width: 5%; background: var(--gray);"></div>
+                                </div>
+                                <span class="budget-amount">~€3,500</span>
+                            </div>
+                        </div>
+                        <div class="budget-total">
+                            <span>Total Estimated Budget</span>
+                            <span class="total-amount">€70,000</span>
+                        </div>
+                    </div>
+
+                    <!-- Team & Roles -->
+                    <div class="exec-block">
+                        <h3>&#128106; Event Team & Roles</h3>
+                        <div class="team-grid">
+                            <div class="team-role">
+                                <div class="role-header hpe-role">HPE Team</div>
+                                <ul>
+                                    <li><strong>Event Lead:</strong> Raphael Neuherz</li>
+                                    <li><strong>Technical Lead:</strong> Iveta Lohovska</li>
+                                    <li><strong>Data Science Mentor:</strong> Patrick Kosak</li>
+                                    <li><strong>Marketing:</strong> Ulrike Ulrich, Mailin Ganser</li>
+                                    <li><strong>Executive Sponsor:</strong> Stefan Brock</li>
+                                </ul>
+                            </div>
+                            <div class="team-role">
+                                <div class="role-header ait-role">AIT Team</div>
+                                <ul>
+                                    <li><strong>Venue Coordinator:</strong> TBD</li>
+                                    <li><strong>Research Mentors:</strong> TBD</li>
+                                    <li><strong>Technical Support:</strong> TBD</li>
+                                    <li><strong>Academic Liaison:</strong> TBD</li>
+                                    <li><strong>Student Coordinator:</strong> TBD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline to Event -->
+                    <div class="exec-block">
+                        <h3>&#128197; Preparation Timeline</h3>
+                        <div class="prep-timeline">
+                            <div class="prep-phase">
+                                <div class="phase-marker">12-8 weeks</div>
+                                <div class="phase-content">
+                                    <strong>Planning Phase</strong>
+                                    <p>Finalize team, confirm venue, define challenges, secure partnerships</p>
+                                </div>
+                            </div>
+                            <div class="prep-phase">
+                                <div class="phase-marker">8-4 weeks</div>
+                                <div class="phase-content">
+                                    <strong>Preparation Phase</strong>
+                                    <p>Launch marketing, open registration, recruit mentors, setup tech stack</p>
+                                </div>
+                            </div>
+                            <div class="prep-phase">
+                                <div class="phase-marker">4-1 weeks</div>
+                                <div class="phase-content">
+                                    <strong>Final Prep</strong>
+                                    <p>Intensify marketing, conduct dry runs, brief team, prepare materials</p>
+                                </div>
+                            </div>
+                            <div class="prep-phase highlight">
+                                <div class="phase-marker">Event</div>
+                                <div class="phase-content">
+                                    <strong>48-Hour Datathon</strong>
+                                    <p>Execute event, provide support, document everything</p>
+                                </div>
+                            </div>
+                            <div class="prep-phase">
+                                <div class="phase-marker">+1-4 weeks</div>
+                                <div class="phase-content">
+                                    <strong>Follow-up</strong>
+                                    <p>Thank-you comms, publish content, sales outreach, analyze metrics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Success Criteria -->
+                    <div class="exec-recommendation" style="background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(13, 148, 136, 0.1) 100%); border-left-color: var(--accent);">
+                        <h3 style="color: var(--accent);">&#127919; Success Criteria</h3>
+                        <div class="success-grid">
+                            <div class="success-item">
+                                <span class="success-check">&#10003;</span>
+                                <span>50-100 high-quality attendees</span>
+                            </div>
+                            <div class="success-item">
+                                <span class="success-check">&#10003;</span>
+                                <span>15-20 functioning project submissions</span>
+                            </div>
+                            <div class="success-item">
+                                <span class="success-check">&#10003;</span>
+                                <span>40-50 Marketing Qualified Leads</span>
+                            </div>
+                            <div class="success-item">
+                                <span class="success-check">&#10003;</span>
+                                <span>NPS score of 50+</span>
+                            </div>
+                            <div class="success-item">
+                                <span class="success-check">&#10003;</span>
+                                <span>4-5 media mentions</span>
+                            </div>
+                            <div class="success-item">
+                                <span class="success-check">&#10003;</span>
+                                <span>2-3 follow-up PoC opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#executive-summary" class="nav-highlight">Executive Summary</a>
+            <a href="#rough-concept" class="nav-highlight-teal">Rough Concept</a>
+            <a href="#overview">Overview</a>
+            <a href="#financial">Financial</a>
+            <a href="#technology">Technology</a>
+            <a href="#talent">Talent</a>
+            <a href="#brand">Brand</a>
+            <a href="#research">Research</a>
+            <a href="#network">Network</a>
+            <a href="#roi">ROI</a>
+        </div>
+    </nav>
+
+    <!-- Key Stats Section -->
+    <section id="overview">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">1</div>
+                <h2 class="section-title">Key Benefits at a Glance</h2>
+                <p class="section-subtitle">Quantified advantages for AIT from the datathon partnership</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">75%</div>
+                    <div class="stat-label">Cost Reduction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">10x+</div>
+                    <div class="stat-label">Expected ROI</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">100k</div>
+                    <div class="stat-label">Brand Impressions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">50-100</div>
+                    <div class="stat-label">AI Professionals</div>
+                </div>
+            </div>
+
+            <div class="highlight-box purple mt-32">
+                <h4>Executive Summary</h4>
+                <p>The HPE & AIT Datathon partnership presents a strategic opportunity for AIT to strengthen its position as Austria's leading Research and Technology Organization (RTO) in the AI and data science domain, with minimal financial risk and maximum strategic value.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About AIT Section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">2</div>
+                <h2 class="section-title">About AIT</h2>
+                <p class="section-subtitle">Austria's largest non-university research institute</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon purple">&#128200;</div>
+                    <h3>1,400+ Employees</h3>
+                    <p>Professionals across multiple locations including Vienna, Seibersdorf, Wiener Neustadt, and Graz</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon pink">&#127979;</div>
+                    <h3>7 Research Centers</h3>
+                    <p>Specialized centers covering Energy, Digital Safety, Transport, Health, Vision & Automation</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon teal">&#129302;</div>
+                    <h3>200+ AI Experts</h3>
+                    <p>Center for Digital Safety & Security with expertise in AI, Data Science, and Cybersecurity</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper mt-32">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Research Center</th>
+                            <th>Focus Areas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Digital Safety & Security</strong></td>
+                            <td>AI, Data Science, Blockchain, Cybersecurity</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Energy</strong></td>
+                            <td>Smart Cities, Energy Networks, Digital Resilience</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transport Technologies</strong></td>
+                            <td>Sustainable Mobility, Electrification</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vision, Automation & Control</strong></td>
+                            <td>Machine Vision, Industrial Inspection, 3D Modeling</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Health & Bioresources</strong></td>
+                            <td>Health Technologies, Biotechnology</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Benefits Section -->
+    <section id="financial">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">3</div>
+                <h2 class="section-title">Financial Benefits</h2>
+                <p class="section-subtitle">Reduced exposure with maximum infrastructure value</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-icon green">&#128176;</div>
+                    <h3>Reduced Financial Exposure</h3>
+                    <p>AIT's maximum investment is only <strong>~17,500</strong> compared to 70,000 total event budget - a 75% cost reduction through partnership.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon orange">&#128187;</div>
+                    <h3>Infrastructure Cost Avoidance</h3>
+                    <p>Access to enterprise AI infrastructure worth <strong>190,000+</strong> at zero cost through HPE's technology provision.</p>
+                </div>
+            </div>
+
+            <div class="table-wrapper mt-32">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Budget Distribution</th>
+                            <th>Contribution</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HPE</td>
+                            <td>50%</td>
+                            <td>35,000</td>
+                        </tr>
+                        <tr>
+                            <td>Technology Partner (NVIDIA/Intel/AMD)</td>
+                            <td>25%</td>
+                            <td>17,500</td>
+                        </tr>
+                        <tr>
+                            <td>AIT / Other Partners</td>
+                            <td>25%</td>
+                            <td>17,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card mt-32">
+                <h3>Infrastructure Cost Avoidance Breakdown</h3>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">HPE Private Cloud AI Platform</span>
+                        <span class="progress-value">100,000+</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill purple" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">NVIDIA AI Enterprise Software</span>
+                        <span class="progress-value">50,000+</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill teal" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">GPU Compute Resources</span>
+                        <span class="progress-value">25,000+</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill orange" style="width: 25%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-label">MLOps & Data Pipeline Tools</span>
+                        <span class="progress-value">15,000+</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill purple" style="width: 15%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Access Section -->
+    <section id="technology" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">4</div>
+                <h2 class="section-title">Technology Access</h2>
+                <p class="section-subtitle">Enterprise-grade AI infrastructure and tools</p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon purple">&#9729;&#65039;</div>
+                <h3>HPE Private Cloud AI (PCAI)</h3>
+                <p>Co-developed with NVIDIA, this flagship AI platform provides:</p>
+                <ul class="check-list">
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Private AI Deployment</strong> - Secure environment for sensitive research data</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>NVIDIA AI Enterprise</strong> - Industry-leading AI software portfolio</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Inferencing & RAG</strong> - Production-ready AI capabilities</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>HPE GreenLake Management</strong> - Enterprise-grade orchestration</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid grid-2 mt-32">
+                <div class="card">
+                    <h3>HPE AI Essentials Suite</h3>
+                    <div style="margin-top: 12px;">
+                        <span class="benefit-tag purple">Data Pipeline</span>
+                        <span class="benefit-tag pink">Orchestration</span>
+                        <span class="benefit-tag teal">MLOps</span>
+                    </div>
+                    <p style="margin-top: 12px;">Complete software suite for AI lifecycle management from data processing to model deployment.</p>
+                </div>
+                <div class="card">
+                    <h3>NVIDIA AI Enterprise Tools</h3>
+                    <div style="margin-top: 12px;">
+                        <span class="benefit-tag green">NeMo Curator</span>
+                        <span class="benefit-tag orange">NeMo Customizer</span>
+                        <span class="benefit-tag purple">NeMo Guardrails</span>
+                    </div>
+                    <p style="margin-top: 12px;">Advanced tools for data curation, model customization, embeddings, and AI safety.</p>
+                </div>
+            </div>
+
+            <div class="highlight-box teal mt-32">
+                <h4>Infrastructure as a Service (IaaS) Benefits</h4>
+                <ul>
+                    <li><strong>Compute Resources</strong> - On-demand VMs and GPUs for ML workloads</li>
+                    <li><strong>Scalable Storage</strong> - Handle large research datasets</li>
+                    <li><strong>Secure Networking</strong> - Protected research environments</li>
+                    <li><strong>Flexibility</strong> - Scale resources based on project needs</li>
+                    <li><strong>Accessibility</strong> - Cloud-based access from any AIT location</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talent & Community Section -->
+    <section id="talent">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">5</div>
+                <h2 class="section-title">Talent & Community</h2>
+                <p class="section-subtitle">Access to AI professionals and future researchers</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-icon purple">&#128101;</div>
+                    <h3>Data Scientists</h3>
+                    <p>ML, NLP, and AI professionals as potential research collaborators</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon pink">&#128187;</div>
+                    <h3>Developers</h3>
+                    <p>Software experts for technical talent pipeline</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon teal">&#127891;</div>
+                    <h3>Students</h3>
+                    <p>CS and AI graduates as future PhD candidates</p>
+                </div>
+            </div>
+
+            <div class="card mt-32">
+                <h3>Talent Pipeline Development</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Datathon Participants</h4>
+                        <p>50-100 high-quality AI professionals</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Engaged Contacts</h4>
+                        <p>40-50 Marketing Qualified Leads</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Qualified Talent Pool</h4>
+                        <p>20-30 Sales Qualified Leads</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Active Recruitment Leads</h4>
+                        <p>10-15 opportunities</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Potential Hires/Collaborators</h4>
+                        <p>2-5 new team members or partners</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box green mt-32">
+                <h4>PhD Community Expansion</h4>
+                <p>AIT's current PhD community of <strong>150 international students</strong> gains:</p>
+                <ul>
+                    <li>Direct observation of problem-solving abilities during event</li>
+                    <li>Initial connections with potential candidates</li>
+                    <li>Increased visibility among AI professionals</li>
+                    <li>Showcase of AIT's research opportunities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand & Visibility Section -->
+    <section id="brand" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">6</div>
+                <h2 class="section-title">Brand & Visibility</h2>
+                <p class="section-subtitle">Enhanced market positioning and thought leadership</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">100k</div>
+                    <div class="stat-label">Brand Impressions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">4-5</div>
+                    <div class="stat-label">Media Mentions</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">1k+</div>
+                    <div class="stat-label">Social Engagements</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">5-10</div>
+                    <div class="stat-label">Content Pieces</div>
+                </div>
+            </div>
+
+            <div class="grid grid-2 mt-32">
+                <div class="card">
+                    <div class="card-icon orange">&#128240;</div>
+                    <h3>Content Creation</h3>
+                    <p>Blog posts, videos, case studies, and testimonials showcasing AIT's AI expertise and innovation leadership.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon green">&#127942;</div>
+                    <h3>Thought Leadership</h3>
+                    <p>Position AIT as the central hub of Austrian AI innovation and the convener of Austria's AI community.</p>
+                </div>
+            </div>
+
+            <div class="card mt-32">
+                <h3>Partner Association Benefits</h3>
+                <div class="table-wrapper" style="margin: 16px 0; box-shadow: none;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Partner</th>
+                                <th>Association Benefit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>HPE</strong></td>
+                                <td>Global enterprise technology credibility</td>
+                            </tr>
+                            <tr>
+                                <td><strong>NVIDIA</strong></td>
+                                <td>AI hardware/software leadership</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Intel/AMD</strong></td>
+                                <td>Semiconductor industry connections</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Deloitte/BCG/PWC</strong></td>
+                                <td>Consulting industry visibility</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Innovation Section -->
+    <section id="research">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">7</div>
+                <h2 class="section-title">Research & Innovation</h2>
+                <p class="section-subtitle">Real-world validation and cross-domain insights</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-icon purple">&#128300;</div>
+                    <h3>Use Case Validation</h3>
+                    <p>Direct market feedback on AI solutions, identification of practical applications, and understanding of market needs vs. research focus.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon pink">&#129504;</div>
+                    <h3>Innovation Acceleration</h3>
+                    <p>GenAI speeds up ideation, prototyping, and demonstrations - accelerating the research-to-application pipeline.</p>
+                </div>
+            </div>
+
+            <div class="accordion mt-32">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Text Generation & NLP</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            Aligned with Center for Digital Safety & Security research in natural language processing, document analysis, and automated text generation systems.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Sentiment Analysis</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            Supports AIT's data science capabilities in analyzing public opinion, market trends, and social media monitoring for various applications.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>LLM Application Development</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            Directly relevant to AIT's applied AI research, enabling practical implementations of large language models in enterprise and research contexts.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Data Pipeline Optimization</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            Enhances AIT's MLOps expertise and ability to productionize research outputs efficiently.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box purple mt-32">
+                <h4>Cross-Domain Innovation Potential</h4>
+                <p>The datathon brings together diverse expertise across multiple sectors:</p>
+                <div style="margin-top: 12px;">
+                    <span class="benefit-tag purple">Healthcare</span>
+                    <span class="benefit-tag pink">Finance</span>
+                    <span class="benefit-tag teal">Manufacturing</span>
+                    <span class="benefit-tag orange">Energy</span>
+                    <span class="benefit-tag green">Security</span>
+                </div>
+                <p style="margin-top: 12px;">This aligns perfectly with AIT's multi-center research approach spanning various sectors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network & Partnerships Section -->
+    <section id="network" class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">8</div>
+                <h2 class="section-title">Network & Partnerships</h2>
+                <p class="section-subtitle">Expanded connections across technology and industry</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Technology Partners</h3>
+                    <ul class="check-list">
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <span><strong>NVIDIA</strong> - Hardware/software access, co-marketing</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <span><strong>Intel</strong> - Semiconductor collaboration</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <span><strong>AMD</strong> - Computing platform access</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Consulting Partners</h3>
+                    <ul class="check-list">
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <span><strong>Deloitte</strong> - Industry expertise</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <span><strong>BCG</strong> - Strategic insights</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">&#10003;</span>
+                            <span><strong>PWC</strong> - Project opportunities</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mt-32">
+                <h3>Austrian AI Community Leadership</h3>
+                <p style="margin-bottom: 16px;">The datathon positions AIT at the center of Austria's AI ecosystem:</p>
+                <div class="grid grid-2" style="gap: 12px;">
+                    <div class="highlight-box teal" style="margin: 0;">
+                        <h4 style="font-size: 14px;">Vienna Data Science Group</h4>
+                        <p style="font-size: 13px;">Strengthened local connections</p>
+                    </div>
+                    <div class="highlight-box purple" style="margin: 0;">
+                        <h4 style="font-size: 14px;">Austrian AI Association</h4>
+                        <p style="font-size: 13px;">Leadership position</p>
+                    </div>
+                    <div class="highlight-box green" style="margin: 0;">
+                        <h4 style="font-size: 14px;">Tech Meetups</h4>
+                        <p style="font-size: 13px;">Regular engagement platform</p>
+                    </div>
+                    <div class="highlight-box purple" style="margin: 0;">
+                        <h4 style="font-size: 14px;">University Networks</h4>
+                        <p style="font-size: 13px;">Enhanced academic relationships</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box teal mt-32">
+                <h4>International Network Growth</h4>
+                <p>Through HPE's global presence, AIT gains access to:</p>
+                <ul>
+                    <li>International AI communities</li>
+                    <li>HPE's developer ecosystem (HPE Developer Days)</li>
+                    <li>Global enterprise AI discussions</li>
+                    <li>Potential for international collaboration expansion</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Summary Section -->
+    <section id="roi">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">9</div>
+                <h2 class="section-title">ROI Summary</h2>
+                <p class="section-subtitle">Quantified return on investment</p>
+            </div>
+
+            <div class="roi-card">
+                <h3>Overall Return on Investment</h3>
+                <div class="roi-value">10x+</div>
+                <p class="roi-label">On Direct Investment of ~17,500</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Financial Benefits</h3>
+                    <div class="table-wrapper" style="box-shadow: none; margin: 12px 0;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Infrastructure Cost Avoidance</td>
+                                    <td><strong>190,000+</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Event Cost Savings (75%)</td>
+                                    <td><strong>52,500</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Technology License Access</td>
+                                    <td><strong>65,000+</strong></td>
+                                </tr>
+                                <tr style="background: rgba(99, 102, 241, 0.1);">
+                                    <td><strong>Total Financial Benefit</strong></td>
+                                    <td><strong class="text-gradient">307,500+</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Strategic Benefits</h3>
+                    <div class="table-wrapper" style="box-shadow: none; margin: 12px 0;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>AI Professional Access</td>
+                                    <td><strong>50-100</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Brand Impressions</td>
+                                    <td><strong>50k-100k</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Recruitment Leads</td>
+                                    <td><strong>10-15</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Community Contacts</td>
+                                    <td><strong>40-50</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-box green mt-32">
+                <h4>Investment vs. Return Summary</h4>
+                <div class="grid grid-2" style="gap: 16px; margin-top: 16px;">
+                    <div>
+                        <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Investment</p>
+                        <p><strong>Financial:</strong> ~17,500</p>
+                        <p><strong>Time:</strong> Team involvement</p>
+                        <p><strong>Brand:</strong> Co-branding effort</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px;">Return</p>
+                        <p><strong>Technology:</strong> 190,000+ access</p>
+                        <p><strong>Community:</strong> 50-100 professionals</p>
+                        <p><strong>Visibility:</strong> 50k-100k impressions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-number">&#10003;</div>
+                <h2 class="section-title">Conclusion</h2>
+                <p class="section-subtitle">Strategic recommendation for AIT</p>
+            </div>
+
+            <div class="card">
+                <h3>Summary of Key Advantages</h3>
+                <ul class="check-list">
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Financial Efficiency</strong> - 75% reduction in event costs through partnership structure</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Technology Access</strong> - Enterprise-grade AI infrastructure worth 190,000+</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Talent Pipeline</strong> - Direct access to 50-100 AI professionals</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Brand Enhancement</strong> - 50k-100k impressions, AI leader positioning</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Research Validation</strong> - Real-world testing of AI solutions</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Network Expansion</strong> - Enterprise partnerships with global tech leaders</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Knowledge Transfer</strong> - Cutting-edge skills and methodologies</span>
+                    </li>
+                    <li>
+                        <span class="check-icon">&#10003;</span>
+                        <span><strong>Long-term Value</strong> - Replicable blueprint for future initiatives</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="highlight-box purple mt-32">
+                <h4>Strategic Alignment</h4>
+                <p>The datathon directly supports AIT's mission to serve as <em>"a national and international network node at the interface of science and industry,"</em> enabling innovation through scientific-technological expertise while building crucial industry relationships.</p>
+            </div>
+
+            <div class="roi-card" style="background: var(--gradient-2);">
+                <h3>Recommendation</h3>
+                <p style="font-size: 16px; max-width: 600px; margin: 16px auto 0; opacity: 0.95;">AIT should actively engage in the HPE Datathon partnership, leveraging its 200+ AI experts, 150 PhD students, and established university partnerships to strengthen leadership in Austria's AI ecosystem with minimal financial risk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>December 5, 2024</strong></p>
+            <p>HPE & AIT Datathon Partnership Benefits Analysis</p>
+            <p style="margin-top: 16px;">Powered by <strong>Raphael NEUHERZ</strong></p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle section visibility
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const execSummarySection = document.getElementById('executive-summary');
+            const roughConceptSection = document.getElementById('rough-concept');
+            const execSummaryBtn = document.getElementById('exec-summary-toggle');
+            const roughConceptBtn = document.getElementById('rough-concept-toggle');
+
+            // If clicking on already visible section, hide it
+            if (section.classList.contains('visible')) {
+                section.classList.remove('visible');
+                if (sectionId === 'executive-summary') {
+                    execSummaryBtn.classList.remove('active');
+                } else {
+                    roughConceptBtn.classList.remove('active');
+                }
+                return;
+            }
+
+            // Hide both sections first
+            execSummarySection.classList.remove('visible');
+            roughConceptSection.classList.remove('visible');
+            execSummaryBtn.classList.remove('active');
+            roughConceptBtn.classList.remove('active');
+
+            // Show the clicked section
+            section.classList.add('visible');
+
+            // Add active state to the clicked button
+            if (sectionId === 'executive-summary') {
+                execSummaryBtn.classList.add('active');
+            } else {
+                roughConceptBtn.classList.add('active');
+            }
+
+            // Smooth scroll to the section
+            setTimeout(() => {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+
+        // Scroll indicator
+        window.addEventListener('scroll', () => {
+            const scrollIndicator = document.getElementById('scrollIndicator');
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollPercent = (scrollTop / scrollHeight) * 100;
+            scrollIndicator.style.width = scrollPercent + '%';
+        });
+
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+
+                // Close all items
+                document.querySelectorAll('.accordion-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const targetId = link.getAttribute('href');
+
+                // Handle special toggle sections
+                if (targetId === '#executive-summary' || targetId === '#rough-concept') {
+                    e.preventDefault();
+                    const sectionId = targetId.substring(1);
+                    toggleSection(sectionId);
+                    return;
+                }
+
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const navHeight = document.querySelector('.nav').offsetHeight;
+                    const targetPosition = targetElement.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav a');
+            const navHeight = document.querySelector('.nav').offsetHeight;
+
+            let current = '';
+            sections.forEach(section => {
+                // Skip hidden sections
+                if (!section.classList.contains('visible') &&
+                    (section.id === 'executive-summary' || section.id === 'rough-concept')) {
+                    return;
+                }
+                const sectionTop = section.offsetTop - navHeight - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
