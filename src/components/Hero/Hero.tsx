@@ -1,26 +1,15 @@
 import { motion } from 'framer-motion';
 import { HpeLogo } from './HpeLogo';
 import { ActionButtons } from './ActionButtons';
-import { BenefitTag } from '../common';
 import type { SectionId } from '../../hooks';
 import styles from './Hero.module.css';
 
 interface HeroProps {
   activeSection: SectionId;
   onToggle: (section: SectionId) => void;
-  onBenefitClick: (benefitId: string) => void;
 }
 
-const benefitTags = [
-  { label: 'Financial', id: 'financial', color: 'primary' as const },
-  { label: 'Technology', id: 'technology', color: 'secondary' as const },
-  { label: 'Talent', id: 'talent', color: 'accent' as const },
-  { label: 'Brand', id: 'brand', color: 'warning' as const },
-  { label: 'Network', id: 'network', color: 'success' as const },
-  { label: 'Research', id: 'research', color: 'primary' as const },
-];
-
-export const Hero = ({ activeSection, onToggle, onBenefitClick }: HeroProps) => {
+export const Hero = ({ activeSection, onToggle }: HeroProps) => {
   return (
     <header className={styles.hero}>
       <div className={styles.backgroundOverlay} />
@@ -65,24 +54,6 @@ export const Hero = ({ activeSection, onToggle, onBenefitClick }: HeroProps) => 
           >
             Comprehensive analysis of strategic benefits from the HPE & AIT Datathon Partnership
           </motion.p>
-
-          <motion.div
-            className={styles.tags}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
-          >
-            {benefitTags.map((tag, index) => (
-              <BenefitTag
-                key={tag.label}
-                color={tag.color}
-                index={index}
-                onClick={() => onBenefitClick(tag.id)}
-              >
-                {tag.label}
-              </BenefitTag>
-            ))}
-          </motion.div>
 
           <ActionButtons activeSection={activeSection} onToggle={onToggle} />
         </div>
