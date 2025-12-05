@@ -58,9 +58,20 @@ export const BenefitsSection = ({ isVisible, highlightedBenefit }: BenefitsSecti
 
   useEffect(() => {
     if (isVisible && sectionRef.current && !highlightedBenefit) {
+      // Wait for animation to start, then scroll to top of section
       setTimeout(() => {
-        sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 100);
+        const element = sectionRef.current;
+        if (element) {
+          const headerOffset = 20; // Small offset from top
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }, 50);
     }
   }, [isVisible, highlightedBenefit]);
 
