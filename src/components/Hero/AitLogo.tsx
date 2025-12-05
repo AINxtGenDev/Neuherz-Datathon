@@ -13,8 +13,9 @@ export const AitLogo = () => {
         src={aitLogo}
         alt="AIT - Austrian Institute of Technology"
         style={{
-          height: '120px',
-          width: 'auto'
+          height: '84px',
+          width: 'auto',
+          maxWidth: '90%'
         }}
         onError={(e) => {
           // Fallback to text if image fails
