@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { HpeLogo } from './HpeLogo';
+import { AitLogo } from './AitLogo';
 import { ActionButtons } from './ActionButtons';
 import type { SectionId } from '../../hooks';
 import styles from './Hero.module.css';
@@ -56,6 +57,7 @@ export const Hero = ({ activeSection, onToggle }: HeroProps) => {
           </motion.p>
 
           <ActionButtons activeSection={activeSection} onToggle={onToggle} />
+          <AitLogo />
         </div>
       </div>
     </header>
