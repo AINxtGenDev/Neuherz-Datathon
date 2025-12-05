@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import aitLogo from '/AIT_logo.png?url';
+import aitLogo from '/AIT_logo_clean.png?url';
 
 export const AitLogo = () => {
   return (
@@ -14,11 +14,7 @@ export const AitLogo = () => {
         alt="AIT - Austrian Institute of Technology"
         style={{
           height: '120px',
-          width: 'auto',
-          background: 'white',
-          padding: '12px 20px',
-          borderRadius: '12px',
-          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+          width: 'auto'
         }}
         onError={(e) => {
           // Fallback to text if image fails
