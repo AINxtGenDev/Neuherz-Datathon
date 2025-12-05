@@ -8,17 +8,19 @@ import styles from './Hero.module.css';
 interface HeroProps {
   activeSection: SectionId;
   onToggle: (section: SectionId) => void;
+  onBenefitClick: (benefitId: string) => void;
 }
 
 const benefitTags = [
-  { label: 'Financial', color: 'primary' as const },
-  { label: 'Technology', color: 'secondary' as const },
-  { label: 'Talent', color: 'accent' as const },
-  { label: 'Brand', color: 'warning' as const },
-  { label: 'Network', color: 'success' as const },
+  { label: 'Financial', id: 'financial', color: 'primary' as const },
+  { label: 'Technology', id: 'technology', color: 'secondary' as const },
+  { label: 'Talent', id: 'talent', color: 'accent' as const },
+  { label: 'Brand', id: 'brand', color: 'warning' as const },
+  { label: 'Network', id: 'network', color: 'success' as const },
+  { label: 'Research', id: 'research', color: 'primary' as const },
 ];
 
-export const Hero = ({ activeSection, onToggle }: HeroProps) => {
+export const Hero = ({ activeSection, onToggle, onBenefitClick }: HeroProps) => {
   return (
     <header className={styles.hero}>
       <div className={styles.backgroundOverlay} />
@@ -71,7 +73,12 @@ export const Hero = ({ activeSection, onToggle }: HeroProps) => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             {benefitTags.map((tag, index) => (
-              <BenefitTag key={tag.label} color={tag.color} index={index}>
+              <BenefitTag
+                key={tag.label}
+                color={tag.color}
+                index={index}
+                onClick={() => onBenefitClick(tag.id)}
+              >
                 {tag.label}
               </BenefitTag>
             ))}

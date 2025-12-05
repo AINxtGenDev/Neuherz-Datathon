@@ -6,6 +6,7 @@ import styles from './BenefitsSection.module.css';
 
 interface BenefitsSectionProps {
   isVisible: boolean;
+  highlightedBenefit?: string | null;
 }
 
 const containerVariants = {
@@ -35,16 +36,16 @@ const itemVariants = {
   },
 };
 
-export const BenefitsSection = ({ isVisible }: BenefitsSectionProps) => {
+export const BenefitsSection = ({ isVisible, highlightedBenefit }: BenefitsSectionProps) => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (isVisible && sectionRef.current) {
+    if (isVisible && sectionRef.current && !highlightedBenefit) {
       setTimeout(() => {
         sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }, 100);
     }
-  }, [isVisible]);
+  }, [isVisible, highlightedBenefit]);
 
   return (
     <AnimatePresence>
@@ -71,8 +72,16 @@ export const BenefitsSection = ({ isVisible }: BenefitsSectionProps) => {
 
             <div className={styles.grid}>
               {benefits.map((benefit, index) => (
-                <div key={benefit.id} id={benefit.id}>
-                  <BenefitCard {...benefit} index={index} />
+                <div
+                  key={benefit.id}
+                  id={benefit.id}
+                  className={highlightedBenefit === benefit.id ? styles.highlighted : ''}
+                >
+                  <BenefitCard
+                    {...benefit}
+                    index={index}
+                    isHighlighted={highlightedBenefit === benefit.id}
+                  />
                 </div>
               ))}
             </div>

@@ -4,6 +4,7 @@ import styles from './BenefitCard.module.css';
 
 interface BenefitCardProps extends BenefitItem {
   index: number;
+  isHighlighted?: boolean;
 }
 
 export const BenefitCard = ({
@@ -13,15 +14,24 @@ export const BenefitCard = ({
   items,
   gradient,
   index,
+  isHighlighted = false,
 }: BenefitCardProps) => {
   return (
     <motion.div
-      className={`${styles.card} ${styles[gradient]}`}
+      className={`${styles.card} ${styles[gradient]} ${isHighlighted ? styles.highlighted : ''}`}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       whileHover={{ y: -10, transition: { duration: 0.2 } }}
+      animate={isHighlighted ? {
+        scale: [1, 1.02, 1],
+        boxShadow: [
+          '0 10px 15px -3px rgb(0 0 0 / 0.1)',
+          '0 20px 40px -3px rgb(99 102 241 / 0.4)',
+          '0 10px 15px -3px rgb(0 0 0 / 0.1)',
+        ],
+      } : {}}
     >
       <motion.div
         className={styles.iconWrapper}
