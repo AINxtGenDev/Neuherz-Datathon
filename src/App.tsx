@@ -1,50 +1,49 @@
 import { useState, useCallback } from 'react';
 import { Navbar } from './components/Navigation';
 import { Hero } from './components/Hero';
-import { ExecutiveSummary, RoughConcept, BenefitsSection, Footer } from './components/Sections';
+import { ExecutiveSummary, RoughConcept, BenefitsSection, BenefitDetail, Footer } from './components/Sections';
 import { useToggleSection } from './hooks';
 import './styles/global.css';
 
 function App() {
   const { activeSection, toggleSection, isActive } = useToggleSection();
-  const [highlightedBenefit, setHighlightedBenefit] = useState<string | null>(null);
+  const [selectedBenefit, setSelectedBenefit] = useState<string | null>(null);
 
   const handleBenefitClick = useCallback((benefitId: string) => {
-    // Show the Strategic Benefits section
-    if (activeSection !== 'strategic-benefits') {
-      toggleSection('strategic-benefits');
+    // Close other sections and show the benefit detail
+    if (activeSection !== null) {
+      toggleSection(activeSection); // Close current section
     }
-
-    // Set the highlighted benefit
-    setHighlightedBenefit(benefitId);
-
-    // Scroll to the specific benefit card after a short delay
-    setTimeout(() => {
-      const element = document.getElementById(benefitId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 500);
-
-    // Clear highlight after animation
-    setTimeout(() => {
-      setHighlightedBenefit(null);
-    }, 3000);
+    setSelectedBenefit(benefitId);
   }, [activeSection, toggleSection]);
+
+  const handleCloseBenefitDetail = useCallback(() => {
+    setSelectedBenefit(null);
+  }, []);
+
+  const handleToggleSection = useCallback((sectionId: typeof activeSection) => {
+    // Close benefit detail when opening a main section
+    setSelectedBenefit(null);
+    toggleSection(sectionId);
+  }, [toggleSection]);
 
   return (
     <div className="app">
       <Navbar />
       <Hero
         activeSection={activeSection}
-        onToggle={toggleSection}
+        onToggle={handleToggleSection}
         onBenefitClick={handleBenefitClick}
+      />
+      <BenefitDetail
+        benefitId={selectedBenefit}
+        onClose={handleCloseBenefitDetail}
       />
       <ExecutiveSummary isVisible={isActive('executive-summary')} />
       <RoughConcept isVisible={isActive('rough-concept')} />
       <BenefitsSection
         isVisible={isActive('strategic-benefits')}
-        highlightedBenefit={highlightedBenefit}
+        highlightedBenefit={null}
       />
       <Footer />
     </div>
