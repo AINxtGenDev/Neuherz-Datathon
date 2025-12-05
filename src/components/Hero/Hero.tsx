@@ -1,9 +1,11 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
 import { HpeLogo } from './HpeLogo';
 import { AitLogo } from './AitLogo';
 import { ActionButtons } from './ActionButtons';
 import type { SectionId } from '../../hooks';
 import styles from './Hero.module.css';
+import datathonImage from '/02_ait_hpe_datathon_clean_quarter.png?url';
 
 interface HeroProps {
   activeSection: SectionId;
@@ -11,6 +13,8 @@ interface HeroProps {
 }
 
 export const Hero = ({ activeSection, onToggle }: HeroProps) => {
+  const [showDatathonImage, setShowDatathonImage] = useState(false);
+
   return (
     <header className={styles.hero}>
       <div className={styles.backgroundOverlay} />
@@ -27,14 +31,37 @@ export const Hero = ({ activeSection, onToggle }: HeroProps) => {
             Lead: <strong>Raphael NEUHERZ</strong>
           </motion.p>
 
-          <motion.span
+          <motion.button
             className={styles.badge}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            onClick={() => setShowDatathonImage(!showDatathonImage)}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             Partnership Benefits
-          </motion.span>
+          </motion.button>
+
+          <AnimatePresence>
+            {showDatathonImage && (
+              <motion.div
+                className={styles.datathonImageContainer}
+                initial={{ opacity: 0, scale: 0.8, y: -20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: -20 }}
+                transition={{ duration: 0.3, ease: 'easeOut' }}
+              >
+                <motion.img
+                  src={datathonImage}
+                  alt="AIT HPE Datathon"
+                  className={styles.datathonImage}
+                  onClick={() => setShowDatathonImage(false)}
+                  whileHover={{ scale: 1.02 }}
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           <motion.h1
             className={styles.title}
