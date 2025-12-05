@@ -35,6 +35,15 @@ export const ActionButtons = ({ activeSection, onToggle }: ActionButtonsProps) =
       >
         Rough Concept
       </Button>
+      <Button
+        variant="accent"
+        size="lg"
+        icon="⭐"
+        onClick={() => onToggle('strategic-benefits')}
+        isActive={activeSection === 'strategic-benefits'}
+      >
+        Strategic Benefits
+      </Button>
     </motion.div>
   );
 };

@@ -16,7 +16,7 @@ function App() {
       />
       <ExecutiveSummary isVisible={isActive('executive-summary')} />
       <RoughConcept isVisible={isActive('rough-concept')} />
-      <BenefitsSection />
+      <BenefitsSection isVisible={isActive('strategic-benefits')} />
       <Footer />
     </div>
   );

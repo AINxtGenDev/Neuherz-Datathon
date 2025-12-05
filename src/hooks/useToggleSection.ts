@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 
-export type SectionId = 'executive-summary' | 'rough-concept' | null;
+export type SectionId = 'executive-summary' | 'rough-concept' | 'strategic-benefits' | null;
 
 export const useToggleSection = () => {
   const [activeSection, setActiveSection] = useState<SectionId>(null);
