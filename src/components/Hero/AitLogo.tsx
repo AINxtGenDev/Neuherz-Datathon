@@ -12,13 +12,20 @@ export const AitLogo = () => {
       <img
         src={aitLogo}
         alt="AIT - Austrian Institute of Technology"
-        style={{ height: '60px', width: 'auto' }}
+        style={{
+          height: '120px',
+          width: 'auto',
+          background: 'white',
+          padding: '12px 20px',
+          borderRadius: '12px',
+          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)'
+        }}
         onError={(e) => {
           // Fallback to text if image fails
           const target = e.currentTarget;
           target.style.display = 'none';
           const fallback = document.createElement('div');
-          fallback.innerHTML = `<svg height="60" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+          fallback.innerHTML = `<svg height="120" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
             <text x="0" y="38" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="white">AIT</text>
           </svg>`;
           target.parentNode?.appendChild(fallback.firstChild as Node);
