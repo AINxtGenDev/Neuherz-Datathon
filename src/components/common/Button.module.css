@@ -73,13 +73,25 @@
 
 /* Active state */
 .active {
-  background: var(--dark);
-  color: white;
   animation: none !important;
 }
 
+.primary.active {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #1a1a2e;
+  box-shadow: 0 4px 20px rgba(251, 191, 36, 0.5);
+}
+
 .secondary.active {
-  background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%);
+  background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+  color: #1a1a2e;
+  box-shadow: 0 4px 20px rgba(45, 212, 191, 0.5);
+}
+
+.accent.active {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+  color: white;
+  box-shadow: 0 4px 20px rgba(167, 139, 250, 0.5);
 }
 
 /* Icon */
