@@ -1,0 +1,43 @@
+.container {
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.amount {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.track {
+  width: 100%;
+  height: 8px;
+  background: var(--gray-light);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: var(--radius-full);
+}
+
+.percentage {
+  display: block;
+  text-align: right;
+  font-size: 0.75rem;
+  color: var(--gray);
+  margin-top: 4px;
+}

@@ -1,0 +1,39 @@
+.metric {
+  background: white;
+  padding: 20px;
+  border-radius: var(--radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.metric:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.highlight {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.value {
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.highlight .value {
+  color: white;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.highlight .label {
+  color: rgba(255, 255, 255, 0.9);
+}

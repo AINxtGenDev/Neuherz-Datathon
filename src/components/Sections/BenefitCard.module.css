@@ -1,0 +1,144 @@
+.card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+/* Gradient variants */
+.card.primary::before {
+  background: var(--gradient-primary);
+}
+
+.card.secondary::before {
+  background: var(--gradient-secondary);
+}
+
+.card.accent::before {
+  background: var(--gradient-accent);
+}
+
+.card.warning::before {
+  background: var(--gradient-warning);
+}
+
+.card.success::before {
+  background: var(--gradient-success);
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: var(--light);
+}
+
+.primary .iconWrapper {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+}
+
+.secondary .iconWrapper {
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(245, 158, 11, 0.1) 100%);
+}
+
+.accent .iconWrapper {
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
+}
+
+.warning .iconWrapper {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(239, 68, 68, 0.1) 100%);
+}
+
+.success .iconWrapper {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(20, 184, 166, 0.1) 100%);
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--gray);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-light);
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+.list li:last-child {
+  border-bottom: none;
+}
+
+.checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.primary .checkmark {
+  background: var(--primary);
+  color: white;
+}
+
+.secondary .checkmark {
+  background: var(--secondary);
+  color: white;
+}
+
+.accent .checkmark {
+  background: var(--accent);
+  color: white;
+}
+
+.warning .checkmark {
+  background: var(--warning);
+  color: white;
+}
+
+.success .checkmark {
+  background: var(--success);
+  color: white;
+}
