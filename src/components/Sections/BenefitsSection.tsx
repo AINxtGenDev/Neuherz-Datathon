@@ -57,14 +57,14 @@ export const BenefitsSection = ({ isVisible, highlightedBenefit }: BenefitsSecti
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (isVisible && sectionRef.current && !highlightedBenefit) {
-      // Wait for section to render, then scroll to it
+    if (isVisible && !highlightedBenefit) {
+      // Scroll to just below the hero section (100vh)
       setTimeout(() => {
-        sectionRef.current?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+        window.scrollTo({
+          top: window.innerHeight,
+          behavior: 'smooth'
         });
-      }, 100);
+      }, 50);
     }
   }, [isVisible, highlightedBenefit]);
 

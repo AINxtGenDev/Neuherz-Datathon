@@ -67,14 +67,14 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (isVisible && sectionRef.current) {
-      // Wait for section to render, then scroll to it
+    if (isVisible) {
+      // Scroll to just below the hero section (100vh)
       setTimeout(() => {
-        sectionRef.current?.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
+        window.scrollTo({
+          top: window.innerHeight,
+          behavior: 'smooth'
         });
-      }, 100);
+      }, 50);
     }
   }, [isVisible]);
 
