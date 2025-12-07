@@ -5,7 +5,7 @@
 [![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge)](#-license)
 
 **"Two Leaders, One Vision" - A professional React web presentation showcasing the AIT-HPE Strategic Partnership for Austria's AI Innovation Ecosystem**
 
@@ -149,7 +149,9 @@ Build and upload the `dist/` folder to any static hosting service.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+© 2025 AIT & HPE. All Rights Reserved.
+
+This project and its contents are proprietary and confidential. No part of this presentation may be reproduced, distributed, or transmitted in any form without prior written permission.
 
 ---
 
