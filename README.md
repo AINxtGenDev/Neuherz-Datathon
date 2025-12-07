@@ -22,9 +22,8 @@ This project presents the strategic benefits of a partnership between **AIT (Aus
 | Metric | Value |
 |--------|-------|
 | 💰 Total Investment | €70,000 |
-| 🏛️ AIT Investment | €17,500 (25%) |
 | 🖥️ HPE Technology Value | €190,000+ |
-| 📈 Investment Leverage | 4:1 |
+| 🏛️ AIT Contribution | Premises & Data |
 | 👥 Target Participants | 50-100 AI Professionals |
 
 ---
