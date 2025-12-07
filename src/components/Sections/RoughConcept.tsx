@@ -432,6 +432,40 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                   <p className={styles.milestoneSubtitle}>
                     Key milestones for Datathon event (Target: Mid-June 2026)
                   </p>
+
+                  {/* Visual Timeline Graphic */}
+                  <motion.div
+                    className={styles.timelineGraphic}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2, duration: 0.6 }}
+                  >
+                    <div className={styles.timelineLegend}>
+                      <span className={`${styles.legendItem} ${styles.preEventLegend}`}>Pre-Event</span>
+                      <span className={`${styles.legendItem} ${styles.eventLegend}`}>Event</span>
+                      <span className={`${styles.legendItem} ${styles.postEventLegend}`}>Post-Event</span>
+                    </div>
+                    <div className={styles.timelineTrack}>
+                      {milestonePlan.map((milestone, index) => (
+                        <motion.div
+                          key={`timeline-${milestone.phase}`}
+                          className={`${styles.timelineNode} ${styles[`${milestone.status}Node`]}`}
+                          initial={{ scale: 0, opacity: 0 }}
+                          whileInView={{ scale: 1, opacity: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.3 + index * 0.1, type: 'spring', stiffness: 200 }}
+                          whileHover={{ scale: 1.2, transition: { duration: 0.2 } }}
+                        >
+                          <span className={styles.nodeIcon}>{milestone.icon}</span>
+                          <span className={styles.nodeLabel}>{milestone.phase.split(' ')[0]}</span>
+                          <span className={styles.nodeDate}>{milestone.timing.split(' - ')[0]}</span>
+                        </motion.div>
+                      ))}
+                      <div className={styles.timelineLine} />
+                    </div>
+                  </motion.div>
+
                   <div className={styles.milestoneTimeline}>
                     {milestonePlan.map((milestone, index) => (
                       <motion.div
