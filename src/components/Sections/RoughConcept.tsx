@@ -67,12 +67,14 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (isVisible) {
-      // Scroll to top of page when section becomes visible
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+    if (isVisible && sectionRef.current) {
+      // Wait for section to render, then scroll to it
+      setTimeout(() => {
+        sectionRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
     }
   }, [isVisible]);
 
