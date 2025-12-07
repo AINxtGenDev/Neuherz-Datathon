@@ -69,9 +69,9 @@ export const Hero = ({ activeSection, onToggle }: HeroProps) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            Advantages for AIT
+            AIT-HPE Strategic Partnership
             <br />
-            <span className={styles.titleHighlight}>Austrian Institute of Technology</span>
+            <span className={styles.titleHighlight}>Two Leaders, One Vision</span>
           </motion.h1>
 
           <motion.p
@@ -80,7 +80,7 @@ export const Hero = ({ activeSection, onToggle }: HeroProps) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
           >
-            Comprehensive analysis of strategic benefits from the HPE & AIT Datathon Partnership
+            Austria's Premier Research Institution + Global AI Leader
           </motion.p>
 
           <ActionButtons activeSection={activeSection} onToggle={onToggle} />

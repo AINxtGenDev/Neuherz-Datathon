@@ -106,14 +106,14 @@ export const BenefitsSection = ({ isVisible, highlightedBenefit }: BenefitsSecti
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
               >
-                Strategic Benefits
+                Strategic Partnership Value
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
-                Comprehensive advantages for AIT through the HPE Datathon Partnership
+                Strategic value created through the AIT-HPE research alliance
               </motion.p>
             </motion.div>
 

@@ -13,107 +13,165 @@ export interface MetricItem {
   highlight?: boolean;
 }
 
+export interface PartnerStat {
+  value: string;
+  label: string;
+}
+
+export interface PartnerProfile {
+  name: string;
+  tagline: string;
+  stats: PartnerStat[];
+  contributions: string[];
+}
+
+// AIT Profile - Highlighting their strategic value as equal partner
+export const aitProfile: PartnerProfile = {
+  name: 'Austrian Institute of Technology',
+  tagline: "Austria's Largest Research and Technology Organisation",
+  stats: [
+    { value: '1,400+', label: 'Researchers' },
+    { value: '€200M+', label: 'Annual Revenue' },
+    { value: '5', label: 'Research Centers' },
+    { value: '50+', label: 'Years of Excellence' },
+  ],
+  contributions: [
+    'World-class research expertise in AI, ML, and Cybersecurity',
+    'Austrian enterprise and government network access',
+    'State-of-the-art event hosting infrastructure',
+    'Research credibility and academic reputation',
+    'Domain expertise: Digital Health, Energy Systems, Autonomous Systems',
+  ],
+};
+
+// HPE Profile - Partner contributions
+export const hpeProfile: PartnerProfile = {
+  name: 'Hewlett Packard Enterprise',
+  tagline: 'Global Leader in Enterprise AI Solutions',
+  stats: [
+    { value: '$28B+', label: 'Annual Revenue' },
+    { value: '60,000+', label: 'Employees Worldwide' },
+    { value: '170+', label: 'Countries' },
+    { value: '#1', label: 'Enterprise AI Infrastructure' },
+  ],
+  contributions: [
+    'HPE Private Cloud AI infrastructure (€190k+ value)',
+    'NVIDIA AI Enterprise software suite',
+    'Global partner ecosystem access',
+    'Marketing and operational investment (€52.5k)',
+    'Technical mentorship and enterprise support',
+  ],
+};
+
+// Partnership Vision - "Two Leaders, One Vision"
+export const partnershipVision = {
+  headline: 'Two Leaders, One Vision',
+  subheadline: "Advancing Austria's AI Innovation Ecosystem",
+  statement: `This strategic partnership unites Austria's premier research institution with a global enterprise AI leader. Together, AIT and HPE are creating a unique catalyst for Austrian AI innovation—combining world-class research capabilities with enterprise-grade infrastructure to accelerate the nation's AI ecosystem.`,
+};
+
 export const metrics: MetricItem[] = [
-  { value: '€70k', label: 'Total Investment' },
-  { value: '€7.5M', label: 'Expected Pipeline', highlight: true },
-  { value: '40x', label: 'Target ROI' },
   { value: '€17.5k', label: 'AIT Investment' },
+  { value: '4:1', label: 'Investment Leverage', highlight: true },
+  { value: '€190k+', label: 'Technology Access' },
+  { value: '50-100', label: 'AI Professionals' },
 ];
 
 export const benefits: BenefitItem[] = [
   {
-    id: 'financial',
-    icon: '💰',
-    title: 'Financial Benefits',
-    description: 'Maximize ROI with minimal investment through strategic cost-sharing',
+    id: 'strategic-leverage',
+    icon: '🤝',
+    title: 'Strategic Investment Leverage',
+    description: 'Maximize impact through intelligent resource pooling between partners',
     gradient: 'primary',
     items: [
-      '75% cost reduction through HPE partnership (€17.5k vs €70k)',
-      'Access to €190k+ worth of enterprise technology',
-      'Shared marketing and operational expenses',
-      'Potential for follow-up funded research projects',
-      'Revenue from sponsored challenges and future events',
+      '4:1 investment leverage: €17.5k unlocks €70k total initiative value',
+      'Access to €190k+ enterprise technology through partnership',
+      'Shared operational costs with global technology leader',
+      'Risk-balanced partnership structure with proven ROI model',
+      'Foundation for multi-year strategic research collaboration',
     ],
   },
   {
-    id: 'technology',
+    id: 'technology-excellence',
     icon: '🚀',
-    title: 'Technology Access',
-    description: 'Enterprise-grade infrastructure for cutting-edge AI research',
+    title: 'Technology & Infrastructure',
+    description: 'Enterprise-grade AI capabilities accelerating research excellence',
     gradient: 'secondary',
     items: [
-      'HPE Private Cloud AI infrastructure',
-      'NVIDIA AI Enterprise software suite',
-      'HPE GreenLake cloud platform access',
-      'Enterprise-grade GPU computing resources',
-      'Production-ready AI/ML development environment',
+      'HPE Private Cloud AI with dedicated GPU resources',
+      'NVIDIA AI Enterprise software suite and tools',
+      'HPE GreenLake hybrid cloud platform',
+      'Production-ready ML development environment',
+      'Technology validation for AIT research projects',
     ],
   },
   {
-    id: 'talent',
-    icon: '🎯',
-    title: 'Talent Pipeline',
-    description: 'Connect with Austria\'s top AI professionals and researchers',
+    id: 'talent-research',
+    icon: '🎓',
+    title: 'Talent & Research Pipeline',
+    description: 'Connect with Austria\'s emerging AI leaders and future collaborators',
     gradient: 'accent',
     items: [
-      'Access to 50-100 pre-vetted AI professionals',
-      'Identify potential PhD candidates and researchers',
-      'Build relationships with industry data scientists',
-      'Showcase AIT as premier research destination',
-      'Create internship and collaboration pathways',
+      'Direct access to 50-100 pre-vetted AI professionals',
+      'Identification of PhD candidates and research talent',
+      'Industry practitioner connections for applied research',
+      'Showcase AIT as premier AI research destination',
+      'Build long-term research collaboration pathways',
     ],
   },
   {
-    id: 'brand',
-    icon: '✨',
-    title: 'Brand Enhancement',
-    description: 'Position AIT as Austria\'s leading AI research institution',
+    id: 'market-positioning',
+    icon: '🏆',
+    title: 'Market & Brand Positioning',
+    description: 'Strengthen AIT\'s leadership in applied AI research and innovation',
     gradient: 'warning',
     items: [
-      '50,000-100,000 marketing impressions',
+      '50,000-100,000 targeted marketing impressions',
+      'Co-branding with global enterprise AI leader',
       'Media coverage and press opportunities',
-      'Association with HPE enterprise brand',
-      'Thought leadership positioning',
-      'Social media and content amplification',
+      'Thought leadership content and positioning',
+      'Demonstration of industry partnership capability',
     ],
   },
   {
-    id: 'network',
+    id: 'ecosystem-network',
     icon: '🌐',
-    title: 'Network Expansion',
-    description: 'Strategic connections across industry, academia, and government',
+    title: 'Ecosystem & Network Access',
+    description: 'Strategic connections across Austria\'s innovation landscape',
     gradient: 'success',
     items: [
-      'Direct access to HPE partner ecosystem',
-      'Austrian enterprise customer connections',
+      'HPE enterprise customer and partner ecosystem',
+      'Austrian enterprise decision-maker network',
       'Government and policy stakeholder engagement',
-      'Academic collaboration opportunities',
-      'Startup and innovation ecosystem access',
+      'Startup and innovation ecosystem connections',
+      'Academic and cross-institutional collaboration',
     ],
   },
   {
-    id: 'research',
-    icon: '🔬',
-    title: 'Research Synergies',
-    description: 'Real-world challenges driving innovative research outcomes',
+    id: 'research-ip',
+    icon: '💡',
+    title: 'Research & Intellectual Property',
+    description: 'Tangible research outputs from real-world AI challenges',
     gradient: 'primary',
     items: [
-      'Real-world AI challenge prototypes',
-      'Intellectual property from solutions',
-      'Publication and case study material',
-      'Industry-relevant research validation',
-      'Cross-disciplinary collaboration opportunities',
+      'AI prototypes addressing real-world challenges',
+      'Joint intellectual property development opportunities',
+      'Publication-ready case study and research material',
+      'Industry-validated research methodologies',
+      'Cross-disciplinary collaboration outcomes',
     ],
   },
 ];
 
 export const executiveSummaryContent = {
+  partnershipStatement: `As Austria's largest Research and Technology Organisation with <strong>1,400+ researchers</strong> and <strong>€200M+ annual revenue</strong>, AIT brings unparalleled research depth in AI, Machine Learning, Cybersecurity, and Digital Transformation. Combined with HPE's enterprise AI infrastructure and global market reach, this partnership positions both organizations at the forefront of Austria's AI innovation ecosystem.`,
   paragraphs: [
-    `The <strong>HPE & AIT Datathon Partnership</strong> represents a strategic opportunity for the Austrian Institute of Technology to significantly strengthen its position as Austria's leading Research and Technology Organization in the AI and data science domain. Through a modest investment of <strong>€17,500</strong> (representing only 25% of the total €70,000 initiative), AIT gains access to enterprise-grade technology infrastructure valued at over <strong>€190,000</strong>, including HPE Private Cloud AI and NVIDIA AI Enterprise tools.`,
-    `This collaborative initiative is designed to foster Austria's AI expert community through a 48-hour intensive innovation event, bringing together <strong>50-100 top AI professionals</strong>, data scientists, and researchers. For AIT, the partnership delivers exceptional value across five key dimensions: <strong>(1) Financial efficiency</strong> through 75% cost reduction via risk-sharing; <strong>(2) Technology access</strong> to cutting-edge HPE/NVIDIA infrastructure; <strong>(3) Talent acquisition</strong> pipeline for potential PhD candidates and research collaborators; <strong>(4) Brand enhancement</strong> with 50,000-100,000 marketing impressions; and <strong>(5) Research synergies</strong> through real-world AI challenge prototypes.`,
-    `The expected ROI for HPE is projected at <strong>40x</strong> with a €7.5M pipeline target, demonstrating the commercial viability of this initiative. For AIT, the return extends beyond financial metrics to include <strong>intellectual property</strong> from developed solutions, <strong>strengthened industry relationships</strong>, and <strong>enhanced visibility</strong> as the premier Austrian AI research institution.`,
+    `The <strong>AIT-HPE Strategic Partnership</strong> unites Austria's premier research institution with a global enterprise AI leader. This is not merely a sponsorship arrangement—it represents a <strong>strategic research alliance</strong> where AIT's world-class research capabilities meet HPE's enterprise-grade AI infrastructure, creating unique value for Austria's innovation ecosystem.`,
+    `<strong>AIT contributes:</strong> Research credibility through 50+ years of excellence, access to Austrian enterprise and government networks, state-of-the-art hosting facilities, and domain expertise across AI, Cybersecurity, Digital Health, and Autonomous Systems. <strong>HPE contributes:</strong> Private Cloud AI infrastructure valued at €190,000+, NVIDIA AI Enterprise software suite, global partner ecosystem access, and €52,500 in marketing and operational investment.`,
+    `The 48-hour intensive Datathon will produce <strong>actionable AI prototypes</strong> addressing real-world challenges in AIT's core research domains—Sustainable AI, Healthcare Innovation, Smart Infrastructure, and Open Innovation. These prototypes represent potential <strong>joint IP opportunities</strong>, publication material for AIT researchers, and market-ready solution concepts demonstrating both partners' capabilities.`,
   ],
-  recommendation: `This partnership offers AIT a low-risk, high-reward opportunity to advance its strategic objectives in AI leadership, talent development, and industry collaboration. The favorable cost-sharing structure, combined with access to premium technology resources and networking opportunities, makes this initiative a compelling investment in AIT's future as Austria's AI innovation hub.`,
+  recommendation: `This strategic alliance positions AIT as the anchor research institution for enterprise AI innovation in Austria. By contributing research expertise, facilities, and network access—while leveraging HPE's €190k+ technology investment—AIT demonstrates leadership in translating academic excellence into industry impact. This partnership establishes a replicable model for future strategic collaborations.`,
 };
 
 export const agendaItems = [

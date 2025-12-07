@@ -1,5 +1,5 @@
 .section {
-  background: linear-gradient(135deg, #4a6fa5 0%, #6b8cae 50%, #88a4be 100%);
+  background: linear-gradient(135deg, #2d4a6f 0%, #3d6a8f 50%, #4d7a9f 100%);
   padding: 60px 0;
   overflow: hidden;
 }
@@ -23,6 +23,172 @@
   text-align: center;
   margin-bottom: 40px;
   color: #1a1a2e;
+}
+
+/* Partnership Badge */
+.partnershipBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.partnerName {
+  font-size: 2rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1a365d, #2d5a87);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.partnerDivider {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #1a365d;
+}
+
+/* AIT Credentials Block */
+.credentialsBlock {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 32px;
+  border: 2px solid rgba(26, 54, 93, 0.2);
+}
+
+.credentialsBlock h3 {
+  font-size: 1.25rem;
+  color: #1a365d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 12px;
+  background: rgba(26, 54, 93, 0.1);
+  border-radius: var(--radius);
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1a365d;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: #2d3748;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a365d;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Partnership Statement */
+.partnershipStatement {
+  background: linear-gradient(135deg, rgba(26, 54, 93, 0.15), rgba(45, 90, 135, 0.1));
+  border-left: 4px solid #1a365d;
+  padding: 20px 24px;
+  border-radius: var(--radius);
+  margin-bottom: 32px;
+}
+
+.partnershipStatement p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+/* Mutual Value Section */
+.mutualValueSection {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.mutualValueSection h3 {
+  font-size: 1.25rem;
+  color: #1a365d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mutualValueGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .mutualValueGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+.partnerColumn {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: var(--radius);
+}
+
+.partnerColumn h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(26, 54, 93, 0.2);
+}
+
+.partnerColumn ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.partnerColumn li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #2d3748;
+}
+
+.partnerColumn li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1a365d;
+  font-weight: bold;
 }
 
 .icon {
