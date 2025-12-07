@@ -1,11 +1,23 @@
 .card {
   background: white;
   border-radius: var(--radius-lg);
-  padding: 32px 24px;
+  padding: 20px 16px;
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
   position: relative;
   overflow: hidden;
+}
+
+@media (min-width: 480px) {
+  .card {
+    padding: 24px 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 32px 24px;
+  }
 }
 
 .card::before {
@@ -39,14 +51,32 @@
 }
 
 .iconWrapper {
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   background: var(--light);
+}
+
+@media (min-width: 480px) {
+  .iconWrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .iconWrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
 }
 
 .primary .iconWrapper {
@@ -70,20 +100,55 @@
 }
 
 .icon {
-  font-size: 2rem;
+  font-size: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .icon {
+    font-size: 2rem;
+  }
 }
 
 .title {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--dark);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+}
+
+@media (min-width: 480px) {
+  .title {
+    font-size: 1.15rem;
+    margin-bottom: 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
 }
 
 .description {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--gray);
-  margin-bottom: 20px;
-  line-height: 1.5;
+  margin-bottom: 14px;
+  line-height: 1.45;
+}
+
+@media (min-width: 480px) {
+  .description {
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
 }
 
 .list {
@@ -95,11 +160,30 @@
 .list li {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  padding: 10px 0;
+  gap: 8px;
+  padding: 8px 0;
   border-bottom: 1px solid var(--gray-light);
-  font-size: 0.9rem;
+  font-size: 0.825rem;
   color: var(--dark);
+  line-height: 1.4;
+}
+
+@media (min-width: 480px) {
+  .list li {
+    gap: 9px;
+    padding: 9px 0;
+    font-size: 0.85rem;
+    line-height: 1.45;
+  }
+}
+
+@media (min-width: 768px) {
+  .list li {
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 }
 
 .list li:last-child {
@@ -110,12 +194,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  font-size: 12px;
+  font-size: 10px;
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+  .checkmark {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
 }
 
 .primary .checkmark {
