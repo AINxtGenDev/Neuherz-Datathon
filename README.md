@@ -141,7 +141,7 @@ Build and upload the `dist/` folder to any static hosting service.
 | Name | Role |
 |------|------|
 | 👩‍💼 **Milena Hirschmann** | Manager Go to Market |
-| 💾 **Raphael Neuherz** | Central Data Serv Storage |
+| 💾 **Raphael Neuherz** | Leader for the project |
 | 👨‍💻 **Werner Plessl** | Development |
 | 👔 **Manfred Traumueller** | Managing Director |
 
