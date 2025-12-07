@@ -216,24 +216,28 @@ export const challengeTracks = [
     icon: '🌱',
     description: 'AI solutions for environmental sustainability and climate action',
     prizes: '€5,000',
+    aitAlignment: 'Energy Systems Research',
   },
   {
     title: 'Healthcare Innovation',
     icon: '🏥',
     description: 'AI applications for medical diagnostics and patient care',
     prizes: '€5,000',
+    aitAlignment: 'Digital Health Center',
   },
   {
     title: 'Smart Infrastructure',
     icon: '🏗️',
     description: 'AI for urban planning, energy efficiency, and transportation',
     prizes: '€5,000',
+    aitAlignment: 'Autonomous Systems',
   },
   {
     title: 'Open Innovation',
     icon: '💡',
     description: 'Creative AI solutions for any industry or domain',
     prizes: '€3,000',
+    aitAlignment: 'Cross-disciplinary',
   },
 ];
 
@@ -244,3 +248,26 @@ export const budgetBreakdown = [
   { category: 'Prizes & Awards', amount: 18000, percentage: 26 },
   { category: 'Marketing & Communications', amount: 7000, percentage: 10 },
 ];
+
+// Technology Infrastructure provided by HPE
+export const technologyInfrastructure = [
+  { name: 'HPE Private Cloud AI', value: '€190k+', description: 'Enterprise-grade GPU compute' },
+  { name: 'NVIDIA AI Enterprise', value: 'Full Suite', description: 'ML frameworks and tools' },
+  { name: 'HPE GreenLake', value: 'Hybrid Cloud', description: 'Flexible infrastructure' },
+  { name: 'Development Environment', value: '48 Hours', description: 'Production-ready setup' },
+];
+
+// Research outcomes for AIT
+export const researchOutcomes = [
+  { metric: '4+', label: 'AI Prototypes', description: 'For AIT research pipeline' },
+  { metric: '2-3', label: 'Publication Opportunities', description: 'Case studies and papers' },
+  { metric: '10+', label: 'Research Collaborators', description: 'Identified for future projects' },
+  { metric: '€190k+', label: 'Technology Access', description: 'HPE infrastructure value' },
+];
+
+// Partnership investment split
+export const investmentSplit = {
+  ait: { amount: 17500, percentage: 25, label: 'AIT Investment' },
+  hpe: { amount: 52500, percentage: 75, label: 'HPE Investment' },
+  total: { amount: 70000, label: 'Total Initiative Value' },
+};

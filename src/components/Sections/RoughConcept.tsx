@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { ProgressBar } from '../common';
-import { agendaItems, challengeTracks, budgetBreakdown } from '../../data/benefits';
+import { agendaItems, challengeTracks, budgetBreakdown, technologyInfrastructure, researchOutcomes, investmentSplit } from '../../data/benefits';
 import styles from './RoughConcept.module.css';
 
 interface RoughConceptProps {
@@ -126,6 +126,24 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                 </motion.p>
               </div>
 
+              {/* Partnership Context */}
+              <motion.div
+                className={styles.partnershipContext}
+                variants={itemVariants}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+              >
+                <div className={styles.partnershipBadge}>
+                  <span className={styles.partnerName}>AIT</span>
+                  <span className={styles.partnerDivider}>×</span>
+                  <span className={styles.partnerName}>HPE</span>
+                </div>
+                <p className={styles.partnershipTagline}>
+                  Combining AIT's research excellence with HPE's enterprise AI infrastructure
+                </p>
+              </motion.div>
+
               <div className={styles.content}>
                 {/* 48-Hour Agenda */}
                 <motion.div
@@ -180,6 +198,44 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                   </div>
                 </motion.div>
 
+                {/* Technology Infrastructure */}
+                <motion.div
+                  className={styles.technologySection}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
+                >
+                  <motion.h3
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.65 }}
+                  >
+                    🖥️ HPE Technology Infrastructure
+                  </motion.h3>
+                  <p className={styles.techSubtitle}>Enterprise-grade AI platform powering all challenge tracks</p>
+                  <div className={styles.techGrid}>
+                    {technologyInfrastructure.map((tech, index) => (
+                      <motion.div
+                        key={tech.name}
+                        className={styles.techCard}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1, type: 'spring', stiffness: 100 }}
+                        whileHover={{
+                          y: -5,
+                          scale: 1.03,
+                          boxShadow: '0 15px 30px rgba(0,0,0,0.2)',
+                          transition: { duration: 0.2 }
+                        }}
+                      >
+                        <span className={styles.techValue}>{tech.value}</span>
+                        <h4>{tech.name}</h4>
+                        <p>{tech.description}</p>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+
                 {/* Challenge Tracks */}
                 <motion.div
                   className={styles.tracksSection}
@@ -217,13 +273,14 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                         </motion.span>
                         <h4>{track.title}</h4>
                         <p>{track.description}</p>
+                        <span className={styles.aitBadge}>AIT: {track.aitAlignment}</span>
                         <span className={styles.prize}>{track.prizes}</span>
                       </motion.div>
                     ))}
                   </div>
                 </motion.div>
 
-                {/* Budget Breakdown */}
+                {/* Investment Split */}
                 <motion.div
                   className={styles.budgetSection}
                   variants={itemVariants}
@@ -234,8 +291,38 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.8 }}
                   >
-                    💶 Budget Breakdown (€70,000 Total)
+                    💶 Partnership Investment
                   </motion.h3>
+
+                  {/* Investment Split Display */}
+                  <div className={styles.investmentSplit}>
+                    <motion.div
+                      className={styles.investmentCard}
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 }}
+                    >
+                      <span className={styles.investmentLabel}>{investmentSplit.ait.label}</span>
+                      <span className={styles.investmentValue}>€{investmentSplit.ait.amount.toLocaleString()}</span>
+                      <span className={styles.investmentPercent}>{investmentSplit.ait.percentage}%</span>
+                    </motion.div>
+                    <motion.div
+                      className={styles.investmentCard}
+                      initial={{ opacity: 0, x: 30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 }}
+                    >
+                      <span className={styles.investmentLabel}>{investmentSplit.hpe.label}</span>
+                      <span className={styles.investmentValue}>€{investmentSplit.hpe.amount.toLocaleString()}</span>
+                      <span className={styles.investmentPercent}>{investmentSplit.hpe.percentage}%</span>
+                    </motion.div>
+                  </div>
+                  <p className={styles.investmentNote}>Total: €{investmentSplit.total.amount.toLocaleString()} (excludes €190k+ technology value)</p>
+
+                  {/* Budget Breakdown */}
+                  <h4 className={styles.budgetSubtitle}>Budget Allocation</h4>
                   <div className={styles.budgetCard}>
                     {budgetBreakdown.map((item, index) => (
                       <ProgressBar
@@ -250,7 +337,44 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                   </div>
                 </motion.div>
 
-                {/* Success Criteria */}
+                {/* Research Outcomes */}
+                <motion.div
+                  className={styles.researchSection}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
+                >
+                  <motion.h3
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.85 }}
+                  >
+                    🔬 Research Outcomes for AIT
+                  </motion.h3>
+                  <div className={styles.outcomesGrid}>
+                    {researchOutcomes.map((outcome, index) => (
+                      <motion.div
+                        key={outcome.label}
+                        className={styles.outcomeCard}
+                        initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1, type: 'spring', stiffness: 120 }}
+                        whileHover={{
+                          y: -5,
+                          scale: 1.05,
+                          boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
+                          transition: { duration: 0.2 }
+                        }}
+                      >
+                        <span className={styles.outcomeMetric}>{outcome.metric}</span>
+                        <h4>{outcome.label}</h4>
+                        <p>{outcome.description}</p>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* Partnership Success Metrics */}
                 <motion.div
                   className={styles.successSection}
                   variants={itemVariants}
@@ -261,14 +385,14 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.9 }}
                   >
-                    🎯 Success Criteria
+                    🎯 Partnership Success Metrics
                   </motion.h3>
                   <div className={styles.criteriaGrid}>
                     {[
-                      { metric: '50+', label: 'Participants' },
-                      { metric: '10+', label: 'Teams' },
-                      { metric: '4', label: 'Challenge Tracks' },
-                      { metric: '€18k', label: 'Prize Pool' },
+                      { metric: '50-100', label: 'AI Professionals' },
+                      { metric: '10+', label: 'Project Teams' },
+                      { metric: '4+', label: 'AI Prototypes' },
+                      { metric: '€190k+', label: 'Tech Access Value' },
                     ].map((item, index) => (
                       <motion.div
                         key={item.label}

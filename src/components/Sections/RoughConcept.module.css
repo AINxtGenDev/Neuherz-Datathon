@@ -1,15 +1,33 @@
 .section {
   background: linear-gradient(135deg, #0f766e 0%, #134e4a 100%);
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
+}
+
+@media (min-width: 480px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
 }
 
 .card {
   background: rgba(255, 255, 255, 0.05);
   border-radius: var(--radius-lg);
-  padding: 32px 24px;
+  padding: 20px 16px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 480px) {
+  .card {
+    padding: 28px 20px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -212,6 +230,405 @@
 }
 
 .criteriaLabel {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.7);
+}
+
+@media (min-width: 768px) {
+  .criteriaLabel {
+    font-size: 0.875rem;
+  }
+}
+
+/* Partnership Context Section */
+.partnershipContext {
+  text-align: center;
+  margin-bottom: 28px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 480px) {
+  .partnershipContext {
+    padding: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .partnershipContext {
+    padding: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.partnershipBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .partnershipBadge {
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+.partnerName {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .partnerName {
+    font-size: 2rem;
+  }
+}
+
+.partnerDivider {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 768px) {
+  .partnerDivider {
+    font-size: 2rem;
+  }
+}
+
+.partnershipTagline {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .partnershipTagline {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Technology Infrastructure Section */
+.technologySection {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .technologySection {
+    margin-bottom: 40px;
+  }
+}
+
+.techSubtitle {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .techSubtitle {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .techGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+
+.techCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 16px 12px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+@media (min-width: 480px) {
+  .techCard {
+    padding: 18px 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .techCard {
+    padding: 20px 16px;
+  }
+}
+
+.techValue {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #4ade80;
+  margin-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+  .techValue {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+}
+
+.techCard h4 {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .techCard h4 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+}
+
+.techCard p {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .techCard p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
+/* AIT Alignment Badge on Challenge Tracks */
+.aitBadge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.3);
+  color: #c7d2fe;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .aitBadge {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+  }
+}
+
+/* Investment Split Section */
+.investmentSplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .investmentSplit {
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+.investmentCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 14px 12px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+@media (min-width: 480px) {
+  .investmentCard {
+    padding: 16px 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .investmentCard {
+    padding: 20px;
+  }
+}
+
+.investmentLabel {
+  display: block;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+}
+
+@media (min-width: 768px) {
+  .investmentLabel {
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+  }
+}
+
+.investmentValue {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 2px;
+}
+
+@media (min-width: 768px) {
+  .investmentValue {
+    font-size: 1.75rem;
+    margin-bottom: 4px;
+  }
+}
+
+.investmentPercent {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .investmentPercent {
+    padding: 3px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+.investmentNote {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .investmentNote {
+    font-size: 0.9rem;
+    margin-bottom: 24px;
+  }
+}
+
+.budgetSubtitle {
+  font-size: 0.95rem;
+  color: white;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .budgetSubtitle {
+    font-size: 1.05rem;
+    margin-bottom: 16px;
+  }
+}
+
+/* Research Outcomes Section */
+.researchSection {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .researchSection {
+    margin-bottom: 40px;
+  }
+}
+
+.outcomesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .outcomesGrid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+}
+
+.outcomeCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 16px 12px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+@media (min-width: 480px) {
+  .outcomeCard {
+    padding: 18px 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .outcomeCard {
+    padding: 20px 16px;
+  }
+}
+
+.outcomeMetric {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #fbbf24;
+  margin-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+  .outcomeMetric {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+}
+
+.outcomeCard h4 {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .outcomeCard h4 {
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+}
+
+.outcomeCard p {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .outcomeCard p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
 }
