@@ -16,8 +16,12 @@ export const Navbar = () => {
       <div className={styles.container}>
         <motion.div
           className={styles.logo}
+          initial={{ rotateY: -180, opacity: 0 }}
+          animate={{ rotateY: 0, opacity: 1 }}
+          transition={{ duration: 1.2, ease: 'easeOut', delay: 0.3 }}
           whileHover={{ scale: 1.05 }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          style={{ perspective: 1000 }}
         >
           AIT Benefits
         </motion.div>
