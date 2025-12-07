@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { ProgressBar } from '../common';
-import { agendaItems, challengeTracks, budgetBreakdown, technologyInfrastructure, researchOutcomes, investmentSplit } from '../../data/benefits';
+import { agendaItems, challengeTracks, budgetBreakdown, technologyInfrastructure, researchOutcomes, investmentSplit, milestonePlan } from '../../data/benefits';
 import styles from './RoughConcept.module.css';
 
 interface RoughConceptProps {
@@ -411,6 +411,66 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                           {item.metric}
                         </motion.span>
                         <span className={styles.criteriaLabel}>{item.label}</span>
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.div>
+
+                {/* Milestone Plan */}
+                <motion.div
+                  className={styles.milestoneSection}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
+                >
+                  <motion.h3
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.95 }}
+                  >
+                    📅 Milestone Plan
+                  </motion.h3>
+                  <p className={styles.milestoneSubtitle}>
+                    Key milestones for Datathon event (Target: Mid-June 2026)
+                  </p>
+                  <div className={styles.milestoneTimeline}>
+                    {milestonePlan.map((milestone, index) => (
+                      <motion.div
+                        key={milestone.phase}
+                        className={`${styles.milestoneCard} ${styles[milestone.status]}`}
+                        initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1, type: 'spring', stiffness: 100 }}
+                        whileHover={{
+                          scale: 1.03,
+                          boxShadow: '0 15px 35px rgba(0,0,0,0.2)',
+                          transition: { duration: 0.2 }
+                        }}
+                      >
+                        <div className={styles.milestoneHeader}>
+                          <span className={styles.milestoneIcon}>{milestone.icon}</span>
+                          <div className={styles.milestoneMeta}>
+                            <h4>{milestone.phase}</h4>
+                            <span className={styles.milestoneTiming}>{milestone.timing}</span>
+                          </div>
+                          <span className={`${styles.milestoneStatus} ${styles[milestone.status]}`}>
+                            {milestone.status === 'pre-event' ? 'Pre-Event' :
+                             milestone.status === 'event' ? 'Event' : 'Post-Event'}
+                          </span>
+                        </div>
+                        <ul className={styles.milestoneDeliverables}>
+                          {milestone.deliverables.map((deliverable, dIndex) => (
+                            <motion.li
+                              key={dIndex}
+                              initial={{ opacity: 0, x: -10 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              viewport={{ once: true }}
+                              transition={{ delay: index * 0.1 + dIndex * 0.05 }}
+                            >
+                              {deliverable}
+                            </motion.li>
+                          ))}
+                        </ul>
                       </motion.div>
                     ))}
                   </div>

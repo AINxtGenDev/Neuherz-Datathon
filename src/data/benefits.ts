@@ -271,3 +271,103 @@ export const investmentSplit = {
   hpe: { amount: 52500, percentage: 75, label: 'HPE Investment' },
   total: { amount: 70000, label: 'Total Initiative Value' },
 };
+
+// Milestone Plan - Timeline for Datathon event (Target: Mid-June 2026)
+export const milestonePlan = [
+  {
+    phase: 'Planning & Partnership',
+    icon: '🎯',
+    timing: 'Dec 2025 - Jan 2026',
+    status: 'pre-event' as const,
+    deliverables: [
+      'Partnership agreement signed',
+      'Budget finalization',
+      'Venue booking at AIT',
+      'Challenge track definition',
+    ],
+  },
+  {
+    phase: 'Marketing & Outreach',
+    icon: '📢',
+    timing: 'Feb - Mar 2026',
+    status: 'pre-event' as const,
+    deliverables: [
+      'Website & registration launch',
+      'Promotional campaign',
+      'University partnerships',
+      'Sponsor outreach',
+    ],
+  },
+  {
+    phase: 'Technical Setup',
+    icon: '🛠️',
+    timing: 'Apr - May 2026',
+    status: 'pre-event' as const,
+    deliverables: [
+      'HPE infrastructure provisioning',
+      'Development environment setup',
+      'Mentor recruitment',
+      'Challenge datasets prepared',
+    ],
+  },
+  {
+    phase: 'Final Preparations',
+    icon: '✅',
+    timing: 'Jun 2026 (Week 1-2)',
+    status: 'pre-event' as const,
+    deliverables: [
+      'Participant confirmation',
+      'Mentor briefing sessions',
+      'Logistics finalization',
+      'Dry run & testing',
+    ],
+  },
+  {
+    phase: 'Datathon Event',
+    icon: '🚀',
+    timing: 'Mid-June 2026',
+    status: 'event' as const,
+    deliverables: [
+      '48-hour intensive hackathon',
+      'Opening ceremony & briefing',
+      'Presentations & judging',
+      'Awards ceremony',
+    ],
+  },
+  {
+    phase: 'Evaluation & Reporting',
+    icon: '📊',
+    timing: 'Jun - Jul 2026',
+    status: 'post-event' as const,
+    deliverables: [
+      'Results documentation',
+      'ROI analysis',
+      'Partnership review',
+      'Media coverage report',
+    ],
+  },
+  {
+    phase: 'Research Publication',
+    icon: '📝',
+    timing: 'Jul - Sep 2026',
+    status: 'post-event' as const,
+    deliverables: [
+      'Case study publication',
+      'Joint research papers',
+      'Prototype documentation',
+      'Best practices guide',
+    ],
+  },
+  {
+    phase: 'Follow-up Collaboration',
+    icon: '🤝',
+    timing: 'Q3-Q4 2026',
+    status: 'post-event' as const,
+    deliverables: [
+      'Talent pipeline activation',
+      'Continued research projects',
+      'Future event planning',
+      'Partnership expansion',
+    ],
+  },
+];
