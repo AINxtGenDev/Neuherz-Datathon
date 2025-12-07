@@ -18,7 +18,7 @@ export const Navbar = () => {
           className={styles.logo}
           initial={{ rotateY: -360, opacity: 0 }}
           animate={{ rotateY: 0, opacity: 1 }}
-          transition={{ duration: 2.5, ease: 'easeOut', delay: 0.3 }}
+          transition={{ duration: 5, ease: 'easeOut', delay: 0.3 }}
           whileHover={{ scale: 1.05 }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           style={{ perspective: 1000 }}
