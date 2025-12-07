@@ -1,6 +1,10 @@
 # AIT Advantages - HPE & AIT Datathon Partnership
 
-Interactive presentation showcasing the strategic benefits for AIT from the HPE Datathon Partnership.
+## Overview
+
+This is a professional React web presentation that pitches the strategic benefits of a partnership between AIT (Austrian Institute of Technology) and HPE (Hewlett Packard Enterprise) for organizing a Datathon event.
+
+**Lead:** Raphael NEUHERZ | **Created:** December 2024
 
 ## Quick Start
 
@@ -31,13 +35,13 @@ npm run preview
 ```
 src/
 ├── components/
-│   ├── Hero/          # Hero section with HPE logo
-│   ├── Navigation/    # Sticky navbar with scroll indicator
-│   ├── Sections/      # Executive Summary, Rough Concept, Benefits
-│   └── common/        # Reusable components (Button, MetricCard, etc.)
-├── hooks/             # Custom React hooks
-├── data/              # Content data (benefits, metrics, agenda)
-└── styles/            # Global CSS and variables
+│   ├── Hero/          # Hero section with logos
+│   ├── Navigation/    # Sticky navbar with scroll progress
+│   ├── Sections/      # Executive Summary, Benefits, Footer
+│   └── common/        # Reusable UI components
+├── hooks/             # useToggleSection, useScrollProgress
+├── data/benefits.ts   # Centralized content data
+└── styles/            # CSS variables and global styles
 ```
 
 ## Deployment
@@ -61,9 +65,12 @@ Build and upload the `dist/` folder to any static hosting service.
 - Node.js 18+
 - npm 9+
 
-## Lead
+## Current Team
 
-**Raphael NEUHERZ**
+- **Milena Hirschmann** - Manager Go to Market
+- **Raphael Neuherz** - Central Data Serv Storage
+- **Werner Plessl** - Development
+- **Manfred Traumueller** - Managing Director
 
 ---
 December 2024
