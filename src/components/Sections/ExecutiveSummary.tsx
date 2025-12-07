@@ -42,21 +42,12 @@ export const ExecutiveSummary = ({ isVisible }: ExecutiveSummaryProps) => {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (isVisible && sectionRef.current) {
-      // Wait for animation to start, then scroll to top of section
-      setTimeout(() => {
-        const element = sectionRef.current;
-        if (element) {
-          const headerOffset = 20; // Small offset from top
-          const elementPosition = element.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-        }
-      }, 50);
+    if (isVisible) {
+      // Scroll to top of page when section becomes visible
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   }, [isVisible]);
 
