@@ -7,7 +7,7 @@
 [![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-**A professional React web presentation showcasing the strategic benefits of the AIT & HPE Datathon Partnership**
+**"Two Leaders, One Vision" - A professional React web presentation showcasing the AIT-HPE Strategic Partnership for Austria's AI Innovation Ecosystem**
 
 [View Demo](https://ainxtgendev.github.io/Neuherz-Datathon/) · [Report Bug](https://github.com/AINxtGenDev/Neuherz-Datathon/issues) · [Request Feature](https://github.com/AINxtGenDev/Neuherz-Datathon/issues)
 
@@ -22,9 +22,10 @@ This project presents the strategic benefits of a partnership between **AIT (Aus
 | Metric | Value |
 |--------|-------|
 | 💰 Total Investment | €70,000 |
-| 🏛️ AIT's Share | €17,500 (25%) |
-| 📈 Expected Pipeline | €7.5M |
-| 🎯 Target ROI | 40x |
+| 🏛️ AIT Investment | €17,500 (25%) |
+| 🖥️ HPE Technology Value | €190,000+ |
+| 📈 Investment Leverage | 4:1 |
+| 👥 Target Participants | 50-100 AI Professionals |
 
 ---
 
@@ -36,7 +37,8 @@ This project presents the strategic benefits of a partnership between **AIT (Aus
 | 🎬 **Framer Motion** | Smooth, professional animations and transitions |
 | 📱 **Responsive Design** | Mobile-first approach for all screen sizes |
 | 🧭 **Interactive Navigation** | Sticky navbar with scroll progress indicator |
-| 📊 **Dynamic Sections** | Executive Summary, Benefits, and more |
+| 📊 **Dynamic Sections** | Executive Summary, Strategic Benefits, Rough Concept |
+| 🤝 **Partnership Framing** | "Two Leaders, One Vision" narrative throughout |
 
 ---
 
@@ -81,7 +83,7 @@ src/
 ├── 🧩 components/
 │   ├── Hero/              # Hero section with logos
 │   ├── Navigation/        # Sticky navbar with scroll progress
-│   ├── Sections/          # Executive Summary, Benefits, Footer
+│   ├── Sections/          # Executive Summary, Benefits, Rough Concept, Footer
 │   └── common/            # Reusable UI components
 ├── 🪝 hooks/               # useToggleSection, useScrollProgress
 ├── 📊 data/benefits.ts     # Centralized content data
@@ -156,6 +158,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Made with ❤️ by the AIT & HPE Team**
 
-📅 December 2024
+📅 December 2025
 
 </div>
