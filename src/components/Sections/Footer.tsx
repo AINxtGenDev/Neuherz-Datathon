@@ -21,6 +21,9 @@ export const Footer = () => {
           <p className={styles.powered}>
             Powered by <strong>Raphael NEUHERZ</strong>
           </p>
+          <p className={styles.version}>
+            Version: 1.21
+          </p>
         </div>
       </div>
     </motion.footer>
