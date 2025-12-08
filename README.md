@@ -48,6 +48,75 @@ This project presents the strategic benefits of a partnership between **AIT (Aus
 - 📦 Node.js 18+
 - 📦 npm 9+
 
+#### Installing Node.js 18+ and npm
+
+<details>
+<summary><strong>🪟 Windows</strong></summary>
+
+**Option 1: Official Installer (Recommended)**
+1. Download the LTS installer from [nodejs.org](https://nodejs.org/)
+2. Run the installer and follow the prompts
+3. Restart your terminal/PowerShell
+4. Verify installation:
+   ```powershell
+   node --version
+   npm --version
+   ```
+
+**Option 2: Using winget**
+```powershell
+winget install OpenJS.NodeJS.LTS
+```
+
+**Option 3: Using Chocolatey**
+```powershell
+choco install nodejs-lts
+```
+
+</details>
+
+<details>
+<summary><strong>🐧 Ubuntu / Debian</strong></summary>
+
+**Option 1: NodeSource Repository (Recommended)**
+```bash
+# Download and run the NodeSource setup script for Node.js 20.x LTS
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+
+# Install Node.js (npm is included)
+sudo apt-get install -y nodejs
+
+# Verify installation
+node --version
+npm --version
+```
+
+**Option 2: Using nvm (Node Version Manager)**
+```bash
+# Install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+
+# Reload shell configuration
+source ~/.bashrc
+
+# Install Node.js 20 LTS
+nvm install 20
+
+# Use Node.js 20
+nvm use 20
+
+# Verify installation
+node --version
+npm --version
+```
+
+**Option 3: Using Snap**
+```bash
+sudo snap install node --classic
+```
+
+</details>
+
 ### Installation
 
 ```bash
