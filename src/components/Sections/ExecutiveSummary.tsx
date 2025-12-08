@@ -257,7 +257,7 @@ export const ExecutiveSummary = ({ isVisible }: ExecutiveSummaryProps) => {
                     {[
                       {
                         title: 'Investment Leverage',
-                        desc: '4:1 leverage - €17.5k AIT investment unlocks €70k total initiative value',
+                        desc: '4:1 investment leverage through strategic partnerships with HPE, NVIDIA & Platinum Partners',
                         icon: '💰',
                       },
                       {

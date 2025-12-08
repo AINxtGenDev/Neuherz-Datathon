@@ -19,14 +19,14 @@ const benefitContent: Record<string, {
   financial: {
     icon: '💰',
     title: 'Financial Benefits',
-    subtitle: 'Maximize ROI with Strategic Cost-Sharing',
+    subtitle: 'Strategic In-Kind Partnership Model',
     highlights: [
-      { value: '€17.5k', label: 'AIT Investment' },
-      { value: '75%', label: 'Cost Reduction' },
+      { value: '€70k', label: 'Total Initiative' },
       { value: '€190k+', label: 'Technology Value' },
+      { value: '100%', label: 'Partner Funded' },
       { value: '40x', label: 'Expected ROI' },
     ],
-    description: 'The HPE partnership offers AIT exceptional financial leverage. With only €17,500 investment (25% of total costs), AIT gains access to resources worth over €190,000.',
+    description: 'AIT contributes premises and data while HPE, NVIDIA, and Platinum Partners provide the €70,000 investment. This gives AIT access to resources worth over €190,000 with strategic in-kind contribution.',
     keyPoints: [
       'Risk-sharing model reduces financial exposure',
       'Access to enterprise technology without capital expenditure',

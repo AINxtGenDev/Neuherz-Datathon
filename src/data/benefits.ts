@@ -71,7 +71,6 @@ export const partnershipVision = {
 };
 
 export const metrics: MetricItem[] = [
-  { value: '€17.5k', label: 'AIT Investment' },
   { value: '4:1', label: 'Investment Leverage', highlight: true },
   { value: '€190k+', label: 'Technology Access' },
   { value: '50-100', label: 'AI Professionals' },
@@ -85,7 +84,7 @@ export const benefits: BenefitItem[] = [
     description: 'Maximize impact through intelligent resource pooling between partners',
     gradient: 'primary',
     items: [
-      '4:1 investment leverage: €17.5k unlocks €70k total initiative value',
+      '4:1 investment leverage: €70k total initiative value funded by HPE, NVIDIA & Partners',
       'Access to €190k+ enterprise technology through partnership',
       'Shared operational costs with global technology leader',
       'Risk-balanced partnership structure with proven ROI model',
@@ -265,10 +264,11 @@ export const researchOutcomes = [
   { metric: '€190k+', label: 'Technology Access', description: 'HPE infrastructure value' },
 ];
 
-// Partnership investment split
+// Partnership investment split - AIT provides premises and data, investments from HPE, NVIDIA & Partners
 export const investmentSplit = {
-  ait: { amount: 17500, percentage: 25, label: 'AIT Investment' },
-  hpe: { amount: 52500, percentage: 75, label: 'HPE Investment' },
+  hpe: { amount: 35000, percentage: 50, label: 'HPE Investment' },
+  nvidia: { amount: 17500, percentage: 25, label: 'NVIDIA Investment' },
+  platinum: { amount: 17500, percentage: 25, label: 'Platinum Partners' },
   total: { amount: 70000, label: 'Total Initiative Value' },
 };
 
