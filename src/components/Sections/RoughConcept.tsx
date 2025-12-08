@@ -296,9 +296,20 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                       viewport={{ once: true }}
                       transition={{ delay: 0.1 }}
                     >
-                      <span className={styles.investmentLabel}>{investmentSplit.ait.label}</span>
-                      <span className={styles.investmentValue}>€{investmentSplit.ait.amount.toLocaleString()}</span>
-                      <span className={styles.investmentPercent}>{investmentSplit.ait.percentage}%</span>
+                      <span className={styles.investmentLabel}>{investmentSplit.hpe.label}</span>
+                      <span className={styles.investmentValue}>€{investmentSplit.hpe.amount.toLocaleString()}</span>
+                      <span className={styles.investmentPercent}>{investmentSplit.hpe.percentage}%</span>
+                    </motion.div>
+                    <motion.div
+                      className={styles.investmentCard}
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.15 }}
+                    >
+                      <span className={styles.investmentLabel}>{investmentSplit.nvidia.label}</span>
+                      <span className={styles.investmentValue}>€{investmentSplit.nvidia.amount.toLocaleString()}</span>
+                      <span className={styles.investmentPercent}>{investmentSplit.nvidia.percentage}%</span>
                     </motion.div>
                     <motion.div
                       className={styles.investmentCard}
@@ -307,12 +318,12 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                       viewport={{ once: true }}
                       transition={{ delay: 0.2 }}
                     >
-                      <span className={styles.investmentLabel}>{investmentSplit.hpe.label}</span>
-                      <span className={styles.investmentValue}>€{investmentSplit.hpe.amount.toLocaleString()}</span>
-                      <span className={styles.investmentPercent}>{investmentSplit.hpe.percentage}%</span>
+                      <span className={styles.investmentLabel}>{investmentSplit.platinum.label}</span>
+                      <span className={styles.investmentValue}>€{investmentSplit.platinum.amount.toLocaleString()}</span>
+                      <span className={styles.investmentPercent}>{investmentSplit.platinum.percentage}%</span>
                     </motion.div>
                   </div>
-                  <p className={styles.investmentNote}>Total: €{investmentSplit.total.amount.toLocaleString()} (excludes €190k+ technology value)</p>
+                  <p className={styles.investmentNote}>Total: €{investmentSplit.total.amount.toLocaleString()} funded by partners (AIT contributes premises & data)</p>
 
                   {/* Budget Breakdown */}
                   <h4 className={styles.budgetSubtitle}>Budget Allocation</h4>
