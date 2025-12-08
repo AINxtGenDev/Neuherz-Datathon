@@ -228,6 +228,6 @@ This project and its contents are proprietary and confidential. No part of this 
 
 **Made with ❤️ by the AIT & HPE Team**
 
-📅 December 2025
+December 2025
 
 </div>
