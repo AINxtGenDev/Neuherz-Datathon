@@ -555,23 +555,38 @@
 }
 
 .metricsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   margin-bottom: 24px;
+}
+
+.metricsGrid > * {
+  flex: 1 1 calc(50% - 6px);
+  max-width: calc(50% - 6px);
 }
 
 @media (min-width: 480px) {
   .metricsGrid {
     gap: 14px;
   }
+
+  .metricsGrid > * {
+    flex: 1 1 calc(50% - 7px);
+    max-width: calc(50% - 7px);
+  }
 }
 
 @media (min-width: 768px) {
   .metricsGrid {
-    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
     margin-bottom: 32px;
+  }
+
+  .metricsGrid > * {
+    flex: 0 1 200px;
+    max-width: 220px;
   }
 }
 
