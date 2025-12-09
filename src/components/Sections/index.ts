@@ -3,4 +3,5 @@ export { RoughConcept } from './RoughConcept';
 export { BenefitCard } from './BenefitCard';
 export { BenefitsSection } from './BenefitsSection';
 export { BenefitDetail } from './BenefitDetail';
+export { TeamMembers } from './TeamMembers';
 export { Footer } from './Footer';

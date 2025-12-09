@@ -1,6 +1,6 @@
 import { Navbar } from './components/Navigation';
 import { Hero } from './components/Hero';
-import { ExecutiveSummary, RoughConcept, BenefitsSection, Footer } from './components/Sections';
+import { ExecutiveSummary, RoughConcept, BenefitsSection, TeamMembers, Footer } from './components/Sections';
 import { useToggleSection } from './hooks';
 import './styles/global.css';
 
@@ -20,6 +20,7 @@ function App() {
         isVisible={isActive('strategic-benefits')}
         highlightedBenefit={null}
       />
+      <TeamMembers isVisible={isActive('team-members')} />
       <Footer />
     </div>
   );

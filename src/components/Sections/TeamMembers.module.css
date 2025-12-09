@@ -1,0 +1,257 @@
+.section {
+  padding: 40px 0;
+  background: linear-gradient(135deg, #0f0d26 0%, #1a1850 50%, #0f172a 100%);
+}
+
+@media (min-width: 480px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 480px) {
+  .header {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 60px;
+  }
+}
+
+.header h2 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 10px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 768px) {
+  .header h2 {
+    margin-bottom: 12px;
+  }
+}
+
+.header p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+  line-height: 1.5;
+}
+
+@media (min-width: 480px) {
+  .header p {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .header p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Team Sections */
+.teamSection {
+  margin-bottom: 48px;
+}
+
+.teamSection:last-child {
+  margin-bottom: 0;
+}
+
+.teamHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.teamBadge {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.hpeBadge {
+  background: linear-gradient(135deg, #01A982 0%, #00d4a0 100%);
+  color: #000;
+  box-shadow: 0 4px 20px rgba(1, 169, 130, 0.4);
+}
+
+.aitBadge {
+  background: linear-gradient(135deg, #0066B3 0%, #0088e0 100%);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 102, 179, 0.4);
+}
+
+.teamTitle {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+/* Sub Sections */
+.subSection {
+  margin-bottom: 32px;
+}
+
+.subSection:last-child {
+  margin-bottom: 0;
+}
+
+.subSectionTitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 16px;
+  padding-left: 12px;
+  border-left: 3px solid #01A982;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 480px) {
+  .grid {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Card Styles */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 12px 12px 0 0;
+}
+
+.card.hpe::before {
+  background: linear-gradient(90deg, #01A982, #00d4a0);
+}
+
+.card.ait::before {
+  background: linear-gradient(90deg, #0066B3, #0088e0);
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.card.hpe:hover {
+  box-shadow: 0 8px 32px rgba(1, 169, 130, 0.15);
+}
+
+.card.ait:hover {
+  box-shadow: 0 8px 32px rgba(0, 102, 179, 0.15);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  flex: 1;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.badgeHpe {
+  background: rgba(1, 169, 130, 0.2);
+  color: #01A982;
+  border: 1px solid rgba(1, 169, 130, 0.3);
+}
+
+.badgeAit {
+  background: rgba(0, 102, 179, 0.2);
+  color: #4da6e0;
+  border: 1px solid rgba(0, 102, 179, 0.3);
+}
+
+.role {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.responsibilities {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.5;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.label {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}

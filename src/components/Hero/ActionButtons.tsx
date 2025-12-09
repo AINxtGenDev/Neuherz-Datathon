@@ -44,6 +44,15 @@ export const ActionButtons = ({ activeSection, onToggle }: ActionButtonsProps) =
       >
         Strategic Benefits
       </Button>
+      <Button
+        variant="primary"
+        size="lg"
+        icon="👥"
+        onClick={() => onToggle('team-members')}
+        isActive={activeSection === 'team-members'}
+      >
+        Team Members
+      </Button>
     </motion.div>
   );
 };
