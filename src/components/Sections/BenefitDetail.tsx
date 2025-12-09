@@ -21,8 +21,8 @@ const benefitContent: Record<string, {
     title: 'Financial Benefits',
     subtitle: 'Strategic In-Kind Partnership Model',
     highlights: [
-      { value: '€70k', label: 'Total Initiative' },
-      { value: '€190k+', label: 'Technology Value' },
+      { value: '€50k', label: 'Total Initiative' },
+      { value: '€500k+', label: 'Technology Value' },
       { value: '100%', label: 'Partner Funded' },
       { value: '40x', label: 'Expected ROI' },
     ],
