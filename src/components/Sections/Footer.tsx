@@ -22,7 +22,7 @@ export const Footer = () => {
             Powered by <strong>Raphael NEUHERZ</strong>
           </p>
           <p className={styles.version}>
-            Version: 1.22
+            Version: 1.23
           </p>
         </div>
       </div>

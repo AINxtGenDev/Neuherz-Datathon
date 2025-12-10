@@ -97,7 +97,7 @@ const aitTeam: TeamMember[] = [
   {
     name: 'Karl Kugler',
     role: 'operativer GF and Project Lead AI Factory Austria AI:AT',
-    responsibilities: 'Executive',
+    responsibilities: 'Executive relationship',
   },
   {
     name: 'Markus Stöhr',
