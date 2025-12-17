@@ -21,8 +21,11 @@ export const Footer = () => {
           <p className={styles.powered}>
             Powered by <strong>Raphael NEUHERZ</strong>
           </p>
+          <p className={styles.disclaimer}>
+            All prices and amounts mentioned in this presentation are non-binding recommended prices and are subject to change at any time.
+          </p>
           <p className={styles.version}>
-            Version: 1.23
+            Version: 1.24
           </p>
         </div>
       </div>

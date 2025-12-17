@@ -26,6 +26,15 @@
   color: white;
 }
 
+.disclaimer {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: italic;
+  max-width: 600px;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
 .version {
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.5);
