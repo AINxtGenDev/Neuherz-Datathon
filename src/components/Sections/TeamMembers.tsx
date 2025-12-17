@@ -104,6 +104,11 @@ const aitTeam: TeamMember[] = [
     role: 'Co-Lead AI Factory Austria AI:AT',
     responsibilities: 'Technical Executive',
   },
+  {
+    name: 'Thomas Mayerhofer',
+    role: 'AIT Team Member',
+    responsibilities: 'Datathon content',
+  },
 ];
 
 const containerVariants = {
