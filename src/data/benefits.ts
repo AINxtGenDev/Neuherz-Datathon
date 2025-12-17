@@ -241,11 +241,11 @@ export const challengeTracks = [
 ];
 
 export const budgetBreakdown = [
-  { category: 'Venue & Facilities', amount: 15000, percentage: 21 },
-  { category: 'Catering & Refreshments', amount: 12000, percentage: 17 },
-  { category: 'Technology Infrastructure', amount: 18000, percentage: 26 },
-  { category: 'Prizes & Awards', amount: 18000, percentage: 26 },
-  { category: 'Marketing & Communications', amount: 7000, percentage: 10 },
+  { category: 'Venue & Facilities', amount: 7500, percentage: 21 },
+  { category: 'Catering & Refreshments', amount: 6000, percentage: 17 },
+  { category: 'Technology Infrastructure', amount: 9000, percentage: 26 },
+  { category: 'Prizes & Awards', amount: 9000, percentage: 26 },
+  { category: 'Marketing & Communications', amount: 3500, percentage: 10 },
 ];
 
 // Technology Infrastructure provided by HPE
