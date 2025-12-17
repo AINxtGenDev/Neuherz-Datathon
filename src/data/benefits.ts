@@ -84,7 +84,7 @@ export const benefits: BenefitItem[] = [
     description: 'Maximize impact through intelligent resource pooling between partners',
     gradient: 'primary',
     items: [
-      '4:1 investment leverage: €70k total initiative value funded by HPE, NVIDIA & Partners',
+      '4:1 investment leverage: €35k total initiative value funded by HPE, NVIDIA & Partners',
       'Access to €500k+ enterprise technology through partnership',
       'Shared operational costs with global technology leader',
       'Risk-balanced partnership structure with proven ROI model',
