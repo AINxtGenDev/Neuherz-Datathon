@@ -186,6 +186,19 @@ Automatic deployment via GitHub Actions on push to `main` branch.
 
 Build and upload the `dist/` folder to any static hosting service.
 
+### Offline Distribution (USB)
+
+For sharing the presentation without internet access:
+
+1. Run `npm run build`
+2. Copy the `dist/` folder to USB
+3. Recipients double-click the appropriate launcher for their OS:
+   - **Windows**: `start-presentation.bat`
+   - **macOS**: `Start Presentation (Mac).command`
+   - **Linux**: `./start-presentation.sh`
+
+> **Note**: Python 3 must be installed on the target machine. The launcher scripts start a local HTTP server and open the presentation in the default browser.
+
 ---
 
 ## 🛠️ Tech Stack
