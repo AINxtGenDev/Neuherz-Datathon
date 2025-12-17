@@ -21,12 +21,12 @@ const benefitContent: Record<string, {
     title: 'Financial Benefits',
     subtitle: 'Strategic In-Kind Partnership Model',
     highlights: [
-      { value: '€70k', label: 'Total Initiative' },
-      { value: '€190k+', label: 'Technology Value' },
+      { value: '€35k', label: 'Total Initiative' },
+      { value: '€500k+', label: 'Technology Value' },
       { value: '100%', label: 'Partner Funded' },
       { value: '40x', label: 'Expected ROI' },
     ],
-    description: 'AIT contributes premises and data while HPE, NVIDIA, and Platinum Partners provide the €70,000 investment. This gives AIT access to resources worth over €190,000 with strategic in-kind contribution.',
+    description: 'AIT contributes premises and data while HPE, NVIDIA, and Platinum Partners provide the €35,000 investment. This gives AIT access to resources worth over €500,000 with strategic in-kind contribution.',
     keyPoints: [
       'Risk-sharing model reduces financial exposure',
       'Access to enterprise technology without capital expenditure',

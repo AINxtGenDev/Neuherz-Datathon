@@ -396,7 +396,7 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                       { metric: '50-100', label: 'AI Professionals' },
                       { metric: '10+', label: 'Project Teams' },
                       { metric: '4+', label: 'AI Prototypes' },
-                      { metric: '€190k+', label: 'Tech Access Value' },
+                      { metric: '€500k+', label: 'Tech Access Value' },
                     ].map((item, index) => (
                       <motion.div
                         key={item.label}

@@ -55,7 +55,7 @@ export const hpeProfile: PartnerProfile = {
     { value: '#1', label: 'Enterprise AI Infrastructure' },
   ],
   contributions: [
-    'HPE Private Cloud AI infrastructure (€190k+ value)',
+    'HPE Private Cloud AI infrastructure (€500k+ value)',
     'NVIDIA AI Enterprise software suite',
     'Global partner ecosystem access',
     'Marketing and operational investment (€52.5k)',
@@ -72,7 +72,7 @@ export const partnershipVision = {
 
 export const metrics: MetricItem[] = [
   { value: '4:1', label: 'Investment Leverage', highlight: true },
-  { value: '€190k+', label: 'Technology Access' },
+  { value: '€500k+', label: 'Technology Access' },
   { value: '50-100', label: 'AI Professionals' },
 ];
 
@@ -85,7 +85,7 @@ export const benefits: BenefitItem[] = [
     gradient: 'primary',
     items: [
       '4:1 investment leverage: €70k total initiative value funded by HPE, NVIDIA & Partners',
-      'Access to €190k+ enterprise technology through partnership',
+      'Access to €500k+ enterprise technology through partnership',
       'Shared operational costs with global technology leader',
       'Risk-balanced partnership structure with proven ROI model',
       'Foundation for multi-year strategic research collaboration',
@@ -167,10 +167,10 @@ export const executiveSummaryContent = {
   partnershipStatement: `As Austria's largest Research and Technology Organisation with <strong>1,400+ researchers</strong> and <strong>€200M+ annual revenue</strong>, AIT brings unparalleled research depth in AI, Machine Learning, Cybersecurity, and Digital Transformation. Combined with HPE's enterprise AI infrastructure and global market reach, this partnership positions both organizations at the forefront of Austria's AI innovation ecosystem.`,
   paragraphs: [
     `The <strong>AIT-HPE Strategic Partnership</strong> unites Austria's premier research institution with a global enterprise AI leader. This is not merely a sponsorship arrangement—it represents a <strong>strategic research alliance</strong> where AIT's world-class research capabilities meet HPE's enterprise-grade AI infrastructure, creating unique value for Austria's innovation ecosystem.`,
-    `<strong>AIT contributes:</strong> Research credibility through 50+ years of excellence, access to Austrian enterprise and government networks, state-of-the-art hosting facilities, and domain expertise across AI, Cybersecurity, Digital Health, and Autonomous Systems. <strong>HPE contributes:</strong> Private Cloud AI infrastructure valued at €190,000+, NVIDIA AI Enterprise software suite, global partner ecosystem access, and €52,500 in marketing and operational investment.`,
+    `<strong>AIT contributes:</strong> Research credibility through 50+ years of excellence, access to Austrian enterprise and government networks, state-of-the-art hosting facilities, and domain expertise across AI, Cybersecurity, Digital Health, and Autonomous Systems. <strong>HPE contributes:</strong> Private Cloud AI infrastructure valued at €500,000+, NVIDIA AI Enterprise software suite, global partner ecosystem access, and €52,500 in marketing and operational investment.`,
     `The 48-hour intensive Datathon will produce <strong>actionable AI prototypes</strong> addressing real-world challenges in AIT's core research domains—Sustainable AI, Healthcare Innovation, Smart Infrastructure, and Open Innovation. These prototypes represent potential <strong>joint IP opportunities</strong>, publication material for AIT researchers, and market-ready solution concepts demonstrating both partners' capabilities.`,
   ],
-  recommendation: `This strategic alliance positions AIT as the anchor research institution for enterprise AI innovation in Austria. By contributing research expertise, facilities, and network access—while leveraging HPE's €190k+ technology investment—AIT demonstrates leadership in translating academic excellence into industry impact. This partnership establishes a replicable model for future strategic collaborations.`,
+  recommendation: `This strategic alliance positions AIT as the anchor research institution for enterprise AI innovation in Austria. By contributing research expertise, facilities, and network access—while leveraging HPE's €500k+ technology investment—AIT demonstrates leadership in translating academic excellence into industry impact. This partnership establishes a replicable model for future strategic collaborations.`,
 };
 
 export const agendaItems = [
@@ -250,7 +250,7 @@ export const budgetBreakdown = [
 
 // Technology Infrastructure provided by HPE
 export const technologyInfrastructure = [
-  { name: 'HPE Private Cloud AI', value: '€190k+', description: 'Enterprise-grade GPU compute' },
+  { name: 'HPE Private Cloud AI', value: '€500k+', description: 'Enterprise-grade GPU compute' },
   { name: 'NVIDIA AI Enterprise', value: 'Full Suite', description: 'ML frameworks and tools' },
   { name: 'HPE GreenLake', value: 'Hybrid Cloud', description: 'Flexible infrastructure' },
   { name: 'Development Environment', value: '48 Hours', description: 'Production-ready setup' },
@@ -261,15 +261,15 @@ export const researchOutcomes = [
   { metric: '4+', label: 'AI Prototypes', description: 'For AIT research pipeline' },
   { metric: '2-3', label: 'Publication Opportunities', description: 'Case studies and papers' },
   { metric: '10+', label: 'Research Collaborators', description: 'Identified for future projects' },
-  { metric: '€190k+', label: 'Technology Access', description: 'HPE infrastructure value' },
+  { metric: '€500k+', label: 'Technology Access', description: 'HPE infrastructure value' },
 ];
 
 // Partnership investment split - AIT provides premises and data, investments from HPE, NVIDIA & Partners
 export const investmentSplit = {
-  hpe: { amount: 35000, percentage: 50, label: 'HPE Investment' },
-  nvidia: { amount: 17500, percentage: 25, label: 'NVIDIA Investment' },
-  platinum: { amount: 17500, percentage: 25, label: 'Platinum Partners' },
-  total: { amount: 70000, label: 'Total Initiative Value' },
+  hpe: { amount: 17500, percentage: 50, label: 'HPE Investment' },
+  nvidia: { amount: 8750, percentage: 25, label: 'NVIDIA Investment' },
+  platinum: { amount: 8750, percentage: 25, label: 'Platinum Partners' },
+  total: { amount: 35000, label: 'Total Initiative Value' },
 };
 
 // Milestone Plan - Timeline for Datathon event (Target: Mid-June 2026)

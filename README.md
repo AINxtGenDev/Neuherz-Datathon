@@ -21,8 +21,8 @@ This project presents the strategic benefits of a partnership between **AIT (Aus
 
 | Metric | Value |
 |--------|-------|
-| 💰 Total Investment | €70,000 |
-| 🖥️ HPE Technology Value | €190,000+ |
+| 💰 Total Investment | €35,000 |
+| 🖥️ HPE Technology Value | €500,000+ |
 | 🏛️ AIT Contribution | Premises & Data |
 | 👥 Target Participants | 50-100 AI Professionals |
 
