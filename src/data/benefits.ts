@@ -58,7 +58,7 @@ export const hpeProfile: PartnerProfile = {
     'HPE Private Cloud AI infrastructure (€500k+ value)',
     'NVIDIA AI Enterprise software suite',
     'Global partner ecosystem access',
-    'Marketing and operational investment (€52.5k)',
+    'Marketing and operational investment (€35k)',
     'Technical mentorship and enterprise support',
   ],
 };
@@ -167,7 +167,7 @@ export const executiveSummaryContent = {
   partnershipStatement: `As Austria's largest Research and Technology Organisation with <strong>1,400+ researchers</strong> and <strong>€200M+ annual revenue</strong>, AIT brings unparalleled research depth in AI, Machine Learning, Cybersecurity, and Digital Transformation. Combined with HPE's enterprise AI infrastructure and global market reach, this partnership positions both organizations at the forefront of Austria's AI innovation ecosystem.`,
   paragraphs: [
     `The <strong>AIT-HPE Strategic Partnership</strong> unites Austria's premier research institution with a global enterprise AI leader. This is not merely a sponsorship arrangement—it represents a <strong>strategic research alliance</strong> where AIT's world-class research capabilities meet HPE's enterprise-grade AI infrastructure, creating unique value for Austria's innovation ecosystem.`,
-    `<strong>AIT contributes:</strong> Research credibility through 50+ years of excellence, access to Austrian enterprise and government networks, state-of-the-art hosting facilities, and domain expertise across AI, Cybersecurity, Digital Health, and Autonomous Systems. <strong>HPE contributes:</strong> Private Cloud AI infrastructure valued at €500,000+, NVIDIA AI Enterprise software suite, global partner ecosystem access, and €52,500 in marketing and operational investment.`,
+    `<strong>AIT contributes:</strong> Research credibility through 50+ years of excellence, access to Austrian enterprise and government networks, state-of-the-art hosting facilities, and domain expertise across AI, Cybersecurity, Digital Health, and Autonomous Systems. <strong>HPE contributes:</strong> Private Cloud AI infrastructure valued at €500,000+, NVIDIA AI Enterprise software suite, global partner ecosystem access, and €35,000 in marketing and operational investment.`,
     `The 48-hour intensive Datathon will produce <strong>actionable AI prototypes</strong> addressing real-world challenges in AIT's core research domains—Sustainable AI, Healthcare Innovation, Smart Infrastructure, and Open Innovation. These prototypes represent potential <strong>joint IP opportunities</strong>, publication material for AIT researchers, and market-ready solution concepts demonstrating both partners' capabilities.`,
   ],
   recommendation: `This strategic alliance positions AIT as the anchor research institution for enterprise AI innovation in Austria. By contributing research expertise, facilities, and network access while leveraging HPE's €500k+ technology investment — AIT demonstrates leadership in translating academic excellence into industry impact. This partnership establishes a replicable model for future strategic collaborations.`,
