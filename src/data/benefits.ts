@@ -272,12 +272,12 @@ export const investmentSplit = {
   total: { amount: 35000, label: 'Total Initiative Value' },
 };
 
-// Milestone Plan - Timeline for Datathon event (Target: Mid-June 2026)
+// Milestone Plan - Timeline for Datathon event (Target: September 2026)
 export const milestonePlan = [
   {
-    phase: 'Planning & Partnership',
+    phase: 'Partnership & Planning',
     icon: '🎯',
-    timing: 'Dec 2025 - Jan 2026',
+    timing: 'Feb - Mar 2026',
     status: 'pre-event' as const,
     deliverables: [
       'Partnership agreement signed',
@@ -289,7 +289,7 @@ export const milestonePlan = [
   {
     phase: 'Marketing & Outreach',
     icon: '📢',
-    timing: 'Feb - Mar 2026',
+    timing: 'Apr - May 2026',
     status: 'pre-event' as const,
     deliverables: [
       'Website & registration launch',
@@ -301,7 +301,7 @@ export const milestonePlan = [
   {
     phase: 'Technical Setup',
     icon: '🛠️',
-    timing: 'Apr - May 2026',
+    timing: 'Jun - Jul 2026',
     status: 'pre-event' as const,
     deliverables: [
       'HPE infrastructure provisioning',
@@ -313,7 +313,7 @@ export const milestonePlan = [
   {
     phase: 'Final Preparations',
     icon: '✅',
-    timing: 'Jun 2026 (Week 1-2)',
+    timing: 'Aug 2026 (Week 1-2)',
     status: 'pre-event' as const,
     deliverables: [
       'Participant confirmation',
@@ -325,7 +325,7 @@ export const milestonePlan = [
   {
     phase: 'Datathon Event',
     icon: '🚀',
-    timing: 'Mid-June 2026',
+    timing: 'Mid-September 2026',
     status: 'event' as const,
     deliverables: [
       '48-hour intensive hackathon',
@@ -337,7 +337,7 @@ export const milestonePlan = [
   {
     phase: 'Evaluation & Reporting',
     icon: '📊',
-    timing: 'Jun - Jul 2026',
+    timing: 'Sep - Oct 2026',
     status: 'post-event' as const,
     deliverables: [
       'Results documentation',
@@ -349,7 +349,7 @@ export const milestonePlan = [
   {
     phase: 'Research Publication',
     icon: '📝',
-    timing: 'Jul - Sep 2026',
+    timing: 'Oct - Dec 2026',
     status: 'post-event' as const,
     deliverables: [
       'Case study publication',
@@ -361,7 +361,7 @@ export const milestonePlan = [
   {
     phase: 'Follow-up Collaboration',
     icon: '🤝',
-    timing: 'Q3-Q4 2026',
+    timing: 'Q4 2026 - Q1 2027',
     status: 'post-event' as const,
     deliverables: [
       'Talent pipeline activation',

@@ -1,0 +1,1095 @@
+================================================================================
+          AIT × HPE DATATHON 2026 - EVENT PREPARATION CHECKLIST
+================================================================================
+
+Document Version: 1.1
+Last Updated: January 2026
+Event Date: Mid-September 2026 (48-Hour Physical Datathon)
+Location: AIT Premises, Austria
+
+--------------------------------------------------------------------------------
+                           EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+
+Total Investment: €70,000
+  - HPE Austria: €35,000 (50%)
+  - NVIDIA: €17,500 (25%)
+  - Platinum Partners: €17,500 (25%)
+
+Technology Value Provided: €190,000+
+Target Participants: 50-100 AI Professionals
+Expected Pipeline Generation: €7.5M+
+Challenge Prize Pool: €18,000
+
+================================================================================
+                    CRITICAL MILESTONES & DEADLINES
+================================================================================
+
+The following milestones represent key decision points and deliverables that
+must be achieved to ensure successful event execution. Missing these deadlines
+will impact downstream activities and overall event success.
+
+--------------------------------------------------------------------------------
+                         PHASE 1: PARTNERSHIP & PLANNING (Feb - Mar 2026)
+--------------------------------------------------------------------------------
+
+  MILESTONE 1.1 | Partnership Agreement Signed
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       28 February 2026
+  Owner:          HPE (Stefan Brock) + AIT (Karl Kugler)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • Formal partnership agreement executed by both parties
+  • Budget commitments confirmed (HPE €35k, NVIDIA €17.5k)
+  • Governance structure and steering committee established
+  • Initial project timeline approved
+
+  Dependencies:   None (Critical Path Start)
+  Risk if Missed: Entire project timeline shifts; may miss September 2026 window
+
+  ─────────────────────────────────────────────────────────────────────────────
+
+  MILESTONE 1.2 | Venue Confirmed & Booked
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 March 2026
+  Owner:          AIT (Karl Kugler)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • AIT venue selected and reserved for mid-September 2026
+  • 48-hour continuous access confirmed
+  • Capacity verified for 100+ participants
+  • Catering and facilities requirements documented
+
+  Dependencies:   Milestone 1.1 (Partnership Agreement)
+  Risk if Missed: Alternative venue search required; event date uncertainty
+
+--------------------------------------------------------------------------------
+                         PHASE 2: MARKETING & OUTREACH (Apr - May 2026)
+--------------------------------------------------------------------------------
+
+  MILESTONE 2.1 | Marketing Campaign Launch
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       15 April 2026
+  Owner:          HPE (Ulrike Ulrich, Mailin Ganser)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • Event website/landing page live
+  • Co-branded marketing materials finalized
+  • Social media campaign initiated
+  • Registration system operational
+  • Press release drafted
+
+  Dependencies:   Milestone 1.1, Joint branding guidelines approved
+  Risk if Missed: Insufficient participant recruitment time; lower attendance
+
+  ─────────────────────────────────────────────────────────────────────────────
+
+  MILESTONE 2.2 | Platinum Partners Secured
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 May 2026
+  Owner:          HPE (Werner Plessl, Milena Hirschman)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • 2-3 Platinum Partners committed (€17.5k total)
+  • Sponsorship agreements signed
+  • Partner logos and branding received
+  • Partner-specific requirements documented
+
+  Dependencies:   Milestone 1.1
+  Risk if Missed: Budget shortfall; reduced event scope or quality
+
+  ─────────────────────────────────────────────────────────────────────────────
+
+  MILESTONE 2.3 | Challenge Tracks & Datasets Defined
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 May 2026
+  Owner:          HPE (Raphael Neuherz) + AIT (Markus Stöhr)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • 4 challenge tracks finalized with clear problem statements
+  • AIT datasets identified and access approved
+  • Data privacy/GDPR compliance verified
+  • Evaluation criteria and judging rubrics defined
+  • Challenge documentation drafted
+
+  Dependencies:   Milestone 1.1, AIT research team engagement
+  Risk if Missed: Unclear participant expectations; poor project quality
+
+--------------------------------------------------------------------------------
+                         PHASE 3: TECHNICAL SETUP (Jun - Jul 2026)
+--------------------------------------------------------------------------------
+
+  MILESTONE 3.1 | Technical Infrastructure Ready
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 July 2026
+  Owner:          HPE (Iveta Lohovska)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • HPE Private Cloud AI environment provisioned
+  • NVIDIA AI Enterprise suite configured
+  • HPE GreenLake hybrid cloud operational
+  • Development environments and sandboxes ready
+  • Capacity tested for 100 concurrent users
+  • Access credentials and documentation prepared
+
+  Dependencies:   Milestone 1.1, NVIDIA partnership confirmed
+  Risk if Missed: Event cancellation or significant scope reduction
+
+  ─────────────────────────────────────────────────────────────────────────────
+
+  MILESTONE 3.2 | Participant Registration Target Met
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 July 2026
+  Owner:          HPE (Marketing) + AIT (Academic Relations)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • Minimum 100 registrations received
+  • Target 150+ registrations achieved
+  • Participant diversity goals met (industry/academia mix)
+  • Waitlist management in place if oversubscribed
+
+  Dependencies:   Milestone 2.1
+  Risk if Missed: Event viability concerns; reduced ROI potential
+
+  ─────────────────────────────────────────────────────────────────────────────
+
+  MILESTONE 3.3 | Mentor & Judge Teams Confirmed
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 July 2026
+  Owner:          HPE (Iveta Lohovska) + AIT (Research Leadership)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • HPE technical mentors briefed and scheduled
+  • AIT domain expert mentors assigned to tracks
+  • NVIDIA technical representatives confirmed
+  • Judging panel assembled (HPE, AIT, NVIDIA, Partners)
+  • Mentor rotation schedule created
+
+  Dependencies:   Milestone 2.3
+  Risk if Missed: Inadequate participant support; poor judging quality
+
+--------------------------------------------------------------------------------
+                         PHASE 4: FINAL PREPARATIONS (Aug 2026 Week 1-2)
+--------------------------------------------------------------------------------
+
+  MILESTONE 4.1 | Technical Dry Run Complete
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 August 2026 (2 weeks before event)
+  Owner:          HPE (Iveta Lohovska) + AIT (IT Department)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • Full technical rehearsal executed
+  • All systems tested under simulated load
+  • Network connectivity verified at venue
+  • Participant onboarding workflow validated
+  • Troubleshooting procedures documented
+  • Technical support escalation matrix ready
+
+  Dependencies:   Milestone 3.1, Venue infrastructure ready
+  Risk if Missed: Technical failures during event; poor participant experience
+
+  ─────────────────────────────────────────────────────────────────────────────
+
+  MILESTONE 4.2 | Event Operations Finalized
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       07 September 2026 (1 week before event)
+  Owner:          HPE (Jannine Mahone) + AIT (Event Coordination)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • Detailed run-of-show document approved
+  • Staff roles and responsibilities assigned
+  • Catering confirmed and dietary requirements accommodated
+  • Prizes and awards procured
+  • Emergency and contingency procedures in place
+  • Final participant communications sent
+
+  Dependencies:   All previous milestones
+  Risk if Missed: Operational chaos; poor event execution
+
+--------------------------------------------------------------------------------
+                         PHASE 5: EVENT EXECUTION (Mid-September 2026)
+--------------------------------------------------------------------------------
+
+  MILESTONE 5.1 | Datathon Event Executed
+  ─────────────────────────────────────────────────────────────────────────────
+  Date:           Mid-September 2026 (Fri-Sun, 48 hours)
+  Owner:          Full HPE & AIT Teams
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • Day 1: Registration, opening, challenge briefing, hacking starts
+  • Day 2: Checkpoints, mentoring sessions, continued development
+  • Day 3: Code freeze, presentations, judging, awards ceremony
+  • Media coverage and documentation captured
+  • Participant feedback collected
+
+  Success Criteria:
+  • 70%+ attendance rate
+  • 15+ projects submitted
+  • Positive participant experience (NPS > 40)
+  • No major technical or operational failures
+
+--------------------------------------------------------------------------------
+                         PHASE 6: POST-EVENT (Sep 2026 - Q1 2027)
+--------------------------------------------------------------------------------
+
+  MILESTONE 6.1 | Event Reporting Complete
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       15 October 2026
+  Owner:          HPE (Jannine Mahone, Raphael Neuherz)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • Event metrics compiled and analyzed
+  • Participant NPS survey results
+  • Executive summary report for stakeholders
+  • Lessons learned documented
+  • Media coverage summary
+  • ROI preliminary assessment
+
+  Dependencies:   Milestone 5.1
+  Risk if Missed: Lost insights; inability to demonstrate value to stakeholders
+
+  ─────────────────────────────────────────────────────────────────────────────
+
+  MILESTONE 6.2 | Lead Qualification & Pipeline Attribution
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 October 2026
+  Owner:          HPE (Werner Plessl, Gerald Six)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • 20-30 qualified leads identified and scored
+  • Leads entered into CRM with proper attribution
+  • Follow-up meetings scheduled with top prospects
+  • Pipeline influence tracking initiated (€7.5M target)
+
+  Dependencies:   Milestone 5.1
+  Risk if Missed: Lost business opportunities; inability to demonstrate ROI
+
+  ─────────────────────────────────────────────────────────────────────────────
+
+  MILESTONE 6.3 | Research Collaboration Initiated
+  ─────────────────────────────────────────────────────────────────────────────
+  Deadline:       31 December 2026
+  Owner:          AIT (Karl Kugler, Markus Stöhr) + HPE (Technical Team)
+  Status:         [ ] Not Started  [ ] In Progress  [ ] Complete
+
+  Deliverables:
+  • Promising projects evaluated for continued collaboration
+  • Joint research opportunities identified
+  • Publication support provided to winning teams
+  • 2-3 publication submissions in progress
+  • Talent pipeline activated (AIT recruitment follow-up)
+
+  Dependencies:   Milestone 5.1
+  Risk if Missed: Lost research value; reduced long-term partnership benefits
+
+================================================================================
+              MILESTONE SUMMARY - CRITICAL PATH OVERVIEW
+================================================================================
+
+  DATE              MILESTONE                                    OWNER
+  ────────────────────────────────────────────────────────────────────────────
+  28 Feb 2026       Partnership Agreement Signed                 HPE + AIT
+  31 Mar 2026       Venue Confirmed & Booked                     AIT
+  15 Apr 2026       Marketing Campaign Launch                    HPE
+  31 May 2026       Platinum Partners Secured                    HPE
+  31 May 2026       Challenge Tracks & Datasets Defined          HPE + AIT
+  31 Jul 2026       Technical Infrastructure Ready               HPE
+  31 Jul 2026       Participant Registration Target Met          HPE + AIT
+  31 Jul 2026       Mentor & Judge Teams Confirmed               HPE + AIT
+  31 Aug 2026       Technical Dry Run Complete                   HPE + AIT
+  07 Sep 2026       Event Operations Finalized                   HPE + AIT
+  Mid-Sep 2026      DATATHON EVENT                               ALL
+  15 Oct 2026       Event Reporting Complete                     HPE
+  31 Oct 2026       Lead Qualification Complete                  HPE
+  31 Dec 2026       Research Collaboration Initiated             AIT + HPE
+  ────────────────────────────────────────────────────────────────────────────
+
+================================================================================
+                    SECTION A: HPE RESPONSIBILITIES
+================================================================================
+
+The following tasks are the responsibility of HPE Austria and must be completed
+according to the milestone timeline.
+
+--------------------------------------------------------------------------------
+A.1  STRATEGIC & EXECUTIVE TASKS
+--------------------------------------------------------------------------------
+
+[ ] A.1.1  Partnership Agreement Finalization
+    Owner: Stefan Brock (Executive Sponsor), Manfred Traumüller (Managing Director)
+    Timeline: February 2026
+
+    - Finalize formal partnership agreement with AIT
+    - Secure internal HPE budget approval (€35,000)
+    - Establish governance structure and decision-making process
+    - Define success metrics and KPIs with all partners
+    - Coordinate with NVIDIA on partnership terms
+    - Identify and onboard Platinum Partners
+
+[ ] A.1.2  NVIDIA Partnership Coordination
+    Owner: Raphael Neuherz (Project Lead)
+    Timeline: February - March 2026
+
+    - Formalize NVIDIA contribution agreement (€17,500)
+    - Secure NVIDIA AI Enterprise software licenses for event
+    - Arrange NVIDIA technical representative attendance
+    - Coordinate GPU resource allocation for datathon
+    - Align on co-marketing and branding guidelines
+
+[ ] A.1.3  Platinum Partner Acquisition
+    Owner: Werner Plessl (Account Manager), Milena Hirschman (GTM)
+    Timeline: March - May 2026
+
+    - Identify potential Platinum Partners (target: 2-3 companies)
+    - Develop sponsorship packages and benefits
+    - Negotiate and close sponsorship agreements (€17,500 total)
+    - Coordinate partner-specific challenge tracks if applicable
+    - Integrate partner branding into event materials
+
+--------------------------------------------------------------------------------
+A.2  TECHNOLOGY & INFRASTRUCTURE TASKS
+--------------------------------------------------------------------------------
+
+[ ] A.2.1  HPE Private Cloud AI Provisioning
+    Owner: Iveta Lohovska (CTO/Technical Lead)
+    Timeline: June - July 2026
+
+    - Provision HPE Private Cloud AI environment for datathon
+    - Configure compute resources for 50-100 concurrent users
+    - Set up development environments and sandboxes
+    - Establish secure access protocols and credentials
+    - Create backup and disaster recovery procedures
+    - Document system architecture and access procedures
+
+[ ] A.2.2  NVIDIA AI Enterprise Integration
+    Owner: Patrick Kosak (Data Scientist), Technical Team
+    Timeline: June - July 2026
+
+    - Deploy NVIDIA NIM microservices
+    - Configure NeMo Curator, Customizer, and Guardrails
+    - Set up GPU resource allocation and monitoring
+    - Prepare pre-configured AI model templates
+    - Create starter notebooks and code examples
+    - Test full stack integration end-to-end
+
+[ ] A.2.3  HPE GreenLake Configuration
+    Owner: Technical Team (Julia Hanak, Laura Krone, Dominic Viola)
+    Timeline: July 2026
+
+    - Configure HPE GreenLake hybrid cloud environment
+    - Set up team workspaces and resource quotas
+    - Implement monitoring and logging systems
+    - Establish data ingestion pipelines
+    - Create user documentation and quick-start guides
+    - Conduct load testing for peak usage scenarios
+
+[ ] A.2.4  Development Environment Preparation
+    Owner: Michael Martin (Consultant), Patrick Kosak
+    Timeline: July - August 2026 (Week 1)
+
+    - Pre-configure development tools and IDEs
+    - Create team project templates
+    - Set up version control (Git repositories)
+    - Prepare CI/CD pipelines for team projects
+    - Install and configure MLOps tools (Pachyderm, Determined AI)
+    - Create sandbox environments for each challenge track
+
+[ ] A.2.5  Technical Dry Run
+    Owner: Iveta Lohovska, Full Technical Team
+    Timeline: August 2026 (Week 3-4)
+
+    - Execute complete technical rehearsal
+    - Test all systems under simulated load
+    - Verify network connectivity and bandwidth
+    - Validate security configurations
+    - Test participant onboarding workflow
+    - Document troubleshooting procedures
+    - Prepare technical support escalation matrix
+
+--------------------------------------------------------------------------------
+A.3  MARKETING & COMMUNICATIONS TASKS
+--------------------------------------------------------------------------------
+
+[ ] A.3.1  Marketing Strategy Development
+    Owner: Ulrike Ulrich (Marketing), Mailin Ganser (Marketing)
+    Timeline: March - April 2026
+
+    - Develop comprehensive marketing plan
+    - Create event branding and visual identity
+    - Design marketing collateral (digital and print)
+    - Establish social media campaign strategy
+    - Coordinate press release and media outreach plan
+    - Define target audience segments and messaging
+
+[ ] A.3.2  Digital Marketing Execution
+    Owner: Mailin Ganser, Ulrike Ulrich
+    Timeline: April - September 2026
+
+    - Launch event website/landing page
+    - Execute social media campaigns (LinkedIn, Twitter)
+    - Create email marketing sequences
+    - Develop blog content and thought leadership pieces
+    - Produce promotional video content
+    - Implement analytics and tracking
+
+[ ] A.3.3  Participant Recruitment Campaign
+    Owner: Marketing Team, Gerald Six (Business Intelligence)
+    Timeline: April - July 2026
+
+    - Identify target participant profiles
+    - Reach out to Austrian AI/ML communities
+    - Partner with universities and research institutions
+    - Engage professional networks and meetup groups
+    - Coordinate with AIT on academic outreach
+    - Track registration metrics and adjust strategy
+
+[ ] A.3.4  Media Relations & PR
+    Owner: Ulrike Ulrich, Jannine Mahone (Program Manager)
+    Timeline: August - October 2026
+
+    - Prepare press kit and media materials
+    - Invite technology and business journalists
+    - Coordinate photographer/videographer for event
+    - Plan post-event press release
+    - Arrange executive interviews and quotes
+    - Monitor media coverage and sentiment
+
+--------------------------------------------------------------------------------
+A.4  EVENT OPERATIONS TASKS
+--------------------------------------------------------------------------------
+
+[ ] A.4.1  Program Management
+    Owner: Jannine Mahone (Program Manager), Raphael Neuherz
+    Timeline: February - September 2026
+
+    - Create detailed event project plan
+    - Establish regular status meetings with all stakeholders
+    - Manage cross-functional task coordination
+    - Track budget and expenditures
+    - Prepare risk assessment and mitigation plans
+    - Document all decisions and action items
+
+[ ] A.4.2  Challenge Track Definition
+    Owner: Raphael Neuherz, Gerald Six, Technical Team
+    Timeline: April - May 2026
+
+    - Finalize challenge track themes:
+      * Sustainable AI (€5,000 prize)
+      * Healthcare Innovation (€5,000 prize)
+      * Smart Infrastructure (€5,000 prize)
+      * Open Innovation (€3,000 prize)
+    - Define evaluation criteria and judging rubrics
+    - Prepare challenge briefs and documentation
+    - Identify relevant datasets for each track
+    - Coordinate with AIT on challenge alignment
+
+[ ] A.4.3  Judging Panel Assembly
+    Owner: Raphael Neuherz, Werner Plessl
+    Timeline: June - July 2026
+
+    - Identify and invite judges (HPE, AIT, NVIDIA, Partners)
+    - Prepare judging guidelines and scoring sheets
+    - Brief judges on evaluation criteria
+    - Schedule judging sessions and deliberations
+    - Coordinate logistics for judge attendance
+
+[ ] A.4.4  Prize & Award Preparation
+    Owner: Jannine Mahone, Milena Hirschman
+    Timeline: July - August 2026
+
+    - Procure prize funds (€18,000 total)
+    - Design award certificates and trophies
+    - Prepare additional prizes (software licenses, mentorship)
+    - Coordinate prize distribution logistics
+    - Plan awards ceremony program
+
+[ ] A.4.5  Event Day Operations Planning
+    Owner: Full HPE Team
+    Timeline: September 2026 (Week 1)
+
+    - Create detailed run-of-show document
+    - Assign staff roles and responsibilities
+    - Prepare registration and check-in process
+    - Plan opening ceremony and keynotes
+    - Schedule checkpoint reviews and mentoring sessions
+    - Coordinate with AIT on venue logistics
+    - Prepare emergency and contingency procedures
+
+--------------------------------------------------------------------------------
+A.5  TECHNICAL MENTORSHIP & SUPPORT TASKS
+--------------------------------------------------------------------------------
+
+[ ] A.5.1  Mentor Team Preparation
+    Owner: Iveta Lohovska, Technical Team
+    Timeline: July - August 2026
+
+    - Brief all HPE technical mentors on their roles
+    - Create mentor rotation schedule for 48 hours
+    - Prepare FAQ documents and troubleshooting guides
+    - Set up mentor communication channels (Slack/Teams)
+    - Coordinate with NVIDIA technical representatives
+    - Define escalation procedures for complex issues
+
+[ ] A.5.2  Participant Onboarding Materials
+    Owner: Patrick Kosak, Michael Martin
+    Timeline: July - August 2026
+
+    - Create infrastructure access documentation
+    - Develop video tutorials for HPE tools
+    - Prepare quick-start guides for each technology
+    - Build sample projects and code templates
+    - Design hands-on onboarding workshop content
+    - Test onboarding flow with pilot users
+
+--------------------------------------------------------------------------------
+A.6  POST-EVENT TASKS
+--------------------------------------------------------------------------------
+
+[ ] A.6.1  Lead Qualification & Follow-up
+    Owner: Werner Plessl, Milena Hirschman, Gerald Six
+    Timeline: September - October 2026
+
+    - Collect and qualify participant contact information
+    - Score leads based on engagement and potential
+    - Schedule follow-up meetings with qualified leads
+    - Enter leads into CRM system with proper attribution
+    - Track pipeline influence and conversions
+    - Report on ROI metrics
+
+[ ] A.6.2  Event Documentation & Reporting
+    Owner: Jannine Mahone, Raphael Neuherz
+    Timeline: September - October 2026
+
+    - Compile event metrics and statistics
+    - Gather participant feedback (NPS surveys)
+    - Document lessons learned
+    - Create executive summary report
+    - Prepare case studies from winning projects
+    - Archive all event materials and documentation
+
+[ ] A.6.3  Research Publication Support
+    Owner: Technical Team
+    Timeline: October - December 2026
+
+    - Support winning teams with publication preparation
+    - Provide technical validation and review
+    - Coordinate with AIT on joint publication opportunities
+    - Assist with conference submission processes
+    - Document technical innovations and methodologies
+
+================================================================================
+                    SECTION B: AIT RESPONSIBILITIES
+================================================================================
+
+The following tasks are recommended responsibilities for AIT Austrian Institute
+of Technology to ensure successful event execution.
+
+--------------------------------------------------------------------------------
+B.1  VENUE & FACILITIES TASKS
+--------------------------------------------------------------------------------
+
+[ ] B.1.1  Venue Selection & Booking
+    Owner: AIT Project Lead (Karl Kugler)
+    Timeline: February - March 2026
+
+    - Identify suitable venue at AIT premises
+    - Ensure capacity for 50-100 participants + staff
+    - Verify 48-hour continuous access availability
+    - Confirm facilities meet event requirements:
+      * Main hacking space (flexible seating)
+      * Presentation/demo area
+      * Breakout rooms for team work
+      * Quiet rest areas
+      * Catering/dining space
+    - Book venue and secure dates
+
+[ ] B.1.2  Technical Infrastructure Setup
+    Owner: AIT IT Department
+    Timeline: June - July 2026
+
+    - Ensure high-speed internet connectivity (1Gbps+ recommended)
+    - Provide adequate power outlets and strips
+    - Set up WiFi network with sufficient capacity
+    - Prepare backup internet connection
+    - Coordinate with HPE on network requirements
+    - Test AV equipment (projectors, screens, microphones)
+
+[ ] B.1.3  Catering & Hospitality
+    Owner: AIT Event Coordination
+    Timeline: July - August 2026
+
+    - Arrange catering for 48-hour event:
+      * Day 1: Lunch, Dinner, Evening snacks
+      * Day 2: Breakfast, Lunch, Dinner, Evening snacks
+      * Day 3: Breakfast, Lunch, Reception
+    - Accommodate dietary restrictions (vegetarian, vegan, allergies)
+    - Provide continuous coffee, tea, and refreshments
+    - Set up designated dining and break areas
+    - Coordinate with venue on food service logistics
+
+[ ] B.1.4  Accommodation Coordination
+    Owner: AIT Event Coordination
+    Timeline: July - August 2026
+
+    - Identify nearby hotels for participants
+    - Negotiate group rates if possible
+    - Prepare accommodation information for participants
+    - Consider on-site rest areas for overnight coding
+    - Provide transportation information
+
+--------------------------------------------------------------------------------
+B.2  DATA & RESEARCH ASSETS TASKS
+--------------------------------------------------------------------------------
+
+[ ] B.2.1  Dataset Preparation
+    Owner: AIT Research Teams, Markus Stöhr (AI Factory Austria)
+    Timeline: April - July 2026
+
+    - Identify relevant AIT datasets for challenge tracks:
+      * Sustainable AI: Environmental/climate data
+      * Healthcare Innovation: Medical/health data (anonymized)
+      * Smart Infrastructure: Urban/energy/transport data
+      * Open Innovation: Cross-domain datasets
+    - Ensure data privacy and compliance (GDPR)
+    - Prepare data documentation and dictionaries
+    - Create sample datasets for onboarding
+    - Set up secure data access mechanisms
+    - Coordinate data licensing and usage terms
+
+[ ] B.2.2  Research Problem Definition
+    Owner: AIT Research Leadership
+    Timeline: April - June 2026
+
+    - Define real-world research problems for challenges
+    - Align problems with AIT strategic research priorities
+    - Ensure problems are solvable within 48 hours
+    - Prepare background materials and context
+    - Identify success criteria for each problem
+    - Coordinate with HPE on challenge track alignment
+
+[ ] B.2.3  Intellectual Property Framework
+    Owner: AIT Legal/IP Department
+    Timeline: May - June 2026
+
+    - Define IP ownership terms for datathon outputs
+    - Prepare participant IP agreements
+    - Establish framework for joint IP opportunities
+    - Document data usage rights and restrictions
+    - Clarify publication rights for participants
+    - Coordinate with HPE legal on partnership IP terms
+
+--------------------------------------------------------------------------------
+B.3  ACADEMIC & TALENT PIPELINE TASKS
+--------------------------------------------------------------------------------
+
+[ ] B.3.1  Academic Outreach
+    Owner: AIT Academic Relations
+    Timeline: April - July 2026
+
+    - Promote event to Austrian universities:
+      * TU Wien
+      * University of Vienna
+      * JKU Linz
+      * TU Graz
+      * Other relevant institutions
+    - Engage graduate programs in AI/ML/Data Science
+    - Coordinate with faculty for student participation
+    - Offer academic credit opportunities if possible
+    - Invite promising PhD candidates
+
+[ ] B.3.2  Research Community Engagement
+    Owner: Karl Kugler, Markus Stöhr
+    Timeline: April - July 2026
+
+    - Promote through AI Factory Austria (AI:AT) network
+    - Engage Austrian AI research community
+    - Invite participation from AIT researchers
+    - Coordinate with European research networks
+    - Leverage existing academic collaborations
+
+[ ] B.3.3  Talent Identification Process
+    Owner: AIT HR/Talent Acquisition
+    Timeline: During and Post-Event
+
+    - Prepare talent identification criteria
+    - Assign talent scouts during event
+    - Document high-potential participants
+    - Schedule follow-up interviews with top talent
+    - Coordinate with HPE on joint talent pipeline
+
+--------------------------------------------------------------------------------
+B.4  EXPERT & MENTORSHIP TASKS
+--------------------------------------------------------------------------------
+
+[ ] B.4.1  AIT Mentor Team Assembly
+    Owner: AIT Research Leadership
+    Timeline: June - July 2026
+
+    - Identify AIT researchers as technical mentors
+    - Assign domain experts to each challenge track:
+      * Sustainable AI: Environmental/energy researchers
+      * Healthcare Innovation: Digital health experts
+      * Smart Infrastructure: Smart cities/transport experts
+      * Open Innovation: Cross-disciplinary researchers
+    - Brief mentors on event format and expectations
+    - Create mentor rotation schedule
+    - Coordinate with HPE mentor team
+
+[ ] B.4.2  Keynote & Speaker Coordination
+    Owner: AIT Communications
+    Timeline: June - August 2026
+
+    - Identify AIT executive for opening remarks
+    - Arrange AIT research presentation/keynote
+    - Coordinate speaker schedule with HPE
+    - Prepare presentation materials
+    - Brief speakers on audience and context
+
+[ ] B.4.3  Judging Panel Participation
+    Owner: AIT Research Leadership
+    Timeline: July - August 2026
+
+    - Nominate AIT representatives for judging panel
+    - Ensure domain expertise across challenge tracks
+    - Brief judges on evaluation criteria
+    - Coordinate availability for judging sessions
+    - Prepare judges for deliberation process
+
+--------------------------------------------------------------------------------
+B.5  COMMUNICATIONS & PROMOTION TASKS
+--------------------------------------------------------------------------------
+
+[ ] B.5.1  Internal Communications
+    Owner: AIT Communications Department
+    Timeline: April - September 2026
+
+    - Announce partnership internally at AIT
+    - Encourage AIT researcher participation
+    - Highlight event in internal newsletters
+    - Coordinate internal stakeholder alignment
+    - Document partnership for AIT records
+
+[ ] B.5.2  External Communications & PR
+    Owner: AIT Communications, Press Office
+    Timeline: August - October 2026
+
+    - Coordinate press release with HPE
+    - Invite Austrian science/tech journalists
+    - Prepare AIT spokesperson for media
+    - Document event for AIT annual report
+    - Share success stories through AIT channels
+
+[ ] B.5.3  Digital Presence
+    Owner: AIT Digital Marketing
+    Timeline: April - September 2026
+
+    - Promote event on AIT website
+    - Share through AIT social media channels
+    - Create content for AI Factory Austria network
+    - Cross-promote with HPE marketing materials
+    - Document event with photos and videos
+
+--------------------------------------------------------------------------------
+B.6  ADMINISTRATIVE & LOGISTICS TASKS
+--------------------------------------------------------------------------------
+
+[ ] B.6.1  Participant Registration Support
+    Owner: AIT Event Coordination
+    Timeline: April - September 2026
+
+    - Support participant registration process
+    - Manage AIT-specific registration requirements
+    - Coordinate security/access for external participants
+    - Prepare name badges and event materials
+    - Manage waitlist if oversubscribed
+
+[ ] B.6.2  On-Site Logistics
+    Owner: AIT Facilities Management
+    Timeline: September 2026
+
+    - Set up venue according to event requirements
+    - Coordinate signage and wayfinding
+    - Manage security and access control
+    - Ensure cleaning and maintenance during event
+    - Provide on-call facilities support
+    - Coordinate parking for participants
+
+[ ] B.6.3  Health & Safety Compliance
+    Owner: AIT Safety Officer
+    Timeline: August - September 2026
+
+    - Conduct venue safety assessment
+    - Prepare emergency procedures
+    - Ensure first aid provisions
+    - Brief staff on safety protocols
+    - Coordinate with local emergency services if needed
+    - Display safety information at venue
+
+--------------------------------------------------------------------------------
+B.7  POST-EVENT TASKS
+--------------------------------------------------------------------------------
+
+[ ] B.7.1  Research Collaboration Follow-up
+    Owner: AIT Research Leadership
+    Timeline: September - December 2026
+
+    - Evaluate promising projects for continued collaboration
+    - Initiate discussions with winning teams
+    - Explore joint research opportunities
+    - Support publication preparation
+    - Document research outcomes for AI:AT
+
+[ ] B.7.2  Partnership Evaluation
+    Owner: Karl Kugler, Markus Stöhr
+    Timeline: October 2026
+
+    - Assess partnership outcomes against objectives
+    - Document lessons learned
+    - Provide feedback to HPE
+    - Evaluate potential for continued collaboration
+    - Report outcomes to AIT leadership
+
+[ ] B.7.3  Talent Pipeline Activation
+    Owner: AIT HR/Talent Acquisition
+    Timeline: September - December 2026
+
+    - Follow up with identified talent
+    - Coordinate with research groups on hiring needs
+    - Facilitate connections between talent and AIT teams
+    - Track talent pipeline conversion rates
+    - Document talent acquisition outcomes
+
+================================================================================
+                    SECTION C: JOINT RESPONSIBILITIES
+================================================================================
+
+Tasks requiring close coordination between HPE and AIT.
+
+--------------------------------------------------------------------------------
+C.1  PARTNERSHIP GOVERNANCE
+--------------------------------------------------------------------------------
+
+[ ] C.1.1  Steering Committee Establishment
+    Owner: Stefan Brock (HPE), Karl Kugler (AIT)
+    Timeline: February - March 2026
+
+    - Establish joint steering committee
+    - Define meeting cadence (recommend bi-weekly)
+    - Set decision-making authority and escalation
+    - Create shared communication channels
+    - Document governance procedures
+
+[ ] C.1.2  Regular Status Meetings
+    Owner: Raphael Neuherz (HPE), Markus Stöhr (AIT)
+    Timeline: February - October 2026
+
+    - Schedule regular project status meetings
+    - Track progress against milestones
+    - Address issues and blockers promptly
+    - Document decisions and action items
+    - Maintain shared project documentation
+
+--------------------------------------------------------------------------------
+C.2  BUDGET & FINANCIAL COORDINATION
+--------------------------------------------------------------------------------
+
+[ ] C.2.1  Budget Allocation Agreement
+    Owner: HPE Finance, AIT Finance
+    Timeline: February - March 2026
+
+    - Finalize detailed budget allocation:
+      * Venue & Facilities: TBD
+      * Catering & Hospitality: TBD
+      * Technology Infrastructure: TBD (HPE)
+      * Prizes & Awards: €18,000
+      * Marketing & Promotion: TBD
+    - Agree on cost-sharing arrangements
+    - Establish payment schedules
+    - Define financial reporting requirements
+
+[ ] C.2.2  Sponsor Benefit Delivery
+    Owner: HPE Marketing, AIT Communications
+    Timeline: Throughout Project
+
+    - Ensure all sponsor benefits are delivered
+    - Track logo placement and brand visibility
+    - Document marketing impressions
+    - Report to sponsors on benefit delivery
+    - Maintain sponsor satisfaction
+
+--------------------------------------------------------------------------------
+C.3  BRANDING & COMMUNICATIONS
+--------------------------------------------------------------------------------
+
+[ ] C.3.1  Joint Branding Guidelines
+    Owner: HPE Marketing, AIT Communications
+    Timeline: March - April 2026
+
+    - Develop co-branded visual identity
+    - Agree on logo usage and placement
+    - Create brand guidelines document
+    - Approve all external communications
+    - Coordinate messaging and positioning
+
+[ ] C.3.2  Joint Press Activities
+    Owner: HPE PR, AIT Press Office
+    Timeline: August - October 2026
+
+    - Coordinate joint press release
+    - Align on media messaging
+    - Prepare joint executive quotes
+    - Share media coverage
+    - Document press outcomes
+
+--------------------------------------------------------------------------------
+C.4  PARTICIPANT EXPERIENCE
+--------------------------------------------------------------------------------
+
+[ ] C.4.1  Registration & Communication Flow
+    Owner: HPE Program Management, AIT Event Coordination
+    Timeline: April - September 2026
+
+    - Design unified registration process
+    - Create participant communication templates
+    - Coordinate pre-event briefings
+    - Ensure consistent participant experience
+    - Manage participant expectations
+
+[ ] C.4.2  Event Day Coordination
+    Owner: Full HPE & AIT Teams
+    Timeline: Event Days (September 2026)
+
+    - Execute joint run-of-show
+    - Coordinate staff assignments
+    - Manage participant support jointly
+    - Handle issues and escalations
+    - Ensure smooth event operations
+
+================================================================================
+                    SECTION D: TIMELINE OVERVIEW
+================================================================================
+
+Phase 1: Partnership & Planning (February - March 2026)
+------------------------------------------------------------------------
+- Partnership agreement finalization
+- Steering committee establishment
+- Budget approval and allocation
+- Venue booking at AIT
+
+Phase 2: Marketing & Outreach (April - May 2026)
+------------------------------------------------------------------------
+- Marketing campaign launch
+- Participant recruitment begins
+- Academic outreach activation
+- Sponsor acquisition
+
+Phase 3: Technical Setup (June - July 2026)
+------------------------------------------------------------------------
+- HPE infrastructure provisioning
+- Dataset preparation by AIT
+- Challenge track finalization
+- Mentor team assembly
+
+Phase 4: Final Preparations (August 2026 - Week 1-2)
+------------------------------------------------------------------------
+- Technical dry run
+- Venue setup
+- Final participant communications
+- Staff briefings
+
+Phase 5: Datathon Event (Mid-September 2026)
+------------------------------------------------------------------------
+- Day 1: Opening, team formation, hacking begins
+- Day 2: Checkpoints, mentoring, continued hacking
+- Day 3: Final sprint, presentations, awards
+
+Phase 6: Evaluation & Reporting (September - October 2026)
+------------------------------------------------------------------------
+- Event documentation
+- Lead qualification and follow-up
+- Partnership evaluation
+- Executive reporting
+
+Phase 7: Research Publication (October - December 2026)
+------------------------------------------------------------------------
+- Publication support for winners
+- Joint research collaboration initiation
+- Documentation of innovations
+
+Phase 8: Follow-up Collaboration (Q4 2026 - Q1 2027)
+------------------------------------------------------------------------
+- Talent pipeline activation
+- Long-term partnership planning
+- Lessons learned implementation
+
+================================================================================
+                    SECTION E: KEY CONTACTS
+================================================================================
+
+HPE Austria Team
+------------------------------------------------------------------------
+Executive Sponsor:      Stefan Brock
+Managing Director:      Manfred Traumüller
+Project Lead:           Raphael Neuherz
+Program Manager:        Jannine Mahone
+GTM Lead:              Milena Hirschman
+Account Manager:        Werner Plessl
+Marketing Lead:         Ulrike Ulrich
+Marketing Support:      Mailin Ganser
+Business Intelligence:  Gerald Six
+CTO/Technical Lead:     Iveta Lohovska
+Data Scientist:         Patrick Kosak
+Technical Consultant:   Michael Martin
+Presales Team:          Julia Hanak, Laura Krone, Dominic Viola
+
+AIT Austria Team
+------------------------------------------------------------------------
+Project Lead AI:AT:     Karl Kugler
+Co-Lead AI:AT:         Markus Stöhr
+[Additional AIT contacts to be confirmed]
+
+================================================================================
+                    SECTION F: SUCCESS METRICS
+================================================================================
+
+Quantitative Targets
+------------------------------------------------------------------------
+Metric                          Target          Measurement Method
+------------------------------------------------------------------------
+Registrations                   150+            Registration system
+Attendance Rate                 70%+            Check-in data
+Teams Formed                    15-25           Team registration
+Projects Submitted              15+             Submission platform
+Qualified Leads (HPE)           20-30           CRM tagging
+Pipeline Influenced             €7.5M+          Salesforce attribution
+Direct Deal (EoFY)              1+              Sales tracking
+Marketing Impressions           50k-100k        Analytics tracking
+Media Mentions                  10+             Media monitoring
+
+Qualitative Targets
+------------------------------------------------------------------------
+- Participant NPS Score > 40
+- Partner satisfaction (formal feedback)
+- Innovation quality assessment
+- Research publication potential
+- Talent pipeline quality
+
+================================================================================
+
+Document prepared for HPE-AIT partnership discussion.
+For questions or updates, contact: Raphael Neuherz (HPE Project Lead)
+
+================================================================================
