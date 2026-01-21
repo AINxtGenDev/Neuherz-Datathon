@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { ProgressBar } from '../common';
-import { agendaItems, challengeTracks, budgetBreakdown, technologyInfrastructure, researchOutcomes, investmentSplit, milestonePlan } from '../../data/benefits';
+import { agendaItems, challengeTracks, budgetBreakdown, technologyInfrastructure, researchOutcomes, investmentSplit, milestonePlan, criticalMilestones } from '../../data/benefits';
 import styles from './RoughConcept.module.css';
 
 interface RoughConceptProps {
@@ -441,7 +441,7 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                     📅 Milestone Plan
                   </motion.h3>
                   <p className={styles.milestoneSubtitle}>
-                    Key milestones for Datathon event (Target: Mid-June 2026)
+                    Key milestones for Datathon event (Target: Mid-September 2026)
                   </p>
 
                   {/* Visual Timeline Graphic */}
@@ -519,6 +519,160 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                       </motion.div>
                     ))}
                   </div>
+                </motion.div>
+
+                {/* Preparation Steps - Critical Milestones & Deadlines */}
+                <motion.div
+                  className={styles.preparationSection}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.01, transition: { duration: 0.2 } }}
+                >
+                  <motion.h3
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 1.0 }}
+                  >
+                    📋 Preparation Steps
+                  </motion.h3>
+                  <p className={styles.preparationSubtitle}>
+                    Critical Milestones & Deadlines for Event Success
+                  </p>
+
+                  {/* Critical Path Summary */}
+                  <motion.div
+                    className={styles.criticalPathSummary}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    <div className={styles.summaryHeader}>
+                      <span className={styles.summaryIcon}>⚡</span>
+                      <h4>Critical Path Overview</h4>
+                    </div>
+                    <div className={styles.summaryTimeline}>
+                      <div className={styles.summaryItem}>
+                        <span className={styles.summaryDate}>Feb 2026</span>
+                        <span className={styles.summaryLabel}>Start</span>
+                      </div>
+                      <div className={styles.summaryArrow}>→</div>
+                      <div className={styles.summaryItem}>
+                        <span className={styles.summaryDate}>Mid-Sep 2026</span>
+                        <span className={styles.summaryLabel}>Event</span>
+                      </div>
+                      <div className={styles.summaryArrow}>→</div>
+                      <div className={styles.summaryItem}>
+                        <span className={styles.summaryDate}>Dec 2026</span>
+                        <span className={styles.summaryLabel}>Complete</span>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  {/* Milestones by Phase */}
+                  <div className={styles.milestonesContainer}>
+                    {criticalMilestones.map((phase, phaseIndex) => (
+                      <motion.div
+                        key={phase.phase}
+                        className={styles.phaseBlock}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: phaseIndex * 0.15, type: 'spring', stiffness: 100 }}
+                      >
+                        <div className={styles.phaseHeader}>
+                          <span className={styles.phaseNumber}>{phaseIndex + 1}</span>
+                          <h4>{phase.phase}</h4>
+                        </div>
+                        <div className={styles.milestonesList}>
+                          {phase.milestones.map((milestone, mIndex) => (
+                            <motion.div
+                              key={milestone.title}
+                              className={`${styles.milestoneItem} ${styles[milestone.status]}`}
+                              initial={{ opacity: 0, x: -20 }}
+                              whileInView={{ opacity: 1, x: 0 }}
+                              viewport={{ once: true }}
+                              transition={{ delay: phaseIndex * 0.1 + mIndex * 0.08 }}
+                              whileHover={{
+                                scale: 1.02,
+                                boxShadow: '0 8px 25px rgba(0,0,0,0.15)',
+                                transition: { duration: 0.2 }
+                              }}
+                            >
+                              <div className={styles.milestoneItemHeader}>
+                                <div className={styles.milestoneInfo}>
+                                  <span className={`${styles.statusBadge} ${styles[milestone.status]}`}>
+                                    {milestone.status === 'critical' ? '🔴 Critical' :
+                                     milestone.status === 'event' ? '🎯 Event' : '🟡 Important'}
+                                  </span>
+                                  <h5>{milestone.title}</h5>
+                                </div>
+                                <div className={styles.milestoneMeta}>
+                                  <span className={styles.deadline}>📅 {milestone.deadline}</span>
+                                  <span className={styles.owner}>👥 {milestone.owner}</span>
+                                </div>
+                              </div>
+                              <ul className={styles.deliverablesList}>
+                                {milestone.deliverables.map((deliverable, dIndex) => (
+                                  <motion.li
+                                    key={dIndex}
+                                    initial={{ opacity: 0 }}
+                                    whileInView={{ opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: phaseIndex * 0.05 + mIndex * 0.05 + dIndex * 0.03 }}
+                                  >
+                                    ✓ {deliverable}
+                                  </motion.li>
+                                ))}
+                              </ul>
+                            </motion.div>
+                          ))}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+
+                  {/* Key Responsibilities Summary */}
+                  <motion.div
+                    className={styles.responsibilitiesSummary}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 }}
+                  >
+                    <h4>Key Responsibilities</h4>
+                    <div className={styles.responsibilitiesGrid}>
+                      <div className={styles.responsibilityCard}>
+                        <span className={styles.respIcon}>🏢</span>
+                        <h5>HPE Austria</h5>
+                        <ul>
+                          <li>Partnership agreement & budget</li>
+                          <li>Technical infrastructure</li>
+                          <li>Marketing & recruitment</li>
+                          <li>Lead qualification</li>
+                        </ul>
+                      </div>
+                      <div className={styles.responsibilityCard}>
+                        <span className={styles.respIcon}>🔬</span>
+                        <h5>AIT Austria</h5>
+                        <ul>
+                          <li>Venue & facilities</li>
+                          <li>Datasets & research problems</li>
+                          <li>Academic outreach</li>
+                          <li>Research collaboration</li>
+                        </ul>
+                      </div>
+                      <div className={styles.responsibilityCard}>
+                        <span className={styles.respIcon}>🤝</span>
+                        <h5>Joint Tasks</h5>
+                        <ul>
+                          <li>Steering committee</li>
+                          <li>Challenge track definition</li>
+                          <li>Mentor & judge teams</li>
+                          <li>Event coordination</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </motion.div>
                 </motion.div>
               </div>
             </motion.div>

@@ -1049,3 +1049,485 @@
     font-size: 0.7rem;
   }
 }
+
+/* Preparation Steps Section */
+.preparationSection {
+  margin-top: 48px;
+  padding-top: 40px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .preparationSection {
+    margin-top: 64px;
+    padding-top: 56px;
+  }
+}
+
+.preparationSubtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .preparationSubtitle {
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+  }
+}
+
+/* Critical Path Summary */
+.criticalPathSummary {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(34, 197, 94, 0.2) 50%, rgba(168, 85, 247, 0.2) 100%);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  margin-bottom: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 768px) {
+  .criticalPathSummary {
+    padding: 28px 32px;
+    margin-bottom: 40px;
+  }
+}
+
+.summaryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.summaryIcon {
+  font-size: 1.5rem;
+}
+
+.summaryHeader h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .summaryHeader h4 {
+    font-size: 1.25rem;
+  }
+}
+
+.summaryTimeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .summaryTimeline {
+    gap: 20px;
+  }
+}
+
+.summaryItem {
+  text-align: center;
+}
+
+.summaryDate {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .summaryDate {
+    font-size: 1.25rem;
+  }
+}
+
+.summaryLabel {
+  display: block;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+  .summaryLabel {
+    font-size: 0.75rem;
+  }
+}
+
+.summaryArrow {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 768px) {
+  .summaryArrow {
+    font-size: 2rem;
+  }
+}
+
+/* Milestones Container */
+.milestonesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .milestonesContainer {
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+}
+
+/* Phase Block */
+.phaseBlock {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 768px) {
+  .phaseBlock {
+    padding: 28px 24px;
+  }
+}
+
+.phaseHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.phaseNumber {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: white;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .phaseNumber {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+
+.phaseHeader h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .phaseHeader h4 {
+    font-size: 1.15rem;
+  }
+}
+
+/* Milestones List */
+.milestonesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .milestonesList {
+    gap: 20px;
+  }
+}
+
+/* Milestone Item */
+.milestoneItem {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 16px;
+  border-left: 4px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
+}
+
+@media (min-width: 768px) {
+  .milestoneItem {
+    padding: 20px;
+  }
+}
+
+.milestoneItem.critical {
+  border-left-color: #ef4444;
+  background: rgba(239, 68, 68, 0.08);
+}
+
+.milestoneItem.important {
+  border-left-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.milestoneItem.event {
+  border-left-color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.milestoneItemHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .milestoneItemHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+
+.milestoneInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.milestoneInfo h5 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .milestoneInfo h5 {
+    font-size: 1.05rem;
+  }
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.7rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+@media (min-width: 768px) {
+  .statusBadge {
+    font-size: 0.75rem;
+    padding: 4px 12px;
+  }
+}
+
+.statusBadge.critical {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fca5a5;
+}
+
+.statusBadge.important {
+  background: rgba(245, 158, 11, 0.25);
+  color: #fcd34d;
+}
+
+.statusBadge.event {
+  background: rgba(34, 197, 94, 0.25);
+  color: #86efac;
+}
+
+.milestoneMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .milestoneMeta {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+}
+
+.deadline,
+.owner {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media (min-width: 768px) {
+  .deadline,
+  .owner {
+    font-size: 0.8rem;
+  }
+}
+
+/* Deliverables List */
+.deliverablesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .deliverablesList {
+    gap: 8px;
+  }
+}
+
+.deliverablesList li {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .deliverablesList li {
+    font-size: 0.85rem;
+  }
+}
+
+/* Key Responsibilities Summary */
+.responsibilitiesSummary {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-lg);
+  padding: 24px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .responsibilitiesSummary {
+    padding: 32px 28px;
+  }
+}
+
+.responsibilitiesSummary h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .responsibilitiesSummary h4 {
+    font-size: 1.25rem;
+    margin-bottom: 28px;
+  }
+}
+
+.responsibilitiesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .responsibilitiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.responsibilityCard {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 20px 16px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+@media (min-width: 768px) {
+  .responsibilityCard {
+    padding: 24px 20px;
+  }
+}
+
+.responsibilityCard:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+.respIcon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .respIcon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+}
+
+.responsibilityCard h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 12px 0;
+}
+
+@media (min-width: 768px) {
+  .responsibilityCard h5 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+}
+
+.responsibilityCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+@media (min-width: 768px) {
+  .responsibilityCard ul {
+    gap: 8px;
+  }
+}
+
+.responsibilityCard li {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .responsibilityCard li {
+    font-size: 0.85rem;
+  }
+}

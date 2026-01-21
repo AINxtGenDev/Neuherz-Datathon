@@ -272,6 +272,178 @@ export const investmentSplit = {
   total: { amount: 35000, label: 'Total Initiative Value' },
 };
 
+// Critical Milestones & Deadlines for Event Preparation
+export const criticalMilestones = [
+  {
+    phase: 'Phase 1: Partnership & Planning',
+    milestones: [
+      {
+        title: 'Partnership Agreement Signed',
+        deadline: '28 Feb 2026',
+        owner: 'HPE + AIT',
+        status: 'critical',
+        deliverables: [
+          'Formal partnership agreement executed',
+          'Budget commitments confirmed (HPE €35k, NVIDIA €17.5k)',
+          'Governance structure established',
+        ],
+      },
+      {
+        title: 'Venue Confirmed & Booked',
+        deadline: '31 Mar 2026',
+        owner: 'AIT',
+        status: 'critical',
+        deliverables: [
+          'AIT venue reserved for mid-September 2026',
+          '48-hour continuous access confirmed',
+          'Capacity verified for 100+ participants',
+        ],
+      },
+    ],
+  },
+  {
+    phase: 'Phase 2: Marketing & Outreach',
+    milestones: [
+      {
+        title: 'Marketing Campaign Launch',
+        deadline: '15 Apr 2026',
+        owner: 'HPE',
+        status: 'important',
+        deliverables: [
+          'Event website/landing page live',
+          'Social media campaign initiated',
+          'Registration system operational',
+        ],
+      },
+      {
+        title: 'Platinum Partners Secured',
+        deadline: '31 May 2026',
+        owner: 'HPE',
+        status: 'important',
+        deliverables: [
+          '2-3 Platinum Partners committed (€17.5k)',
+          'Sponsorship agreements signed',
+          'Partner branding received',
+        ],
+      },
+      {
+        title: 'Challenge Tracks & Datasets Defined',
+        deadline: '31 May 2026',
+        owner: 'HPE + AIT',
+        status: 'critical',
+        deliverables: [
+          '4 challenge tracks finalized',
+          'AIT datasets identified and approved',
+          'GDPR compliance verified',
+        ],
+      },
+    ],
+  },
+  {
+    phase: 'Phase 3: Technical Setup',
+    milestones: [
+      {
+        title: 'Technical Infrastructure Ready',
+        deadline: '31 Jul 2026',
+        owner: 'HPE',
+        status: 'critical',
+        deliverables: [
+          'HPE Private Cloud AI provisioned',
+          'NVIDIA AI Enterprise configured',
+          'Capacity tested for 100 users',
+        ],
+      },
+      {
+        title: 'Registration Target Met',
+        deadline: '31 Jul 2026',
+        owner: 'HPE + AIT',
+        status: 'important',
+        deliverables: [
+          'Minimum 100 registrations received',
+          'Target 150+ registrations achieved',
+          'Participant diversity goals met',
+        ],
+      },
+      {
+        title: 'Mentor & Judge Teams Confirmed',
+        deadline: '31 Jul 2026',
+        owner: 'HPE + AIT',
+        status: 'important',
+        deliverables: [
+          'HPE & AIT mentors briefed',
+          'Judging panel assembled',
+          'Mentor rotation schedule created',
+        ],
+      },
+    ],
+  },
+  {
+    phase: 'Phase 4: Final Preparations',
+    milestones: [
+      {
+        title: 'Technical Dry Run Complete',
+        deadline: '31 Aug 2026',
+        owner: 'HPE + AIT',
+        status: 'critical',
+        deliverables: [
+          'Full technical rehearsal executed',
+          'Systems tested under load',
+          'Troubleshooting procedures documented',
+        ],
+      },
+      {
+        title: 'Event Operations Finalized',
+        deadline: '07 Sep 2026',
+        owner: 'HPE + AIT',
+        status: 'critical',
+        deliverables: [
+          'Run-of-show document approved',
+          'Staff roles assigned',
+          'Final participant communications sent',
+        ],
+      },
+    ],
+  },
+  {
+    phase: 'Phase 5: Event & Post-Event',
+    milestones: [
+      {
+        title: 'Datathon Event',
+        deadline: 'Mid-Sep 2026',
+        owner: 'ALL',
+        status: 'event',
+        deliverables: [
+          '48-hour intensive hackathon',
+          'Presentations & judging',
+          'Awards ceremony',
+        ],
+      },
+      {
+        title: 'Event Reporting Complete',
+        deadline: '15 Oct 2026',
+        owner: 'HPE',
+        status: 'important',
+        deliverables: [
+          'Event metrics compiled',
+          'NPS survey results',
+          'ROI assessment',
+        ],
+      },
+      {
+        title: 'Research Collaboration Initiated',
+        deadline: '31 Dec 2026',
+        owner: 'AIT + HPE',
+        status: 'important',
+        deliverables: [
+          'Joint research opportunities identified',
+          '2-3 publication submissions',
+          'Talent pipeline activated',
+        ],
+      },
+    ],
+  },
+];
+
 // Milestone Plan - Timeline for Datathon event (Target: September 2026)
 export const milestonePlan = [
   {

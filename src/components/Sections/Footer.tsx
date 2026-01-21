@@ -25,7 +25,7 @@ export const Footer = () => {
             All prices and amounts mentioned in this presentation are non-binding recommended prices and are subject to change at any time.
           </p>
           <p className={styles.version}>
-            Version: 1.24
+            Version: 1.25
           </p>
         </div>
       </div>
