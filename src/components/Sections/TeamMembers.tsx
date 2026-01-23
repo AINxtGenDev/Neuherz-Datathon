@@ -39,6 +39,11 @@ const hpeLeadershipTeam: TeamMember[] = [
     responsibilities: 'Customer satisfaction',
   },
   {
+    name: 'Johannes Koch',
+    role: 'Executive Sponsor',
+    responsibilities: 'Executive sponsorship',
+  },
+  {
     name: 'Stefan Brock',
     role: 'Executive Sponsor',
     responsibilities: 'Executive know how',
@@ -95,8 +100,8 @@ const hpeTechnicalTeam: TeamMember[] = [
 
 const aitTeam: TeamMember[] = [
   {
-    name: 'Karl Kugler',
-    role: 'operativer GF and Project Lead AI Factory Austria AI:AT',
+    name: 'Dr. Karl Kugler',
+    role: 'Head of AI Factory Austria AI:AT',
     responsibilities: 'Executive relationship',
   },
   {
@@ -106,7 +111,7 @@ const aitTeam: TeamMember[] = [
   },
   {
     name: 'Thomas Mayerhofer',
-    role: 'AIT Team Member',
+    role: 'Head of Innovation - AI and Business Growth',
     responsibilities: 'Datathon content',
   },
 ];
@@ -242,6 +247,20 @@ export const TeamMembers = ({ isVisible }: TeamMembersProps) => {
               </motion.p>
             </motion.div>
 
+            {/* AIT Team Section */}
+            <motion.div className={styles.teamSection} variants={itemVariants}>
+              <div className={styles.teamHeader}>
+                <div className={`${styles.teamBadge} ${styles.aitBadge}`}>AIT</div>
+                <h3 className={styles.teamTitle}>AIT Team</h3>
+              </div>
+
+              <div className={styles.grid}>
+                {aitTeam.map((member) => (
+                  <TeamCard key={member.name} member={member} variant="ait" />
+                ))}
+              </div>
+            </motion.div>
+
             {/* HPE Team Section */}
             <motion.div className={styles.teamSection} variants={itemVariants}>
               <div className={styles.teamHeader}>
@@ -268,20 +287,6 @@ export const TeamMembers = ({ isVisible }: TeamMembersProps) => {
                   ))}
                 </div>
               </motion.div>
-            </motion.div>
-
-            {/* AIT Team Section */}
-            <motion.div className={styles.teamSection} variants={itemVariants}>
-              <div className={styles.teamHeader}>
-                <div className={`${styles.teamBadge} ${styles.aitBadge}`}>AIT</div>
-                <h3 className={styles.teamTitle}>AIT Team</h3>
-              </div>
-
-              <div className={styles.grid}>
-                {aitTeam.map((member) => (
-                  <TeamCard key={member.name} member={member} variant="ait" />
-                ))}
-              </div>
             </motion.div>
           </div>
         </motion.section>
