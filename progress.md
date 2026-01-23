@@ -100,7 +100,7 @@ src/
 - [x] GitHub Pages deployment
 
 ### Recent Changes (Last 10 Commits)
-1. `pending` - Add PoC milestone to timeline (Mid-August 2026)
+1. `b4ad67a` - Add PoC milestone to timeline (Mid-August 2026)
 2. `f1056c8` - Update team structure: add Johannes Koch, update AIT titles, reorder sections
 3. `887b7f4` - Add Preparation Steps section with Critical Milestones & Deadlines
 4. `4b7521a` - Update milestone plan to start from Feb 2026, event moved to Sep 2026
