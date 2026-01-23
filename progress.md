@@ -1,6 +1,6 @@
 # Progress Tracker - AIT & HPE Datathon Partnership Presentation
 
-> Last Updated: 2026-01-23
+> Last Updated: 2026-01-23 (Updated)
 > Current Branch: `version-2`
 > Main Branch: `main`
 
@@ -14,7 +14,9 @@ A professional React web presentation showcasing the **AIT Austrian Institute of
 - **Budget**: €35,000 total investment
 - **HPE Technology Value**: €500,000+
 - **Target Participants**: 50-100 AI Professionals
-- **Event Date**: September 2026 (milestone planning from Feb 2026)
+- **PoC Event**: Mid-August 2026 (proof of concept mini-hackathon)
+- **Main Event**: Mid-September 2026
+- **Timeline**: Feb 2026 → Mid-Aug 2026 (PoC) → Mid-Sep 2026 (Event) → Dec 2026
 
 ### Partners
 - **HPE** (Hewlett Packard Enterprise) - Primary funding
@@ -98,16 +100,16 @@ src/
 - [x] GitHub Pages deployment
 
 ### Recent Changes (Last 10 Commits)
-1. `887b7f4` - Add Preparation Steps section with Critical Milestones & Deadlines
-2. `4b7521a` - Update milestone plan to start from Feb 2026, event moved to Sep 2026
-3. `4410f8a` - Add offline font support for local viewing
-4. `5848a46` - Update marketing investment from €52.5k to €35k
-5. `b53086d` - Fix PDF - ensure all sections render completely
-6. `72ad36c` - Add PDF presentation (all sections combined)
-7. `774dcce` - Add offline distribution instructions to README
-8. `87c3c05` - Add cross-platform launcher scripts for offline viewing
-9. `1ccb6fa` - Change base path to relative for offline viewing
-10. `b57c1e0` - Update investment leverage from €70k to €35k
+1. `pending` - Add PoC milestone to timeline (Mid-August 2026)
+2. `f1056c8` - Update team structure: add Johannes Koch, update AIT titles, reorder sections
+3. `887b7f4` - Add Preparation Steps section with Critical Milestones & Deadlines
+4. `4b7521a` - Update milestone plan to start from Feb 2026, event moved to Sep 2026
+5. `4410f8a` - Add offline font support for local viewing
+6. `5848a46` - Update marketing investment from €52.5k to €35k
+7. `b53086d` - Fix PDF - ensure all sections render completely
+8. `72ad36c` - Add PDF presentation (all sections combined)
+9. `774dcce` - Add offline distribution instructions to README
+10. `87c3c05` - Add cross-platform launcher scripts for offline viewing
 
 ---
 

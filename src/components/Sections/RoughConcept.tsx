@@ -557,6 +557,11 @@ export const RoughConcept = ({ isVisible }: RoughConceptProps) => {
                       </div>
                       <div className={styles.summaryArrow}>→</div>
                       <div className={styles.summaryItem}>
+                        <span className={styles.summaryDate}>Mid-Aug 2026</span>
+                        <span className={styles.summaryLabel}>PoC</span>
+                      </div>
+                      <div className={styles.summaryArrow}>→</div>
+                      <div className={styles.summaryItem}>
                         <span className={styles.summaryDate}>Mid-Sep 2026</span>
                         <span className={styles.summaryLabel}>Event</span>
                       </div>

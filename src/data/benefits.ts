@@ -378,11 +378,11 @@ export const criticalMilestones = [
     ],
   },
   {
-    phase: 'Phase 4: Final Preparations',
+    phase: 'Phase 4: Final Preparations & PoC',
     milestones: [
       {
         title: 'Technical Dry Run Complete',
-        deadline: '31 Aug 2026',
+        deadline: '31 Jul 2026',
         owner: 'HPE + AIT',
         status: 'critical',
         deliverables: [
@@ -392,11 +392,24 @@ export const criticalMilestones = [
         ],
       },
       {
+        title: 'Proof of Concept (PoC) Event',
+        deadline: 'Mid-Aug 2026',
+        owner: 'HPE + AIT',
+        status: 'critical',
+        deliverables: [
+          'Mini-hackathon with 10-15 core team members',
+          'End-to-end infrastructure validation',
+          'Challenge tracks tested with real participants',
+          'Process gaps identified and addressed',
+        ],
+      },
+      {
         title: 'Event Operations Finalized',
         deadline: '07 Sep 2026',
         owner: 'HPE + AIT',
         status: 'critical',
         deliverables: [
+          'PoC learnings incorporated',
           'Run-of-show document approved',
           'Staff roles assigned',
           'Final participant communications sent',
@@ -485,13 +498,25 @@ export const milestonePlan = [
   {
     phase: 'Final Preparations',
     icon: '✅',
-    timing: 'Aug 2026 (Week 1-2)',
+    timing: 'Jul - Early Aug 2026',
     status: 'pre-event' as const,
     deliverables: [
       'Participant confirmation',
       'Mentor briefing sessions',
       'Logistics finalization',
       'Dry run & testing',
+    ],
+  },
+  {
+    phase: 'Proof of Concept (PoC)',
+    icon: '🧪',
+    timing: 'Mid-August 2026',
+    status: 'pre-event' as const,
+    deliverables: [
+      'Mini-hackathon with core team',
+      'Infrastructure validation',
+      'Challenge track testing',
+      'Process refinement',
     ],
   },
   {
