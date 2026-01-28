@@ -114,6 +114,16 @@ const aitTeam: TeamMember[] = [
     role: 'Head of Innovation - AI and Business Growth',
     responsibilities: 'Datathon content',
   },
+  {
+    name: 'Mara Weinblatt',
+    role: 'Eco & Partnership Lead',
+    responsibilities: 'Ecosystem development and partnership coordination',
+  },
+  {
+    name: 'Simeon Harrison',
+    role: 'Tech Lead',
+    responsibilities: 'Technical leadership and implementation',
+  },
 ];
 
 const containerVariants = {
